@@ -1,0 +1,383 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  activeMenu?: string;
+  activeSubmenu?: string;
+  hideSidebar?: boolean;
+}
+
+const { title, activeMenu = 'dashboard', activeSubmenu = '', hideSidebar = false } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | FIT Tour CMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style is:global>
+      * { font-family: 'Inter', sans-serif; box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #f1f5f9; color: #1e293b; }
+      
+      /* Sidebar */
+      .sidebar { background: #0f172a; color: #94a3b8; height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; z-index: 50; overflow-y: auto; overflow-x: hidden; }
+      .sidebar::-webkit-scrollbar { width: 4px; }
+      .sidebar::-webkit-scrollbar-track { background: #0f172a; }
+      .sidebar::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+      .sidebar::-webkit-scrollbar-thumb:hover { background: #475569; }
+      .sidebar-logo { padding: 24px 16px; border-bottom: 1px solid #1e293b; display: flex; align-items: center; gap: 10px; }
+      .sidebar-logo svg { width: 28px; height: 28px; }
+      .sidebar-logo h1 { font-size: 16px; font-weight: 700; color: #fff; }
+      .sidebar-logo span { font-size: 10px; color: #64748b; display: block; }
+      
+      .sidebar-section { padding: 16px 12px 4px; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: #475569; }
+      
+      .sidebar-menu { list-style: none; padding: 4px 8px; }
+      .sidebar-menu li { position: relative; }
+      .sidebar-menu li a, .sidebar-menu li button { display: flex; align-items: center; gap: 8px; padding: 8px; border-radius: 8px; font-size: 12.5px; font-weight: 500; color: #94a3b8; text-decoration: none; width: 100%; border: none; background: none; cursor: pointer; transition: all .15s; }
+      .sidebar-menu li a:hover, .sidebar-menu li button:hover { background: #1e293b; color: #e2e8f0; }
+      .sidebar-menu li a.active, .sidebar-menu li button.active { background: #2563eb; color: #fff; }
+      .sidebar-menu li a .icon, .sidebar-menu li button .icon { width: 16px; text-align: center; font-size: 13px; }
+      .sidebar-menu .badge { background: #ef4444; color: #fff; font-size: 9px; padding: 2px 6px; border-radius: 10px; margin-left: auto; font-weight: 600; }
+      
+      /* Submenu Flyout Right */
+      .flyout-submenu { 
+        display: none; 
+        position: absolute; 
+        left: 100%; 
+        top: 0; 
+        background: #0f172a; 
+        border: 1px solid #1e293b; 
+        border-radius: 8px; 
+        padding: 6px; 
+        list-style: none; 
+        min-width: 160px; 
+        box-shadow: 4px 4px 12px rgba(0,0,0,0.3); 
+        z-index: 100; 
+        margin-left: 5px; 
+      }
+      .sidebar-menu li:hover .flyout-submenu { display: block; }
+      .flyout-submenu li a, .flyout-menu li a { padding: 7px 12px; font-size: 12.5px; color: #94a3b8; border-radius: 6px; display: block; text-decoration: none; }
+      .flyout-submenu li a:hover, .flyout-menu li a:hover, .flyout-menu li button:hover { color: #e2e8f0; background: #1e293b; }
+      .flyout-submenu li a.active, .flyout-menu li a.active { color: #60a5fa; background: transparent; }
+      
+      .sidebar-collapse { padding: 16px; border-top: 1px solid #1e293b; margin-top: auto; }
+      .sidebar-collapse button { display: flex; align-items: center; gap: 8px; color: #64748b; font-size: 12px; background: none; border: none; cursor: pointer; }
+      
+      /* Main wrapper */
+      .main-wrapper { min-height: 100vh; }
+      
+      /* Header */
+      .top-header { background: #0f172a; border-bottom: 1px solid #1e293b; padding: 0 24px; height: 56px; display: flex; align-items: center; gap: 16px; position: sticky; top: 0; z-index: 40; }
+      .header-hamburger { color: #94a3b8; font-size: 18px; cursor: pointer; background: none; border: none; }
+      .header-search { flex: 1; max-width: 360px; position: relative; }
+      .header-search input { width: 100%; background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 8px 14px 8px 36px; color: #e2e8f0; font-size: 13px; outline: none; }
+      .header-search input::placeholder { color: #64748b; }
+      .header-search .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #64748b; font-size: 14px; }
+      .header-search .shortcut { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: #334155; color: #94a3b8; padding: 2px 8px; border-radius: 4px; font-size: 11px; }
+      .header-right { margin-left: auto; display: flex; align-items: center; gap: 16px; }
+      .header-icon-btn { position: relative; background: none; border: none; color: #94a3b8; font-size: 18px; cursor: pointer; padding: 6px; }
+      .header-icon-btn .notif-dot { position: absolute; top: 2px; right: 2px; width: 8px; height: 8px; background: #ef4444; border-radius: 50%; border: 2px solid #0f172a; }
+      .header-user { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+      .header-user img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+      .header-user .user-info { text-align: right; }
+      .header-user .user-name { font-size: 13px; font-weight: 600; color: #e2e8f0; }
+      .header-user .user-role { font-size: 11px; color: #64748b; }
+      
+      /* Content area */
+      .page-content { padding: 28px; }
+      
+      /* Utility */
+      .card { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; }
+      .badge-cat { padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+      .badge-published { background: #dcfce7; color: #16a34a; }
+      .badge-draft { background: #fef3c7; color: #d97706; }
+      .badge-pending { background: #dbeafe; color: #2563eb; }
+      .badge-trash { background: #fee2e2; color: #dc2626; }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    {!hideSidebar && (
+      <nav class="sidebar" style="width: 176px;">
+        <div class="sidebar-logo">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 2L4 8v16l12 6 12-6V8L16 2z" fill="#3b82f6"/><path d="M16 2L4 8l12 6 12-6L16 2z" fill="#60a5fa"/><path d="M16 14v16l12-6V8L16 14z" fill="#2563eb"/></svg>
+            <div>
+                <h1>FIT TOUR</h1>
+                <span>Dashboard</span>
+            </div>
+        </div>
+
+        <div class="sidebar-section">Content</div>
+        <ul class="sidebar-menu">
+            <li><a href="/admin" class={activeMenu === 'dashboard' ? 'active' : ''}><span class="icon">📊</span> Dashboard</a></li>
+            <li id="posts-menu-item">
+                <a href="/admin/posts" class={activeMenu === 'posts' ? 'active' : ''}>
+                    <span class="icon">📝</span> Posts <svg style="margin-left:auto" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M4 3l4 3-4 3V3z"/></svg>
+                </a>
+                <ul id="posts-flyout" class="flyout-menu" style="display:none; position:fixed; background:#0f172a; border:1px solid #1e293b; border-radius:8px; padding:6px; list-style:none; min-width:160px; box-shadow:4px 4px 12px rgba(0,0,0,0.3); z-index:100;">
+                    <li><a href="/admin/posts" class={activeSubmenu === 'all' ? 'active' : ''}>All Posts</a></li>
+                    <li><a href="/admin/posts/edit" class={activeSubmenu === 'new' ? 'active' : ''}>Add New</a></li>
+                    <li><a href="/admin/categories" class={activeSubmenu === 'categories' ? 'active' : ''}>Categories</a></li>
+                    <li><a href="/admin/tags" class={activeSubmenu === 'tags' ? 'active' : ''}>Tags</a></li>
+                </ul>
+            </li>
+            <li><a href="/admin/media" class={activeMenu === 'media' ? 'active' : ''}><span class="icon">🖼️</span> Media</a></li>
+            <li id="pages-menu-item">
+                <a href="/admin/pages" class={activeMenu === 'pages' ? 'active' : ''}>
+                    <span class="icon">📄</span> Pages <svg style="margin-left:auto" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M4 3l4 3-4 3V3z"/></svg>
+                </a>
+                <ul id="pages-flyout" class="flyout-menu" style="display:none; position:fixed; background:#0f172a; border:1px solid #1e293b; border-radius:8px; padding:6px; list-style:none; min-width:160px; box-shadow:4px 4px 12px rgba(0,0,0,0.3); z-index:100;">
+                    <li><a href="/admin/pages" class={activeSubmenu === 'all' ? 'active' : ''}>Tất cả Pages</a></li>
+                    <li><a href="/admin/pages/edit" class={activeSubmenu === 'new' ? 'active' : ''}>Thêm Trang Mới</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="sidebar-section">Hệ thống & Cấu hình</div>
+        <ul class="sidebar-menu">
+            <li><a href="/admin/links" class={activeMenu === 'system' && activeSubmenu === 'links' ? 'active' : ''}><span class="icon">🔗</span> Link Manager</a></li>
+        </ul>
+
+        <div class="sidebar-section">Users & Roles</div>
+        <ul class="sidebar-menu">
+            {Astro.locals && (Astro.locals as any).authorize('view', 'user') && (
+              <li><a href="/admin/users" class={activeMenu === 'system' && activeSubmenu === 'users' ? 'active' : ''}><span class="icon">👤</span> Quản lý Users</a></li>
+            )}
+            {Astro.locals && (Astro.locals as any).authorize('manage_roles', 'system') && (
+              <li><a href="/admin/roles" class={activeMenu === 'system' && activeSubmenu === 'roles' ? 'active' : ''}><span class="icon">🔐</span> Ma trận Phân quyền</a></li>
+            )}
+        </ul>
+
+        <div class="sidebar-collapse">
+            <button>◀ Collapse menu</button>
+        </div>
+      </nav>
+    )}
+
+    <!-- Main Content -->
+    <div class="main-wrapper" style={`margin-left: ${hideSidebar ? '0' : '176px'};`}>
+        <!-- Top Header -->
+        <header class="top-header">
+            <button class="header-hamburger">☰</button>
+            <div class="header-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search anything..." />
+                <span class="shortcut">⌘K</span>
+            </div>
+            <div class="header-right">
+                <a href="/" target="_blank" style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; background:#1e293b; border:1px solid #334155; border-radius:8px; color:#e2e8f0; font-size:12px; font-weight:500; text-decoration:none; transition:all .15s;" onmouseover="this.style.background='#2563eb';this.style.borderColor='#3b82f6'" onmouseout="this.style.background='#1e293b';this.style.borderColor='#334155'">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Xem Website
+                </a>
+                <div class="header-user" id="header-user-btn" style="position:relative;">
+                    <div class="user-info">
+                        <div class="user-name">{(Astro.locals as any).user?.username || 'Guest'}</div>
+                        <div class="user-role" style="text-transform: capitalize;">{(Astro.locals as any).user?.role || 'User'}</div>
+                    </div>
+                    <img src={`https://ui-avatars.com/api/?name=${(Astro.locals as any).user?.username || 'G'}&background=3b82f6&color=fff&size=68`} alt="Avatar" />
+                    
+                    <!-- Avatar dropdown -->
+                    <ul id="user-flyout" class="flyout-menu" style="display:none; position:fixed; background:#0f172a; border:1px solid #1e293b; border-radius:8px; padding:6px; list-style:none; min-width:160px; box-shadow:4px 4px 12px rgba(0,0,0,0.3); z-index:100;">
+                        <li><a href={`/admin/users/${(Astro.locals as any).user?.id || ''}`}>Hồ sơ & Mật khẩu</a></li>
+                        <li><button onclick="fetch('/api/auth/logout', { method: 'POST' }).then(() => window.location.href='/admin/login')" style="padding:7px 12px; font-size:12.5px; color:#ef4444; border-radius:6px; display:block; width:100%; text-align:left; border:none; background:none; cursor:pointer;">Đăng xuất</button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="page-content">
+            <slot />
+        </div>
+    </div>
+    <script define:vars={{ userRole: (Astro.locals as any).user?.role }}>
+      if (userRole === 'admin' || userRole === 'editor' || userRole === 'author') {
+        localStorage.setItem('isAdmin', 'true');
+        localStorage.setItem('userRole', userRole);
+      } else {
+        localStorage.removeItem('isAdmin');
+        localStorage.removeItem('userRole');
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const setupFlyout = (itemId, flyoutId, isRightAlign = false, offsetY = 0) => {
+          const menuItem = document.getElementById(itemId);
+          const flyout = document.getElementById(flyoutId);
+          if (menuItem && flyout) {
+            // Append flyout to body to prevent overflow hidden clipping
+            document.body.appendChild(flyout);
+            
+            let timeout;
+            menuItem.addEventListener('mouseenter', () => {
+              clearTimeout(timeout);
+              const rect = menuItem.getBoundingClientRect();
+              flyout.style.display = 'block';
+              
+              if (isRightAlign) {
+                // For header user avatar
+                flyout.style.top = (rect.bottom + offsetY) + 'px';
+                flyout.style.right = (window.innerWidth - rect.right) + 'px';
+                flyout.style.left = 'auto';
+              } else {
+                // For sidebar
+                flyout.style.top = rect.top + 'px';
+                flyout.style.left = (rect.right + 5) + 'px';
+              }
+            });
+            menuItem.addEventListener('mouseleave', () => {
+              timeout = setTimeout(() => {
+                flyout.style.display = 'none';
+              }, 200);
+            });
+            flyout.addEventListener('mouseenter', () => {
+              clearTimeout(timeout);
+              flyout.style.display = 'block';
+            });
+            flyout.addEventListener('mouseleave', () => {
+              timeout = setTimeout(() => {
+                flyout.style.display = 'none';
+              }, 200);
+            });
+          }
+        };
+        setupFlyout('posts-menu-item', 'posts-flyout');
+        setupFlyout('pages-menu-item', 'pages-flyout');
+        setupFlyout('header-user-btn', 'user-flyout', true, 10);
+      });
+    </script>
+    <!-- Global Modal System -->
+    <div id="app-modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(15,23,42,0.6); z-index:9999; align-items:center; justify-content:center; opacity:0; transition:opacity 0.2s;">
+      <div id="app-modal-box" style="background:#fff; border-radius:12px; padding:24px; max-width:400px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.1); transform:translateY(20px); transition:transform 0.2s;">
+        <h3 id="app-modal-title" style="margin:0 0 8px 0; font-size:18px; color:#0f172a;">Xác nhận</h3>
+        <p id="app-modal-message" style="margin:0 0 16px 0; font-size:14px; color:#475569; line-height:1.5;"></p>
+        <input type="text" id="app-modal-input" style="display:none; width:100%; box-sizing:border-box; padding:10px 12px; margin-bottom:24px; border:1px solid #cbd5e1; border-radius:6px; font-size:14px; outline:none;" />
+        <div style="display:flex; justify-content:flex-end; gap:12px;">
+          <button id="app-modal-cancel" style="padding:8px 16px; border-radius:6px; font-size:14px; font-weight:500; cursor:pointer; background:#f1f5f9; color:#475569; border:none; transition:background 0.2s;">Huỷ</button>
+          <button id="app-modal-confirm" style="padding:8px 16px; border-radius:6px; font-size:14px; font-weight:500; cursor:pointer; background:#ef4444; color:#fff; border:none; transition:background 0.2s;">Đồng ý</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.AppModal = {
+        _resolve: null,
+        show(message, type = 'confirm') {
+          return new Promise(resolve => {
+            this._resolve = resolve;
+            const overlay = document.getElementById('app-modal-overlay');
+            const box = document.getElementById('app-modal-box');
+            document.getElementById('app-modal-message').innerText = message;
+            
+            const btnCancel = document.getElementById('app-modal-cancel');
+            const btnConfirm = document.getElementById('app-modal-confirm');
+            const title = document.getElementById('app-modal-title');
+            const input = document.getElementById('app-modal-input');
+            
+            // Lưu type vào biến ngoài để xử lý kết quả
+            this._currentType = type;
+            
+            input.style.display = 'none';
+            btnConfirm.style.display = 'block';
+            document.getElementById('app-modal-message').style.marginBottom = '24px';
+
+            if (type === 'alert') {
+              btnCancel.style.display = 'none';
+              title.innerText = 'Thông báo';
+              btnConfirm.innerText = 'Đóng';
+              btnConfirm.style.background = '#3b82f6';
+            } else if (type === 'error') {
+              btnCancel.style.display = 'none';
+              title.innerText = 'Lỗi';
+              btnConfirm.innerText = 'Đóng';
+              btnConfirm.style.background = '#ef4444';
+            } else if (type === 'prompt') {
+              btnCancel.style.display = 'block';
+              title.innerText = 'Nhập thông tin';
+              btnConfirm.innerText = 'Xác nhận';
+              btnConfirm.style.background = '#3b82f6';
+              input.style.display = 'block';
+              input.value = ''; // Reset input
+              document.getElementById('app-modal-message').style.marginBottom = '12px';
+            } else {
+              btnCancel.style.display = 'block';
+              title.innerText = 'Xác nhận';
+              btnConfirm.innerText = 'Đồng ý';
+              btnConfirm.style.background = '#ef4444';
+            }
+
+            overlay.style.display = 'flex';
+            // Trigger reflow
+            void overlay.offsetWidth;
+            overlay.style.opacity = '1';
+            box.style.transform = 'translateY(0)';
+            
+            if (type === 'prompt') {
+              setTimeout(() => input.focus(), 100);
+            }
+          });
+        },
+        close(result) {
+          const overlay = document.getElementById('app-modal-overlay');
+          const box = document.getElementById('app-modal-box');
+          overlay.style.opacity = '0';
+          box.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            overlay.style.display = 'none';
+            if (this._resolve) this._resolve(result);
+            this._resolve = null;
+          }, 200);
+        },
+        confirm(message) {
+          return this.show(message, 'confirm');
+        },
+        alert(message, type = 'alert') {
+          return this.show(message, type);
+        },
+        prompt(message) {
+          return this.show(message, 'prompt');
+        },
+        showLoading(message = 'Đang xử lý...') {
+          const overlay = document.getElementById('app-modal-overlay');
+          const box = document.getElementById('app-modal-box');
+          document.getElementById('app-modal-title').innerText = 'Vui lòng chờ';
+          document.getElementById('app-modal-message').innerText = message;
+          document.getElementById('app-modal-cancel').style.display = 'none';
+          document.getElementById('app-modal-confirm').style.display = 'none';
+          document.getElementById('app-modal-input').style.display = 'none';
+          
+          overlay.style.display = 'flex';
+          void overlay.offsetWidth;
+          overlay.style.opacity = '1';
+          box.style.transform = 'translateY(0)';
+        },
+        closeLoading() {
+          this.close();
+        }
+      };
+
+      document.getElementById('app-modal-cancel').addEventListener('click', () => window.AppModal.close(window.AppModal._currentType === 'prompt' ? null : false));
+      document.getElementById('app-modal-confirm').addEventListener('click', () => {
+        if (window.AppModal._currentType === 'prompt') {
+          window.AppModal.close(document.getElementById('app-modal-input').value);
+        } else {
+          window.AppModal.close(true);
+        }
+      });
+      document.getElementById('app-modal-input').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          window.AppModal.close(document.getElementById('app-modal-input').value);
+        }
+      });
+      document.getElementById('app-modal-overlay').addEventListener('click', (e) => {
+        if (e.target === e.currentTarget && document.getElementById('app-modal-cancel').style.display !== 'none') {
+          window.AppModal.close(window.AppModal._currentType === 'prompt' ? null : false);
+        }
+      });
+    </script>
+</body>
+</html>

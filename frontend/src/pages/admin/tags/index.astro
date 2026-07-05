@@ -1,0 +1,186 @@
+---
+import { env } from "cloudflare:workers";
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+const d1Db = env.DB;
+let tags: any[] = [];
+
+if (d1Db) {
+  try {
+    const { results } = await d1Db.prepare("SELECT * FROM Tag ORDER BY name ASC").all();
+    tags = results || [];
+  } catch (e) {
+    console.error(e);
+  }
+}
+---
+
+<AdminLayout title="Tags" activeMenu="posts" activeSubmenu="tags">
+<style>
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .header h2 { font-size: 24px; font-weight: 700; }
+  
+  .layout-grid { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 768px) { .layout-grid { grid-template-columns: 1fr; } }
+  
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; }
+  
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 6px; }
+  .form-group input { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; outline: none; }
+  .form-group input:focus { border-color: #2563eb; box-shadow: 0 0 0 2px #bfdbfe; }
+  .form-group .hint { display: block; font-size: 12px; color: #64748b; margin-top: 4px; }
+  
+  .btn-submit { background: #2563eb; color: #fff; font-weight: 600; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; }
+  .btn-submit:hover { background: #1d4ed8; }
+  
+  table { width: 100%; border-collapse: collapse; }
+  thead th { text-align: left; padding: 12px 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; border-bottom: 1px solid #e2e8f0; background: #f8fafc; }
+  tbody td { padding: 12px 14px; font-size: 13px; border-bottom: 1px solid #f1f5f9; }
+  tbody tr:hover { background: #f8fafc; }
+  
+  .action-link { font-size: 12px; border: none; background: none; cursor: pointer; padding: 0; display: inline-block; margin-right: 8px; }
+  .action-edit { color: #2563eb; }
+  .action-delete { color: #ef4444; }
+</style>
+
+<div class="header">
+  <h2>Tags</h2>
+</div>
+
+<div class="layout-grid">
+  <!-- Add New Form -->
+  <div class="card">
+    <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 16px;">Add New Tag</h3>
+    <form id="addTagForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <span class="hint">The name is how it appears on your site.</span>
+      </div>
+      <div class="form-group">
+        <label for="slug">Slug</label>
+        <input type="text" id="slug" name="slug" />
+        <span class="hint">The "slug" is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</span>
+      </div>
+      <button type="submit" class="btn-submit">Add New Tag</button>
+    </form>
+  </div>
+
+  <!-- List Table -->
+  <div class="card" style="padding: 0; overflow: hidden;">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Slug</th>
+          <th>Count</th>
+          <th style="width: 100px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {tags.length === 0 && (
+          <tr><td colspan="4" style="text-align: center; color: #94a3b8; padding: 24px;">No tags found.</td></tr>
+        )}
+        {tags.map(tag => (
+          <tr id={`row-${tag.id}`}>
+            <td style="font-weight: 600;">{tag.name}</td>
+            <td style="color: #64748b;">{tag.slug}</td>
+            <td>{tag.count}</td>
+            <td>
+              <button class="action-link action-edit" onclick={`editTag('${tag.id}', '${tag.name}', '${tag.slug}')`}>Edit</button>
+              <button class="action-link action-delete" onclick={`deleteTag('${tag.id}')`}>Delete</button>
+              <a href={`/tag/${tag.slug}`} target="_blank" class="action-link action-view" style="color: #10b981; text-decoration: none;">View</a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script is:inline>
+  let editingId = null;
+
+  document.getElementById('addTagForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const slug = document.getElementById('slug').value;
+    const btn = e.target.querySelector('button');
+    const originalText = btn.innerText;
+
+    btn.innerText = 'Saving...';
+    btn.disabled = true;
+
+    try {
+      const url = editingId ? `/api/admin/tags/${editingId}` : '/api/admin/tags';
+      const method = editingId ? 'PUT' : 'POST';
+
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, slug })
+      });
+      const resData = await res.json();
+
+      if (res.ok && resData.success) {
+        window.location.reload();
+      } else {
+        window.AppModal.alert(resData.error?.message || 'Lỗi khi lưu tag', 'error');
+      }
+    } catch (err) {
+      window.AppModal.alert('Lỗi kết nối đến máy chủ', 'error');
+    } finally {
+      btn.innerText = originalText;
+      btn.disabled = false;
+    }
+  });
+
+  function editTag(id, name, slug) {
+    editingId = id;
+    document.getElementById('name').value = name;
+    document.getElementById('slug').value = slug;
+    document.querySelector('.btn-submit').innerText = 'Update Tag';
+    document.querySelector('.card h3').innerText = 'Edit Tag';
+    
+    // Add cancel button if not exists
+    if (!document.getElementById('cancelEditBtn')) {
+      const cancelBtn = document.createElement('button');
+      cancelBtn.id = 'cancelEditBtn';
+      cancelBtn.type = 'button';
+      cancelBtn.innerText = 'Cancel';
+      cancelBtn.style.marginLeft = '8px';
+      cancelBtn.style.padding = '8px 16px';
+      cancelBtn.style.background = '#f1f5f9';
+      cancelBtn.style.border = '1px solid #cbd5e1';
+      cancelBtn.style.borderRadius = '6px';
+      cancelBtn.style.cursor = 'pointer';
+      cancelBtn.onclick = () => {
+        editingId = null;
+        document.getElementById('addTagForm').reset();
+        document.querySelector('.btn-submit').innerText = 'Add New Tag';
+        document.querySelector('.card h3').innerText = 'Add New Tag';
+        cancelBtn.remove();
+      };
+      document.querySelector('.btn-submit').after(cancelBtn);
+    }
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  async function deleteTag(id) {
+    const confirmed = await window.AppModal.confirm('Bạn có chắc muốn xoá tag này?');
+    if (!confirmed) return;
+    try {
+      const res = await fetch(`/api/admin/tags/${id}`, { method: 'DELETE' });
+      const resData = await res.json();
+      if (res.ok && resData.success) {
+        document.getElementById(`row-${id}`).remove();
+      } else {
+        window.AppModal.alert(resData.error?.message || 'Lỗi khi xoá', 'error');
+      }
+    } catch (err) {
+      window.AppModal.alert('Lỗi kết nối đến máy chủ', 'error');
+    }
+  }
+</script>
+</AdminLayout>

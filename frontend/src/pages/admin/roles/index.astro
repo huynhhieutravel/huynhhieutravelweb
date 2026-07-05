@@ -1,0 +1,196 @@
+---
+import { env } from "cloudflare:workers";
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+import { DEFAULT_ROLES } from '../../../lib/iam';
+
+const { locals } = Astro;
+const authorize = (locals as any).authorize;
+
+if (!authorize('manage_roles', 'system')) {
+  return Astro.redirect('/admin');
+}
+
+const d1Db = env.DB;
+let roleMatrix = DEFAULT_ROLES;
+
+if (d1Db) {
+  const setting = await d1Db.prepare("SELECT value FROM SiteSetting WHERE key = 'role_permissions'").first();
+  if (setting && setting.value) {
+    try {
+      roleMatrix = JSON.parse(setting.value as string);
+    } catch(e) {}
+  }
+}
+
+// Define available permissions scheme for the UI
+const MODULES = [
+  { id: 'post', name: 'Bài viết (Blog)' },
+  { id: 'tour', name: 'Tours' },
+  { id: 'media', name: 'Thư viện Media' },
+  { id: 'user', name: 'Tài khoản (Users)' },
+  { id: 'system', name: 'Hệ thống (System)' }
+];
+
+const AVAILABLE_ACTIONS: Record<string, {id: string, label: string}[]> = {
+  post: [
+    { id: 'view', label: 'Xem' },
+    { id: 'create', label: 'Tạo mới' },
+    { id: 'edit', label: 'Sửa tất cả' },
+    { id: 'edit_own', label: 'Chỉ sửa bài mình' },
+    { id: 'delete', label: 'Xóa' }
+  ],
+  tour: [
+    { id: 'view', label: 'Xem' },
+    { id: 'create', label: 'Tạo mới' },
+    { id: 'edit', label: 'Sửa' },
+    { id: 'delete', label: 'Xóa' }
+  ],
+  media: [
+    { id: 'view', label: 'Xem' },
+    { id: 'create', label: 'Tải lên' },
+    { id: 'edit', label: 'Sửa' },
+    { id: 'delete', label: 'Xóa' }
+  ],
+  user: [
+    { id: 'view', label: 'Xem' },
+    { id: 'create', label: 'Tạo mới' },
+    { id: 'edit', label: 'Sửa role' },
+    { id: 'disable', label: 'Khóa tài khoản' }
+  ],
+  system: [
+    { id: 'manage_settings', label: 'Cài đặt hệ thống' },
+    { id: 'manage_roles', label: 'Phân quyền (Role Matrix)' }
+  ]
+};
+
+// Filter out super_admin from UI because super_admin cannot be edited
+const editableRoles = Object.entries(roleMatrix.roles).filter(([key]) => key !== 'super_admin');
+---
+
+<AdminLayout title="Ma trận Phân quyền (RBAC)" activeMenu="system" activeSubmenu="roles">
+  <div class="header-actions" style="margin-bottom: 24px; display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <h2 style="font-size: 24px; font-weight: 700; color: #0f172a; margin-bottom: 4px;">Ma trận Phân quyền</h2>
+      <p style="color: #64748b; font-size: 14px;">Quản lý quyền hạn chi tiết (RBAC) cho từng nhóm vai trò.</p>
+    </div>
+    <div style="display:flex; gap:12px;">
+      <button onclick="window.AppModal.alert('Chức năng thêm Role tự do đang được phát triển.')" style="background:#fff; color:#0f172a; border:1px solid #e2e8f0; padding:10px 16px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">
+        + Vai trò mới
+      </button>
+      <button id="btnSave" style="background:#0f172a; color:#fff; border:none; padding:10px 16px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer;">
+        Lưu thay đổi
+      </button>
+    </div>
+  </div>
+
+  <div class="card" style="padding: 0; overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; text-align: left; min-width:800px;" id="rolesTable">
+      <thead style="background: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+        <tr>
+          <th style="padding: 16px; font-size: 14px; font-weight: 700; color: #0f172a; width:200px; border-right:1px solid #e2e8f0;">Module / Quyền hạn</th>
+          {editableRoles.map(([roleId, roleData]) => (
+            <th style="padding: 16px; text-align:center; border-right:1px solid #e2e8f0; min-width:150px;">
+              <div style="font-size: 14px; font-weight: 700; color: #0f172a;">{roleData.name}</div>
+              {roleData.isSystem && <span style="font-size:11px; background:#e2e8f0; color:#475569; padding:2px 6px; border-radius:4px; margin-top:4px; display:inline-block;">Hệ thống</span>}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {MODULES.map(module => (
+          <>
+            <tr style="background:#f1f5f9; border-bottom:1px solid #e2e8f0; border-top:1px solid #e2e8f0;">
+              <td colspan={editableRoles.length + 1} style="padding:12px 16px; font-weight:600; color:#334155; font-size:14px;">
+                {module.name}
+              </td>
+            </tr>
+            {AVAILABLE_ACTIONS[module.id].map(action => (
+              <tr style="border-bottom:1px solid #e2e8f0;">
+                <td style="padding:12px 16px 12px 32px; font-size:13px; color:#475569; border-right:1px solid #e2e8f0;">
+                  {action.label} <span style="color:#94a3b8; font-family:monospace; margin-left:4px; font-size:11px;">{action.id}</span>
+                </td>
+                {editableRoles.map(([roleId, roleData]) => {
+                  const isChecked = roleData.permissions[module.id]?.includes(action.id) || false;
+                  // Admin system role should generally have all non-destructive items checked by default, but we let data speak
+                  const isDisabled = roleId === 'admin' && roleData.isSystem; 
+                  return (
+                    <td style="padding:12px; text-align:center; border-right:1px solid #e2e8f0;">
+                      <input type="checkbox" 
+                             class="perm-checkbox"
+                             data-role={roleId} 
+                             data-module={module.id} 
+                             data-action={action.id} 
+                             checked={isChecked}
+                             disabled={isDisabled}
+                             style="width:16px; height:16px; cursor:pointer;" />
+                    </td>
+                  )
+                })}
+              </tr>
+            ))}
+          </>
+        ))}
+      </tbody>
+    </table>
+    <div style="padding:16px; background:#f8fafc; font-size:13px; color:#64748b; border-top:1px solid #e2e8f0;">
+      *Lưu ý: Vai trò <strong>Admin (Hệ thống)</strong> được bảo vệ khỏi việc vô tình xóa quyền để tránh lỗi mất khả năng quản trị. <br/>
+      *Vai trò <strong>Super Admin</strong> có toàn quyền tối cao và không hiển thị trên ma trận này.
+    </div>
+  </div>
+</AdminLayout>
+
+<script define:vars={{ roleMatrix }}>
+  document.getElementById('btnSave').addEventListener('click', async () => {
+    const btn = document.getElementById('btnSave');
+    btn.disabled = true;
+    btn.innerText = 'Đang lưu...';
+
+    // Clone the matrix
+    const newMatrix = JSON.parse(JSON.stringify(roleMatrix));
+
+    // Clear existing permissions for editable roles
+    const checkboxes = document.querySelectorAll('.perm-checkbox');
+    checkboxes.forEach((cb) => {
+      const roleId = cb.getAttribute('data-role');
+      const modId = cb.getAttribute('data-module');
+      if (newMatrix.roles[roleId]) {
+        newMatrix.roles[roleId].permissions[modId] = []; // Reset module array
+      }
+    });
+
+    // Populate checked ones
+    checkboxes.forEach((cb) => {
+      if (cb.checked) {
+        const roleId = cb.getAttribute('data-role');
+        const modId = cb.getAttribute('data-module');
+        const actionId = cb.getAttribute('data-action');
+        if (!newMatrix.roles[roleId].permissions[modId].includes(actionId)) {
+          newMatrix.roles[roleId].permissions[modId].push(actionId);
+        }
+      }
+    });
+
+    try {
+      const res = await fetch('/api/admin/settings', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify([
+          { key: 'role_permissions', value: JSON.stringify(newMatrix) }
+        ])
+      });
+      const result = await res.json();
+      if (result.success) {
+        window.AppModal.alert('Cập nhật Ma trận Phân quyền thành công! Hệ thống sẽ nạp lại cấu hình ở lần tải tiếp theo.', () => {
+          window.location.reload();
+        });
+      } else {
+        window.AppModal.alert(result.error || 'Lỗi lưu cài đặt');
+      }
+    } catch (err) {
+      window.AppModal.alert('Lỗi kết nối máy chủ');
+    } finally {
+      btn.disabled = false;
+      btn.innerText = 'Lưu thay đổi';
+    }
+  });
+</script>

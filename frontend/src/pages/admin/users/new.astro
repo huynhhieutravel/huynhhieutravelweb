@@ -1,0 +1,255 @@
+---
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+import { env } from 'cloudflare:workers';
+
+const { locals } = Astro;
+const authorize = (locals as any).authorize;
+
+if (!authorize('create', 'user')) {
+  return Astro.redirect('/admin/users');
+}
+
+// Fetch available roles from IAM
+const d1Db = env?.dulichcoguu_d1;
+const sessionKV = env?.SESSION;
+let rolesList: any[] = [];
+try {
+  let roleMatrixStr = await sessionKV?.get('iam:roles');
+  if (!roleMatrixStr && d1Db) {
+    const setting = await d1Db.prepare("SELECT value FROM SiteSetting WHERE key = 'role_permissions'").first();
+    if (setting) roleMatrixStr = setting.value as string;
+  }
+  if (roleMatrixStr) {
+    const roleMatrix = JSON.parse(roleMatrixStr);
+    rolesList = Object.keys(roleMatrix.roles).map(k => ({
+      id: k,
+      name: roleMatrix.roles[k].name,
+      isSystem: roleMatrix.roles[k].isSystem
+    }));
+  } else {
+    // Fallback
+    rolesList = [
+      { id: 'admin', name: 'Admin', isSystem: true },
+      { id: 'editor', name: 'Editor', isSystem: true },
+      { id: 'author', name: 'Author', isSystem: true }
+    ];
+  }
+} catch (e) {}
+
+// Super admin constraint
+const isSuperAdmin = (locals as any).user.role === 'super_admin';
+if (!isSuperAdmin) {
+  rolesList = rolesList.filter(r => r.id !== 'super_admin');
+}
+---
+
+<style>
+  .page-header {
+    margin-bottom: 32px;
+  }
+  .back-link {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+  }
+  .back-link:hover {
+    color: #0f172a;
+  }
+  .page-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+  }
+  .form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    padding: 32px;
+    max-width: 640px;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+  }
+  .form-label span {
+    color: #ef4444;
+  }
+  .form-input, .form-select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    color: #0f172a;
+    transition: all 0.2s;
+    background: #f8fafc;
+  }
+  .form-input:focus, .form-select:focus {
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  .password-group {
+    display: flex;
+    gap: 12px;
+  }
+  .btn-secondary {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .btn-secondary:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+  }
+  .help-text {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 8px;
+  }
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.3);
+  }
+  .btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+</style>
+
+<AdminLayout title="Thêm tài khoản mới" activeMenu="system" activeSubmenu="users">
+  <div class="page-header">
+    <a href="/admin/users" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Quay lại danh sách
+    </a>
+    <h2 class="page-title">Tạo tài khoản mới</h2>
+  </div>
+
+  <div class="form-card">
+    <form id="userForm">
+      <div class="form-group">
+        <label class="form-label">Tên đăng nhập <span>*</span></label>
+        <input type="text" name="username" class="form-input" required pattern="[a-zA-Z0-9_]+" title="Chỉ chứa chữ cái, số và dấu gạch dưới" placeholder="Ví dụ: hieu_nguyen" />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Email <span>*</span></label>
+        <input type="email" name="email" class="form-input" required placeholder="name@fittour.vn" />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Mật khẩu tạm <span>*</span></label>
+        <div class="password-group">
+          <input type="text" name="password" id="passwordField" class="form-input" required placeholder="Nhập hoặc tạo mật khẩu" />
+          <button type="button" id="btnGenerate" class="btn-secondary">
+            Tạo ngẫu nhiên
+          </button>
+        </div>
+        <p class="help-text">Người dùng sẽ được yêu cầu đổi mật khẩu ở lần đăng nhập đầu tiên.</p>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Vai trò (Role) <span>*</span></label>
+        <select name="role" class="form-select" required>
+          <option value="">Chọn vai trò...</option>
+          {rolesList.map(r => (
+            <option value={r.id}>{r.name} {r.isSystem ? '(Hệ thống)' : ''}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">
+          Tạo tài khoản
+        </button>
+      </div>
+    </form>
+  </div>
+</AdminLayout>
+
+<script>
+  document.getElementById('btnGenerate')?.addEventListener('click', () => {
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*';
+    let pwd = '';
+    for(let i = 0; i < 12; i++) {
+      pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    (document.getElementById('passwordField') as HTMLInputElement).value = pwd;
+  });
+
+  document.getElementById('userForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    btn.disabled = true;
+    btn.innerText = 'Đang xử lý...';
+
+    try {
+      const res = await fetch('/api/admin/users', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      
+      if (result.success) {
+        window.AppModal.alert('Tạo tài khoản thành công! Nhớ copy mật khẩu gửi cho người dùng.', () => {
+          window.location.href = '/admin/users';
+        });
+      } else {
+        window.AppModal.alert(result.message || 'Lỗi không xác định');
+        btn.disabled = false;
+        btn.innerText = 'Tạo tài khoản';
+      }
+    } catch (err) {
+      window.AppModal.alert('Lỗi kết nối máy chủ');
+      btn.disabled = false;
+      btn.innerText = 'Tạo tài khoản';
+    }
+  });
+</script>

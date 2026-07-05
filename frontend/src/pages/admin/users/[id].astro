@@ -1,0 +1,457 @@
+---
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+import { env } from 'cloudflare:workers';
+
+const { id } = Astro.params;
+const { locals } = Astro;
+const authorize = (locals as any).authorize;
+const currentUser = (locals as any).user;
+
+if (!authorize('edit', 'user')) {
+  return Astro.redirect('/admin/users');
+}
+
+const d1Db = env?.dulichcoguu_d1;
+if (!d1Db) return Astro.redirect('/admin/users');
+
+const targetUser = await d1Db.prepare("SELECT * FROM users WHERE id = ?").bind(id).first<any>();
+if (!targetUser) return Astro.redirect('/admin/users');
+
+// Lấy thông tin Profile (bảng "User" — chứa display name + URL + snippet)
+const profileUser = await d1Db.prepare('SELECT name, url, avatar, author_snippet FROM "User" WHERE id = ?').bind(id).first<any>();
+
+const sessionKV = env?.SESSION;
+let rolesList: any[] = [];
+try {
+  let roleMatrixStr = await sessionKV?.get('iam:roles');
+  if (!roleMatrixStr) {
+    const setting = await d1Db.prepare("SELECT value FROM SiteSetting WHERE key = 'role_permissions'").first();
+    if (setting) roleMatrixStr = setting.value as string;
+  }
+  if (roleMatrixStr) {
+    const roleMatrix = JSON.parse(roleMatrixStr);
+    rolesList = Object.keys(roleMatrix.roles).map(k => ({
+      id: k,
+      name: roleMatrix.roles[k].name,
+      isSystem: roleMatrix.roles[k].isSystem
+    }));
+  } else {
+    rolesList = [
+      { id: 'admin', name: 'Admin', isSystem: true },
+      { id: 'editor', name: 'Editor', isSystem: true },
+      { id: 'author', name: 'Author', isSystem: true }
+    ];
+  }
+} catch (e) {}
+
+const isSuperAdmin = currentUser.role === 'super_admin';
+if (!isSuperAdmin) {
+  rolesList = rolesList.filter(r => r.id !== 'super_admin');
+}
+
+const canChangeRole = isSuperAdmin || (currentUser.role !== 'super_admin' && targetUser.role !== 'super_admin');
+const canDisable = targetUser.role !== 'super_admin' && targetUser.id !== currentUser.userId && authorize('disable', 'user');
+const canDelete = isSuperAdmin && targetUser.id !== currentUser.userId;
+---
+
+<style>
+  .page-header {
+    margin-bottom: 32px;
+  }
+  .back-link {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+  }
+  .back-link:hover {
+    color: #0f172a;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+  }
+  .btn-danger-outline {
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-danger-outline:hover {
+    background: #fef2f2;
+    border-color: #ef4444;
+  }
+  .layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 24px;
+    align-items: start;
+  }
+  .form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    padding: 32px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+  }
+  .form-input, .form-select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    color: #0f172a;
+    transition: all 0.2s;
+    background: #f8fafc;
+  }
+  .form-input:focus, .form-select:focus {
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  .form-input:disabled, .form-select:disabled {
+    background: #f1f5f9;
+    color: #64748b;
+    cursor: not-allowed;
+  }
+  .password-group {
+    display: flex;
+    gap: 12px;
+  }
+  .btn-secondary {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  .btn-secondary:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+  }
+  .help-text {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  .error-text {
+    font-size: 12px;
+    color: #ef4444;
+    margin-top: 6px;
+  }
+  .alert-box {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: #fef2f2;
+    border-left: 4px solid #ef4444;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #991b1b;
+  }
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.3);
+  }
+  .btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+  .btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2);
+  }
+  .btn-danger:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px -1px rgba(239, 68, 68, 0.3);
+  }
+  
+  @media (max-width: 1024px) {
+    .layout-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<AdminLayout title={`Sửa tài khoản ${targetUser.username}`} activeMenu="system" activeSubmenu="users">
+  <div class="page-header">
+    <a href="/admin/users" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Quay lại danh sách
+    </a>
+    <div class="header-content">
+      <h2 class="page-title">Chỉnh sửa: {targetUser.username}</h2>
+      {canDelete && (
+        <button id="btnDelete" data-id={targetUser.id} class="btn-danger-outline">
+          Xóa vĩnh viễn (Hard Delete)
+        </button>
+      )}
+    </div>
+  </div>
+
+  <div class="layout-grid">
+    <div class="form-card">
+      <h3 class="card-title">Thông tin & Quyền hạn</h3>
+      <form id="editForm" data-id={targetUser.id}>
+        <div class="form-group">
+          <label class="form-label">Email (Không thể sửa)</label>
+          <input type="text" value={targetUser.email} class="form-input" disabled />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tên hiển thị (Tên tác giả)</label>
+          <input type="text" name="displayName" value={profileUser?.name || targetUser.username} class="form-input" placeholder="VD: Huynh Hieu Travel" />
+          <p class="help-text">Tên này sẽ hiển thị trên bài viết và JSON-LD Schema (E-E-A-T).</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">URL trang cá nhân</label>
+          <input type="url" name="profileUrl" value={profileUser?.url || ''} class="form-input" placeholder="https://fittour.vn/huynh-hieu" />
+          <p class="help-text">Link đến trang Profile. Tên tác giả trên bài viết sẽ liên kết đến URL này.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Author Snippet (HTML)</label>
+          <textarea name="authorSnippet" class="form-input" rows="10" style="font-family: monospace; font-size: 13px; line-height: 1.5; resize: vertical;" placeholder='<img src="..." alt="Tên" />&#10;<span class="author-tag">CHỨC DANH</span>&#10;<h3>Tên Tác Giả</h3>&#10;<p class="author-bio">Mô tả...</p>'>{profileUser?.author_snippet || ''}</textarea>
+          <p class="help-text">HTML của Author Card. Dùng shortcode <code>[author-card user="slug"]</code> để chèn vào bài viết. CSS được component tự cung cấp.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Vai trò (Role)</label>
+          <select name="role" class="form-select" disabled={!canChangeRole}>
+            {targetUser.role === 'super_admin' && !isSuperAdmin && (
+              <option value="super_admin">Super Admin</option>
+            )}
+            {rolesList.map(r => (
+              <option value={r.id} selected={r.id === targetUser.role}>{r.name} {r.isSystem ? '(Hệ thống)' : ''}</option>
+            ))}
+          </select>
+          {!canChangeRole && <p class="error-text">Bạn không có quyền đổi role của user này.</p>}
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Trạng thái hoạt động</label>
+          <select name="is_active" class="form-select" disabled={!canDisable}>
+            <option value="1" selected={targetUser.is_active === 1}>Đang hoạt động</option>
+            <option value="0" selected={targetUser.is_active === 0}>Khóa tài khoản</option>
+          </select>
+          {!canDisable && <p class="help-text">Tài khoản này được bảo vệ, không thể khóa.</p>}
+          {targetUser.is_active === 0 && (
+            <div class="alert-box">
+              <strong>Tài khoản đã bị khóa</strong><br/>
+              Khóa lúc: {new Date(targetUser.disabled_at).toLocaleString('vi-VN')}
+            </div>
+          )}
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">
+            Lưu thay đổi
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-card">
+      <h3 class="card-title">Đổi mật khẩu (Force Reset)</h3>
+      <form id="pwdForm" data-id={targetUser.id}>
+        <div class="form-group">
+          <p class="help-text" style="margin-bottom:16px;">
+            Khi đổi mật khẩu mới, user sẽ bị đăng xuất khỏi tất cả thiết bị và bị <strong>bắt buộc phải đổi lại mật khẩu</strong> ở lần đăng nhập tiếp theo.
+          </p>
+          <div class="password-group">
+            <input type="text" name="password" id="passwordField" class="form-input" required placeholder="Nhập mật khẩu mới" style="font-family: monospace;" />
+          </div>
+          <button type="button" id="btnGenerate" class="btn-secondary" style="margin-top: 12px;">
+            Tạo ngẫu nhiên
+          </button>
+        </div>
+        <button type="submit" class="btn-danger">
+          Cập nhật mật khẩu
+        </button>
+      </form>
+    </div>
+  </div>
+</AdminLayout>
+
+<script>
+  // Form Update Role/Status
+  document.getElementById('editForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const id = form.getAttribute('data-id');
+    
+    const formData = new FormData(form);
+    const data = {
+      role: formData.get('role'),
+      is_active: parseInt(formData.get('is_active') as string, 10),
+      displayName: formData.get('displayName'),
+      profileUrl: formData.get('profileUrl'),
+      authorSnippet: formData.get('authorSnippet')
+    };
+
+    btn.disabled = true;
+    btn.innerText = 'Đang lưu...';
+
+    try {
+      const res = await fetch(`/api/admin/users/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      if (result.success) {
+        window.AppModal.alert('Cập nhật thông tin thành công!', () => window.location.reload());
+      } else {
+        window.AppModal.alert(result.message || 'Lỗi hệ thống');
+      }
+    } catch (err) {
+      window.AppModal.alert('Lỗi kết nối máy chủ');
+    } finally {
+      btn.disabled = false;
+      btn.innerText = 'Lưu thay đổi';
+    }
+  });
+
+  // Form Reset Password
+  document.getElementById('btnGenerate')?.addEventListener('click', () => {
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*';
+    let pwd = '';
+    for(let i = 0; i < 12; i++) {
+      pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    (document.getElementById('passwordField') as HTMLInputElement).value = pwd;
+  });
+
+  document.getElementById('pwdForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const id = form.getAttribute('data-id');
+    const pwd = (document.getElementById('passwordField') as HTMLInputElement).value;
+
+    if (!confirm('Bạn có chắc chắn muốn Force Reset mật khẩu của user này?')) return;
+
+    btn.disabled = true;
+    btn.innerText = 'Đang đổi...';
+
+    try {
+      const res = await fetch(`/api/admin/users/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: pwd })
+      });
+      const result = await res.json();
+      if (result.success) {
+        window.AppModal.alert('Đã đổi mật khẩu thành công. User sẽ bị yêu cầu tạo mật khẩu mới ở lần đăng nhập tới.', () => {
+          (document.getElementById('passwordField') as HTMLInputElement).value = '';
+        });
+      } else {
+        window.AppModal.alert(result.message || 'Lỗi hệ thống');
+      }
+    } catch (err) {
+      window.AppModal.alert('Lỗi kết nối máy chủ');
+    } finally {
+      btn.disabled = false;
+      btn.innerText = 'Cập nhật mật khẩu';
+    }
+  });
+
+  // Delete User
+  document.getElementById('btnDelete')?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget as HTMLButtonElement;
+    const id = btn.getAttribute('data-id');
+
+    window.AppModal.confirm('Hành động này sẽ XÓA VĨNH VIỄN user khỏi CSDL và không thể phục hồi. Chắc chắn xóa?', async (confirmed) => {
+      if (!confirmed) return;
+      btn.disabled = true;
+      btn.innerText = 'Đang xóa...';
+      
+      try {
+        const res = await fetch(`/api/admin/users/${id}`, { method: 'DELETE' });
+        const result = await res.json();
+        if (result.success) {
+          window.AppModal.alert('Đã xóa tài khoản', () => window.location.href = '/admin/users');
+        } else {
+          window.AppModal.alert(result.message);
+          btn.disabled = false;
+          btn.innerText = 'Xóa vĩnh viễn (Hard Delete)';
+        }
+      } catch (err) {
+        window.AppModal.alert('Lỗi kết nối');
+        btn.disabled = false;
+        btn.innerText = 'Xóa vĩnh viễn (Hard Delete)';
+      }
+    });
+  });
+</script>

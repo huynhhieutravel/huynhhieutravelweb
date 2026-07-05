@@ -1,0 +1,135 @@
+---
+import { env } from "cloudflare:workers";
+import AdminLayout from '../../layouts/AdminLayout.astro';
+
+export const prerender = false;
+
+let stats = { posts: 0, pages: 0, media: 0, links: 0 };
+let recentPosts = [];
+
+const db = env.DB;
+if (db) {
+  try {
+    const pCount = await db.prepare("SELECT COUNT(*) as c FROM Post").first();
+    const pgCount = await db.prepare("SELECT COUNT(*) as c FROM Page").first();
+    const mCount = await db.prepare("SELECT COUNT(*) as c FROM Media").first();
+    const lCount = await db.prepare("SELECT COUNT(*) as c FROM Link").first();
+    
+    stats.posts = pCount?.c || 0;
+    stats.pages = pgCount?.c || 0;
+    stats.media = mCount?.c || 0;
+    stats.links = lCount?.c || 0;
+    
+    const { results } = await db.prepare("SELECT title, status, publishedAt FROM Post ORDER BY id DESC LIMIT 5").all();
+    recentPosts = results || [];
+  } catch(e) {
+    console.error(e);
+  }
+} else {
+  // DEV MOCK DATA
+  stats = { posts: 12, pages: 5, media: 48, links: 3 };
+  recentPosts = [
+    { title: 'Khám phá dãy Himalaya huyền bí', status: 'published', publishedAt: new Date().toISOString() },
+    { title: 'Kinh nghiệm du lịch Ladakh', status: 'draft', publishedAt: null }
+  ];
+}
+---
+
+<AdminLayout title="Dashboard">
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    
+    <div class="admin-card bg-gradient-to-br from-white to-slate-50 flex items-center p-6 border-l-4 border-l-blue-500">
+      <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+      </div>
+      <div>
+        <div class="text-3xl font-black text-slate-800 tracking-tight">{stats.posts}</div>
+        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-1">Total Posts</div>
+      </div>
+    </div>
+    
+    <div class="admin-card bg-gradient-to-br from-white to-slate-50 flex items-center p-6 border-l-4 border-l-purple-500">
+      <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2m-4 10a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H8z" /></svg>
+      </div>
+      <div>
+        <div class="text-3xl font-black text-slate-800 tracking-tight">{stats.pages}</div>
+        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-1">Total Pages</div>
+      </div>
+    </div>
+    
+    <div class="admin-card bg-gradient-to-br from-white to-slate-50 flex items-center p-6 border-l-4 border-l-pink-500">
+      <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+      </div>
+      <div>
+        <div class="text-3xl font-black text-slate-800 tracking-tight">{stats.media}</div>
+        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-1">Total Media</div>
+      </div>
+    </div>
+    
+    <div class="admin-card bg-gradient-to-br from-white to-slate-50 flex items-center p-6 border-l-4 border-l-emerald-500">
+      <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </div>
+      <div>
+        <div class="text-3xl font-black text-slate-800 tracking-tight">{stats.links}</div>
+        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-1">Total Links</div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="admin-card p-0 overflow-hidden">
+    <div class="px-6 py-5 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
+      <h2 class="text-lg font-bold text-slate-800 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        Recent Posts
+      </h2>
+      <a href="/admin/posts" class="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center transition-colors">
+        View All 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      </a>
+    </div>
+    
+    <div class="overflow-x-auto">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {recentPosts.length === 0 ? (
+            <tr>
+              <td colspan="3" class="text-center py-12 text-slate-500 bg-slate-50/30">
+                <div class="flex flex-col items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-slate-300 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                  <span class="font-medium">No posts found yet.</span>
+                </div>
+              </td>
+            </tr>
+          ) : (
+            recentPosts.map((post: any) => (
+              <tr class="group cursor-pointer hover:bg-slate-50 transition-colors">
+                <td class="font-medium text-slate-800 group-hover:text-blue-600 transition-colors">{post.title}</td>
+                <td>
+                  <span class={`px-3 py-1 text-xs font-semibold rounded-full border ${post.status === 'published' ? 'bg-green-50 text-green-700 border-green-200' : 'bg-amber-50 text-amber-700 border-amber-200'}`}>
+                    {post.status}
+                  </span>
+                </td>
+                <td class="text-slate-500 text-sm">
+                  {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString('vi-VN') : '-'}
+                </td>
+              </tr>
+            ))
+          )}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</AdminLayout>

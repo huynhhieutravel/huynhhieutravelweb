@@ -1,0 +1,245 @@
+---
+import { env } from "cloudflare:workers";
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+
+
+const d1Db = env.DB;
+let pages: any[] = [];
+
+const q = Astro.url.searchParams.get('q') || '';
+const limitParam = parseInt(Astro.url.searchParams.get('limit') || '30');
+const validLimits = [30, 50, 100];
+const limit = validLimits.includes(limitParam) ? limitParam : 30;
+const pageParam = parseInt(Astro.url.searchParams.get('page') || '1');
+const page = pageParam > 0 ? pageParam : 1;
+const offset = (page - 1) * limit;
+const currentTab = Astro.url.searchParams.get('status') || 'all';
+
+let counts = { all: 0, published: 0, draft: 0, trash: 0 };
+
+if (d1Db) {
+  try {
+    const { results: countResults } = await d1Db.prepare("SELECT status, COUNT(*) as count FROM Page GROUP BY status").all();
+    if (countResults) {
+      countResults.forEach((row: any) => {
+        if (row.status === 'published') counts.published = row.count;
+        if (row.status === 'draft') counts.draft = row.count;
+        if (row.status === 'trash') counts.trash = row.count;
+        counts.all += row.count;
+      });
+    }
+  } catch(e) { console.error('Error fetching counts:', e); }
+}
+
+if (d1Db) {
+  try {
+    let baseWhere = `WHERE 1=1`;
+    const params: any[] = [];
+    
+    if (currentTab === 'trash') {
+      baseWhere += ` AND status = 'trash'`;
+    } else if (currentTab !== 'all') {
+      baseWhere += ` AND status = ?`;
+      params.push(currentTab);
+    } else {
+      baseWhere += ` AND status != 'trash'`;
+    }
+
+    if (q) {
+      const normalizeStr = (str: string) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+      const keywords = q.split(' ').map(k => k.trim()).filter(k => k.length > 0);
+      if (keywords.length > 0) {
+        const conditions = keywords.map(() => `(title LIKE ? OR slug LIKE ?)`).join(' AND ');
+        baseWhere += ` AND (${conditions})`;
+        keywords.forEach(k => {
+          params.push(`%${k}%`);
+          params.push(`%${normalizeStr(k)}%`);
+        });
+      }
+    }
+    
+    const countSql = `SELECT COUNT(*) as count FROM Page ${baseWhere}`;
+    let countQuery = d1Db.prepare(countSql);
+    if (params.length > 0) countQuery = countQuery.bind(...params);
+    const { results: filteredCountResults } = await countQuery.all();
+    let filteredTotal = counts.all;
+    if (filteredCountResults && filteredCountResults.length > 0) {
+      filteredTotal = filteredCountResults[0].count;
+    }
+
+    let sql = `SELECT * FROM Page ${baseWhere} ORDER BY updatedAt DESC LIMIT ? OFFSET ?`;
+    let query = d1Db.prepare(sql).bind(...params, limit, offset);
+    
+    const { results } = await query.all();
+    pages = results || [];
+
+    const totalPages = Math.ceil(filteredTotal / limit);
+    Object.assign(Astro.locals, { filteredTotal, totalPages });
+  } catch (e) {
+    console.error('Error fetching pages:', e);
+  }
+}
+
+let filteredTotal = Astro.locals.filteredTotal !== undefined ? Astro.locals.filteredTotal : (currentTab === 'trash' ? counts.trash : currentTab === 'all' ? counts.all - counts.trash : counts[currentTab as keyof typeof counts] || counts.all);
+const totalPages = Astro.locals.totalPages !== undefined ? Astro.locals.totalPages : Math.ceil(filteredTotal / limit);
+
+function formatDate(dateStr: string) {
+  if (!dateStr) return '—';
+  const safeDate = typeof dateStr === 'string' ? dateStr.replace(' ', 'T') : dateStr;
+  const d = new Date(safeDate);
+  if (isNaN(d.getTime())) return dateStr;
+  const datePart = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const timePart = d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  return `${datePart}<br/>${timePart}`;
+}
+---
+
+<AdminLayout title="Tất cả Pages" activeMenu="pages" activeSubmenu="all">
+<style>
+  .posts-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .posts-header h2 { font-size: 24px; font-weight: 700; }
+  .posts-header-right { display: flex; gap: 12px; align-items: center; }
+  .posts-header-right button, .posts-header-right a { padding: 6px 14px; border-radius: 8px; font-size: 13px; border: 1px solid #e2e8f0; background: #fff; color: #64748b; cursor: pointer; text-decoration: none; }
+  .btn-primary { background: #2563eb !important; color: #fff !important; border-color: #2563eb !important; font-weight: 600; padding: 8px 20px !important; border-radius: 8px; }
+
+  .posts-body { display: block; }
+  .tabs { display: flex; gap: 0; border-bottom: 2px solid #e2e8f0; margin-bottom: 16px; }
+  .tabs a { padding: 10px 16px; font-size: 13px; font-weight: 500; color: #64748b; background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer; text-decoration: none; display: inline-block; }
+  .tabs a:hover { color: #0f172a; }
+  .tabs a.active { color: #2563eb; border-bottom-color: #2563eb; }
+  .tabs a.trash { color: #ef4444; border: 1px solid #fecaca; border-radius: 6px; margin-left: 8px; padding: 6px 12px; background: #fef2f2; }
+
+  .filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .filters select, .filters button { padding: 7px 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 12px; color: #64748b; background: #fff; cursor: pointer; }
+  .filters .filter-btn { background: #eff6ff; color: #2563eb; border-color: #bfdbfe; font-weight: 600; }
+  .filters .search-box { display: flex; margin-left: auto; }
+  .filters .search-box input { padding: 7px 12px; border: 1px solid #e2e8f0; border-radius: 8px 0 0 8px; font-size: 12px; width: 180px; outline: none; }
+  .filters .search-box button { border-radius: 0 8px 8px 0; border-left: none; background: #2563eb; color: #fff; font-weight: 600; padding: 7px 14px; }
+
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  thead th { text-align: left; padding: 12px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: #94a3b8; font-weight: 600; border-bottom: 1px solid #e2e8f0; }
+  th.col-check { width: 44px; }
+  th.col-title { width: 60%; }
+  th.col-date { width: 15%; }
+  tbody td { padding: 14px; font-size: 13px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; overflow: hidden; text-overflow: ellipsis; }
+  tbody tr:hover { background: #f8fafc; }
+  .post-cell { display: flex; align-items: center; gap: 12px; }
+  .post-cell img { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; flex-shrink: 0; background: #f1f5f9; }
+  .post-cell .img-placeholder { width: 44px; height: 44px; border-radius: 8px; background: #e2e8f0; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 18px; }
+  .post-cell a { font-weight: 600; color: #0f172a; text-decoration: none; }
+  .post-cell a:hover { color: #2563eb; }
+  
+  .cat-badge { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; white-space: nowrap; display: inline-block; background: #f1f5f9; color: #475569; }
+  .cat-badge.published { background:#dcfce7; color:#16a34a; }
+  .cat-badge.draft { background:#fef3c7; color:#d97706; }
+  .cat-badge.trash { background:#fef2f2; color:#ef4444; }
+
+  .date-cell { color: #64748b; font-size: 12px; white-space: nowrap; }
+  .row-actions { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+  .action-link { font-size: 11px; text-decoration: none; cursor: pointer; display: inline-block; background: none; border: none; padding: 0; }
+  .action-edit { color: #2563eb; }
+  .action-delete { color: #ef4444; }
+  .action-view { color: #64748b; }
+  td input[type="checkbox"], th input[type="checkbox"] { width: 16px; height: 16px; accent-color: #2563eb; }
+  
+  .page-btn { padding: 4px 10px; border: 1px solid #e2e8f0; border-radius: 6px; text-decoration: none; color: #64748b; font-size: 13px; background: #fff; line-height: 1; display: inline-flex; align-items: center; justify-content: center; min-width: 28px; font-weight: 600; }
+  .page-btn:hover { border-color: #cbd5e1; color: #0f172a; }
+  .page-btn.disabled { opacity: 0.5; pointer-events: none; }
+  .page-input { width: 44px; padding: 4px 6px; border: 1px solid #e2e8f0; border-radius: 6px; text-align: center; font-size: 13px; outline: none; margin: 0 4px; }
+  .page-input::-webkit-outer-spin-button, .page-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .page-input[type=number] { -moz-appearance: textfield; }
+</style>
+
+<div class="posts-header">
+  <h2>Pages (Trang)</h2>
+  <div class="posts-header-right">
+    <select id="perPageSelect" style="padding: 6px 14px; border-radius: 8px; font-size: 13px; border: 1px solid #e2e8f0; background: #fff; color: #64748b; cursor: pointer; outline: none;" onchange="window.location.href='?limit='+this.value">
+      <option value="30" selected={limit === 30}>30 items</option>
+      <option value="50" selected={limit === 50}>50 items</option>
+      <option value="100" selected={limit === 100}>100 items</option>
+    </select>
+    <a href="/admin/pages/edit" class="btn-primary">Tạo Page Mới</a>
+  </div>
+</div>
+
+<div class="posts-body">
+  <div>
+    <div class="tabs">
+      <a href="/admin/pages?status=all" class={currentTab === 'all' ? 'active' : ''}>Tất cả ({counts.all - counts.trash})</a>
+      <a href="/admin/pages?status=published" class={currentTab === 'published' ? 'active' : ''}>Đã xuất bản ({counts.published})</a>
+      <a href="/admin/pages?status=draft" class={currentTab === 'draft' ? 'active' : ''}>Bản nháp ({counts.draft})</a>
+      <a href="/admin/pages?status=trash" class={`trash ${currentTab === 'trash' ? 'active' : ''}`}>Thùng rác ({counts.trash})</a>
+    </div>
+
+    <form class="filters" method="GET" action="/admin/pages" style="align-items: center;">
+      {currentTab !== 'all' && <input type="hidden" name="status" value={currentTab} />}
+      
+      <div style="display: flex; align-items: center; gap: 12px; margin-left: auto;">
+        <span style="font-size: 12px; color: #64748b; font-weight: 600;">{filteredTotal} pages</span>
+        {totalPages > 1 && (
+          <div style="display: flex; gap: 4px; align-items: center;">
+            <a href={`?page=1&limit=${limit}&status=${currentTab}&q=${q}`} class={`page-btn ${page === 1 ? 'disabled' : ''}`} aria-label="Trang đầu">«</a>
+            <a href={`?page=${Math.max(1, page - 1)}&limit=${limit}&status=${currentTab}&q=${q}`} class={`page-btn ${page === 1 ? 'disabled' : ''}`} aria-label="Trang trước">‹</a>
+            <span style="font-size: 13px; color: #64748b; font-weight: 500;">
+              <input type="number" class="page-input" value={page} min="1" max={totalPages} onkeydown={`if(event.key==='Enter') window.location.href='?limit=${limit}&status=${currentTab}&q=${q}&page='+this.value`} />
+              of {totalPages}
+            </span>
+            <a href={`?page=${Math.min(totalPages, page + 1)}&limit=${limit}&status=${currentTab}&q=${q}`} class={`page-btn ${page === totalPages ? 'disabled' : ''}`} aria-label="Trang sau">›</a>
+            <a href={`?page=${totalPages}&limit=${limit}&status=${currentTab}&q=${q}`} class={`page-btn ${page === totalPages ? 'disabled' : ''}`} aria-label="Trang cuối">»</a>
+          </div>
+        )}
+      </div>
+
+      <div class="search-box" style="margin-left: 12px;">
+        <input type="text" name="q" placeholder="Tìm tên page..." value={q} />
+        <button type="submit">Tìm</button>
+      </div>
+    </form>
+
+    <div class="card" style="overflow:hidden;">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-check"><input type="checkbox" id="selectAllCheckbox" /></th>
+            <th class="col-title">Tên Trang</th>
+            <th class="col-date">Cập nhật ⬇</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pages.length === 0 && (
+            <tr>
+              <td colspan="3" style="text-align:center; padding: 40px; color: #94a3b8;">Không tìm thấy page nào.</td>
+            </tr>
+          )}
+          {pages.map((p) => {
+            return (
+            <tr data-id={p.id}>
+              <td><input type="checkbox" class="post-checkbox" value={p.id} /></td>
+              <td>
+                <div class="post-cell">
+                  {p.featuredImage ? (
+                    <img src={p.featuredImage} alt={p.title} />
+                  ) : (
+                    <div class="img-placeholder">📄</div>
+                  )}
+                  <div style="display:flex; flex-direction:column; gap:2px;">
+                    <a href={`/admin/pages/edit?id=${p.id}`}>
+                      {p.title || '(Chưa có tên)'} <span class={`cat-badge ${p.status}`} style="font-size: 10px; padding: 2px 6px;">{p.status}</span>
+                    </a>
+                    <div class="row-actions">
+                      <a href={`/admin/pages/edit?id=${p.id}`} class="action-link action-edit">Sửa</a>
+                      <a href={`/${p.slug}`} target="_blank" class="action-link action-view">Xem thử</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell" set:html={formatDate(p.updatedAt)}></td>
+            </tr>
+          )})}
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+</AdminLayout>

@@ -1,0 +1,748 @@
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5911, 'https://media.huynhhieutravel.com/wedding-landing.jpg', '', '', '', '2022-10-26 03:33:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5897, 'https://media.huynhhieutravel.com/gioi-thieu-website-huynh-hieu-travel.jpg', 'Giới thiệu Website Huynh Hieu Travel', 'Giới thiệu Website Huynh Hieu Travel', 'Giới thiệu Website Huynh Hieu Travel', '2022-10-26 02:13:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5864, 'https://media.huynhhieutravel.com/ghe-go-handmade-noi-that-png.png', '', '', '', '2022-10-25 03:04:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5863, 'https://media.huynhhieutravel.com/den-tran-noi-that-png.png', '', '', '', '2022-10-25 03:04:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5862, 'https://media.huynhhieutravel.com/ghe-noi-that-png.png', '', '', '', '2022-10-25 03:04:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5853, 'https://media.huynhhieutravel.com/instagram-black.png', '', '', '', '2022-10-25 02:45:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5852, 'https://media.huynhhieutravel.com/facebook-black.png', '', '', '', '2022-10-25 02:45:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5851, 'https://media.huynhhieutravel.com/whatsapp-black.png', '', '', '', '2022-10-25 02:45:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5850, 'https://media.huynhhieutravel.com/vimeo-black.png', '', '', '', '2022-10-25 02:45:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5849, 'https://media.huynhhieutravel.com/twitter-black.png', '', '', '', '2022-10-25 02:45:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5848, 'https://media.huynhhieutravel.com/youtube-black.png', '', '', '', '2022-10-25 02:45:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5847, 'https://media.huynhhieutravel.com/linkedin-black.png', '', '', '', '2022-10-25 02:45:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5846, 'https://media.huynhhieutravel.com/tiktok-black.png', '', '', '', '2022-10-25 02:45:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5841, 'https://media.huynhhieutravel.com/sofa-xanh.png', '', '', '', '2022-10-25 02:22:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5840, 'https://media.huynhhieutravel.com/noi-that-xanh.jpg', '', '', '', '2022-10-25 02:20:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5825, 'https://media.huynhhieutravel.com/banner-noi-that-2.jpg', '', '', '', '2022-10-23 12:08:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5823, 'https://media.huynhhieutravel.com/Home1_section1-3.jpeg', '', '', '', '2022-10-23 11:59:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5819, 'https://media.huynhhieutravel.com/dong-ho-go-handmade.jpg', '', '', '', '2022-10-23 11:46:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5818, 'https://media.huynhhieutravel.com/bo-ban-ghe-go.jpg', '', '', '', '2022-10-23 11:45:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5817, 'https://media.huynhhieutravel.com/ghe-go-handmade.jpg', 'Ghế gỗ handmade', '', 'Ghế gỗ handmade', '2022-10-23 11:43:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5816, 'https://media.huynhhieutravel.com/ban-gho-cafe.jpg', '', '', '', '2022-10-23 11:41:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5815, 'https://media.huynhhieutravel.com/ghe-trang.jpg', '', '', '', '2022-10-23 11:39:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5814, 'https://media.huynhhieutravel.com/den-tran.jpg', '', '', '', '2022-10-23 11:38:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5813, 'https://media.huynhhieutravel.com/du-quay-tinh-yeu.jpg', '', '', '', '2022-10-23 11:35:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5812, 'https://media.huynhhieutravel.com/thu-cong.jpeg', '', '', '', '2022-10-23 11:27:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5811, 'https://media.huynhhieutravel.com/ghe-go.jpeg', '', '', '', '2022-10-23 11:27:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5810, 'https://media.huynhhieutravel.com/den-ban.jpeg', '', '', '', '2022-10-23 11:27:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5809, 'https://media.huynhhieutravel.com/noi-that-banner.jpg', 'Cô đơn trên sofa', 'Cô đơn trên sofa', 'Cô đơn trên sofa', '2022-10-23 11:23:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5808, 'https://media.huynhhieutravel.com/website-noi-that.jpg', '', '', '', '2022-10-23 11:14:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5806, 'https://media.huynhhieutravel.com/Noise-background.jpeg', '', '', '', '2022-10-23 11:11:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5782, 'https://media.huynhhieutravel.com/duong-pho.jpg', '', '', '', '2022-10-23 07:58:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5781, 'https://media.huynhhieutravel.com/duong-pho-2.jpg', '', '', '', '2022-10-23 07:58:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5780, 'https://media.huynhhieutravel.com/duong-pho-3.jpg', '', '', '', '2022-10-23 07:58:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5779, 'https://media.huynhhieutravel.com/huynh-hieu-travel-square.jpg', '', '', '', '2022-10-23 07:52:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5778, 'https://media.huynhhieutravel.com/chan-dung.jpg', '', '', '', '2022-10-23 07:52:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5777, 'https://media.huynhhieutravel.com/chan-dung-2.jpg', '', '', '', '2022-10-23 07:52:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5776, 'https://media.huynhhieutravel.com/old-love.jpg', '', '', '', '2022-10-23 07:38:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5775, 'https://media.huynhhieutravel.com/old-love-2.jpg', '', '', '', '2022-10-23 07:38:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5774, 'https://media.huynhhieutravel.com/old-love-3.jpg', '', '', '', '2022-10-23 07:38:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5773, 'https://media.huynhhieutravel.com/tuoi-gia-tinh-yeu.jpg', '', '', '', '2022-10-23 07:35:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5772, 'https://media.huynhhieutravel.com/tuoi-gia-tinh-yeu-2.jpg', '', '', '', '2022-10-23 07:35:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5771, 'https://media.huynhhieutravel.com/tuoi-gia-tinh-yeu-3.jpg', '', '', '', '2022-10-23 07:35:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5769, 'https://media.huynhhieutravel.com/co-gai-chan-dung.png', '', '', '', '2022-10-23 07:29:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5765, 'https://media.huynhhieutravel.com/banner-photograph.jpg', '', '', '', '2022-10-23 07:15:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5764, 'https://media.huynhhieutravel.com/photographer-website.jpg', '', '', '', '2022-10-23 07:13:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5747, 'https://media.huynhhieutravel.com/bo-bien-lang-man.jpg', '', '', '', '2022-10-23 05:38:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5746, 'https://media.huynhhieutravel.com/tan-huong-resort.jpg', '', '', '', '2022-10-23 05:38:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5745, 'https://media.huynhhieutravel.com/su-yen-binh-thien-nhien.jpg', '', '', '', '2022-10-23 05:38:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5740, 'https://media.huynhhieutravel.com/phong-doc-sach.jpg', 'Phòng đọc sách', 'Phòng đọc sách', 'Phòng đọc sách', '2022-10-23 05:28:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5739, 'https://media.huynhhieutravel.com/giuong-ngu.jpg', '', '', '', '2022-10-23 05:28:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5738, 'https://media.huynhhieutravel.com/co-gai-doc-sach-2.jpg', '', '', '', '2022-10-23 05:16:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5737, 'https://media.huynhhieutravel.com/co-gai-doc-sach.jpg', '', '', '', '2022-10-23 05:14:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5736, 'https://media.huynhhieutravel.com/dau-bep-rieng.jpg', 'Bữa ăn đặc biệt', 'Bữa ăn đặc biệt', 'Bữa ăn đặc biệt', '2022-10-23 05:09:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5735, 'https://media.huynhhieutravel.com/full-view-flycam.jpg', 'Full view flycam', 'Full view flycam', 'Full view flycam', '2022-10-23 05:08:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5734, 'https://media.huynhhieutravel.com/ho-boi-mini.jpg', 'Hồ bơi mini', 'Hồ bơi mini', 'Hồ bơi mini', '2022-10-23 05:06:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5733, 'https://media.huynhhieutravel.com/resort-banner-project.jpg', '', '', '', '2022-10-23 05:01:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5728, 'https://media.huynhhieutravel.com/resort-project-huynhhieutravel.jpg', '', '', '', '2022-10-23 04:55:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5714, 'https://media.huynhhieutravel.com/tour-chi-tiet-scaled.jpg', '', '', '', '2022-10-23 02:51:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5712, 'https://media.huynhhieutravel.com/emagazine-fit-tour.jpg', 'Emagazine Fit Tour', 'Emagazine Fit Tour', 'Emagazine Fit Tour', '2022-10-23 02:43:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5708, 'https://media.huynhhieutravel.com/Tour-du-lich-hap-dan-dulichcoguu.jpg', '', '', '', '2022-10-23 02:24:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5703, 'https://media.huynhhieutravel.com/giao-dien-website-dulichcoguu.jpg', 'Giao diện Website DuLichCoGuu', 'Giao diện Website DuLichCoGuu', 'Giao diện Website DuLichCoGuu', '2022-10-23 01:57:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5688, 'https://media.huynhhieutravel.com/cropped-favicon-huynhhieutravel.png', 'https://huynhhieutravel.com/wp-content/uploads/2022/10/cropped-favicon-huynhhieutravel.png', 'https://huynhhieutravel.com/wp-content/uploads/2022/10/cropped-favicon-huynhhieutravel.png', '', '2022-10-22 16:03:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5672, 'https://media.huynhhieutravel.com/huynhhieutravel-dark-logo.png', '', '', '', '2022-10-22 15:39:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5671, 'https://media.huynhhieutravel.com/huynhhieutravel-white-logo.png', '', '', '', '2022-10-22 15:39:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5670, 'https://media.huynhhieutravel.com/favicon-huynhhieutravel.png', '', '', '', '2022-10-22 15:39:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5592, 'https://media.huynhhieutravel.com/pmi-logo.png', 'PMI Logo', 'PMI Logo', 'PMI Logo', '2022-10-22 12:07:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5591, 'https://media.huynhhieutravel.com/airtable-logo.png', '', '', 'Airtable', '2022-10-22 12:02:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5586, 'https://media.huynhhieutravel.com/google-logo.png', '', '', '', '2022-10-22 11:15:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5585, 'https://media.huynhhieutravel.com/wordpress-logo.png', 'Wordpress logo', 'WordPress logo', 'Wordpress logo', '2022-10-22 11:05:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5580, 'https://media.huynhhieutravel.com/huynh-hieu-du-lich.jpeg', '', '', '', '2022-10-22 10:52:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5529, 'https://media.huynhhieutravel.com/social-digital.jpg', '', '', '', '2022-10-22 07:40:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5528, 'https://media.huynhhieutravel.com/digital-marketing.jpg', '', '', '', '2022-10-22 07:40:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5527, 'https://media.huynhhieutravel.com/banner-hello.jpg', '', '', '', '2022-10-22 07:40:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5526, 'https://media.huynhhieutravel.com/du-an-website-roadtrip.jpg', 'Dự án website Road Trip', '', 'Dự án website Road Trip', '2022-10-22 07:34:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5521, 'https://media.huynhhieutravel.com/du-an-website-dulichcoguu.jpg', '', '', 'Dự án Website Du Lịch Có Guu - Fit Tour', '2022-10-22 07:24:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5503, 'https://media.huynhhieutravel.com/huynh-hieu-travel.jpeg', 'Huynh Hieu Travel', 'Huynh Hieu Travel', 'Huynh Hieu Travel', '2022-10-22 06:57:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5484, 'https://media.huynhhieutravel.com/nhung-con-kenh-dao-noi-tieng-nhat-the-gioi.jpg', 'Những con kênh đào nổi tiếng nhất thế giới', 'Những con kênh đào nổi tiếng nhất thế giới', 'Những con kênh đào nổi tiếng nhất thế giới', '2022-04-04 07:37:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5460, 'https://media.huynhhieutravel.com/khong-gian-quan-ca-phe-can-tho-yen-tinh.jpg', 'Quán cà phê Cần Thơ yên tĩnh học bài', 'Quán cà phê Cần Thơ yên tĩnh học bài', 'Quán cà phê Cần Thơ yên tĩnh học bài', '2021-04-19 12:41:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5434, 'https://media.huynhhieutravel.com/review-ngành-tài-chính-quản-trị-kinh-doanh-đại-học-hùng-vương.jpg', 'Review khoa tài chính và quản trị kinh doanh đại học Hùng Vương', 'Review khoa tài chính và quản trị kinh doanh đại học Hùng Vương', 'Review khoa tài chính và quản trị kinh doanh đại học Hùng Vương', '2020-08-06 12:09:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5433, 'https://media.huynhhieutravel.com/học-phí-đại-học-hùng-vương-2020-hvuh.jpg', 'Học phí của đại học Hùng Vương 2020 cho 4 năm học', 'Học phí của đại học Hùng Vương 2020 cho 4 năm học', 'Học phí của đại học Hùng Vương 2020 cho 4 năm học', '2020-08-06 12:09:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5432, 'https://media.huynhhieutravel.com/review-đại-học-hùng-vương-hvuh.jpg', 'Review Đại học Hùng Vương HVUH', 'Review Đại học Hùng Vương HVUH', 'Review Đại học Hùng Vương HVUH', '2020-08-06 12:09:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5431, 'https://media.huynhhieutravel.com/hiệu-trưởng-đại-học-hùng-vương-hiện-nay-là-phó-giáo-sư-đỗ-văn-xê.jpg', 'Hiệu trưởng đại học Hùng Vương hiện nay là phó Giáo Sư Đỗ Văn Xê', 'Hiệu trưởng đại học Hùng Vương hiện nay là phó Giáo Sư Đỗ Văn Xê', 'Hiệu trưởng đại học Hùng Vương hiện nay là phó Giáo Sư Đỗ Văn Xê', '2020-08-06 12:08:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5430, 'https://media.huynhhieutravel.com/review-ngành-quản-lý-bệnh-viện-đại-học-hùng-vương.jpg', 'Review ngành quản lý bệnh viện đại học Hùng Vương', 'Review ngành quản lý bệnh viện đại học Hùng Vương', 'Review ngành quản lý bệnh viện đại học Hùng Vương', '2020-08-06 12:08:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5429, 'https://media.huynhhieutravel.com/review-khoa-công-nghệ-đại-học-hùng-vương.jpg', 'Review khoa công nghệ đại học Hùng Vương', 'Review khoa công nghệ đại học Hùng Vương', 'Review khoa công nghệ đại học Hùng Vương', '2020-08-06 12:08:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5428, 'https://media.huynhhieutravel.com/review-khoa-ngoại-ngữ-đại-học-hùng-vương.jpg', 'Review khoa ngoại ngữ đại học Hùng Vương', 'Review khoa ngoại ngữ đại học Hùng Vương', 'Review khoa ngoại ngữ đại học Hùng Vương', '2020-08-06 12:08:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5427, 'https://media.huynhhieutravel.com/review-khoa-du-lịch-đại-học-hùng-vương.jpg', 'Review khoa du lịch đại học Hùng Vương', 'Review khoa du lịch đại học Hùng Vương', 'Review khoa du lịch đại học Hùng Vương', '2020-08-06 12:08:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5426, 'https://media.huynhhieutravel.com/review-ngành-luật-đại-học-hùng-vương.jpg', 'Review ngành luật đại học Hùng Vương', 'Review ngành luật đại học Hùng Vương', 'Review ngành luật đại học Hùng Vương', '2020-08-06 12:08:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5424, 'https://media.huynhhieutravel.com/trụ-sở-đại-học-hùng-vương.jpg', 'Trụ sở đại học Hùng Vương', 'Trụ sở đại học Hùng Vương', 'Trụ sở đại học Hùng Vương', '2020-08-06 11:11:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5423, 'https://media.huynhhieutravel.com/thực-tập-sinh-quản-trị-du-lịch-hvuh-khám-phá-bến-tre.jpg', 'Thực tập sinh quản trị du lịch HVUH khám phá Bến tre', 'Thực tập sinh quản trị du lịch HVUH khám phá Bến tre', 'Thực tập sinh quản trị du lịch HVUH khám phá Bến tre', '2020-08-06 11:11:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5422, 'https://media.huynhhieutravel.com/sinh-viên-ngành-quản-lý-bệnh-viện-đại-học-hùng-vương.jpg', 'Sinh viên ngành quản lý bệnh viện đại học Hùng Vương', 'Sinh viên ngành quản lý bệnh viện đại học Hùng Vương', 'Sinh viên ngành quản lý bệnh viện đại học Hùng Vương', '2020-08-06 11:11:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5421, 'https://media.huynhhieutravel.com/phòng-máy-đại-hoc-hùng-vương.jpg', 'Phòng máy đại học Hùng Vương', 'Phòng máy đại học Hùng Vương', 'Phòng máy đại học Hùng Vương', '2020-08-06 11:10:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5420, 'https://media.huynhhieutravel.com/phòng-học-trường-đại-học-hùng-vương.jpg', 'Phòng học trường đại học Hùng Vương', 'Phòng học trường đại học Hùng Vương', 'Phòng học trường đại học Hùng Vương', '2020-08-06 11:10:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5419, 'https://media.huynhhieutravel.com/phòng-học-hvuh.jpg', 'Phòng học HVUH', 'Phòng học HVUH', 'Phòng học HVUH', '2020-08-06 11:10:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5418, 'https://media.huynhhieutravel.com/nữ-sinh-viên-đại-học-hùng-vương-hvuh.jpg', 'Nữ sinh viên đại học Hùng Vương HVUH', 'Nữ sinh viên đại học Hùng Vương HVUH', 'Nữ sinh viên đại học Hùng Vương HVUH', '2020-08-06 11:10:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5417, 'https://media.huynhhieutravel.com/lớp-học-hvuh.jpg', 'Lớp học HVUH', 'Lớp học HVUH', 'Lớp học HVUH', '2020-08-06 11:10:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5416, 'https://media.huynhhieutravel.com/lễ-trao-học-bổng-hvuh-cho-tân-sinh-viên.jpg', 'Lễ trao học bổng HVUH cho tân sinh viên', 'Lễ trao học bổng HVUH cho tân sinh viên', 'Lễ trao học bổng HVUH cho tân sinh viên', '2020-08-06 11:10:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5415, 'https://media.huynhhieutravel.com/lễ-tốt-nghiệp-khóa-2015-vhuh.jpg', 'Lễ tốt nghiệp khóa 2015 VHUH', 'Lễ tốt nghiệp khóa 2015 VHUH', 'Lễ tốt nghiệp khóa 2015 VHUH', '2020-08-06 11:10:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5414, 'https://media.huynhhieutravel.com/hội-thao-ở-sân-bóng-trong-trường-hùng-vương-university.jpg', 'Hội thao ở sân bóng trường Hùng Vương University', 'Hội thao ở sân bóng trường Hùng Vương University', 'Hội thao ở sân bóng trường Hùng Vương University', '2020-08-06 11:10:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5413, 'https://media.huynhhieutravel.com/hội-sách-2020-đại-học-hùng-vương.jpg', 'Hội sách 2020 đại học Hùng Vương', 'Hội sách 2020 đại học Hùng Vương', 'Hội sách 2020 đại học Hùng Vương', '2020-08-06 11:10:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5412, 'https://media.huynhhieutravel.com/hiệu-trưởng-đại-học-hùng-vương-2020-đỗ-văn-xê-phát-biểu-khai-mạc-hội-sách.jpg', 'Hiệu trưởng đại học Hùng Vương 2020 Đỗ Văn Xê phát biểu khai mạc hội sách', 'Hiệu trưởng đại học Hùng Vương 2020 Đỗ Văn Xê phát biểu khai mạc hội sách', 'Hiệu trưởng đại học Hùng Vương 2020 Đỗ Văn Xê phát biểu khai mạc hội sách', '2020-08-06 11:09:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5411, 'https://media.huynhhieutravel.com/đại-học-hùng-vương-hvuh.jpg', 'Đại học Hùng Vương HVUH', 'Đại học Hùng Vương HVUH', 'Đại học Hùng Vương HVUH', '2020-08-06 11:09:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5410, 'https://media.huynhhieutravel.com/buổi-học-cùng-giáo-viên-nước-ngoài-ở-hvuh.jpg', 'Buổi học cùng giáo viên nước ngoài ở HVUH', 'Buổi học cùng giáo viên nước ngoài ở HVUH', 'Buổi học cùng giáo viên nước ngoài ở HVUH', '2020-08-06 11:09:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5384, 'https://media.huynhhieutravel.com/toàn-cảnh-hồ-đẹp-nhất-ninh-thuận-hồ-sông-sắt.jpg', 'Toàn cảnh hồ đẹp nhất Ninh Thuận', 'Toàn cảnh hồ đẹp nhất Ninh Thuận', 'Toàn cảnh hồ đẹp nhất Ninh Thuận', '2020-05-06 13:58:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5383, 'https://media.huynhhieutravel.com/núi-non-bao-quanh-khu-hồ-song-sắt.jpg', 'Núi non bao quanh khu vực hồ Song Sắt', 'Núi non bao quanh khu vực hồ Song Sắt', 'Núi non bao quanh khu vực hồ Song Sắt', '2020-05-06 13:58:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5382, 'https://media.huynhhieutravel.com/người-nhiếp-ảnh-bị-quyến-rũ-bởi-khung-cảnh-nên-thơ-tại-hồ-đẹp-nhất-ninh-thuận.jpg', 'Người nhiếp ảnh bị quyến rũ bởi khung cảnh nên thơ tại hồ đẹp nhất Ninh Thuận', 'Người nhiếp ảnh bị quyến rũ bởi khung cảnh nên thơ tại hồ đẹp nhất Ninh Thuận', 'Người nhiếp ảnh bị quyến rũ bởi khung cảnh nên thơ tại hồ đẹp nhất Ninh Thuận', '2020-05-06 13:58:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5381, 'https://media.huynhhieutravel.com/người-dân-chày-lưới-ở-hồ.jpg', 'Người dân chày lưới ở hồ', 'Người dân chày lưới ở hồ', 'Người dân chày lưới ở hồ', '2020-05-06 13:58:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5380, 'https://media.huynhhieutravel.com/mặt-trời-chưa-ló-ở-vùng-đất-ninh-thuân.jpg', 'Mặt trời chưa ló ở vùng đất Ninh Thuận', 'Mặt trời chưa ló ở vùng đất Ninh Thuận', 'Mặt trời chưa ló ở vùng đất Ninh Thuận', '2020-05-06 13:58:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5379, 'https://media.huynhhieutravel.com/khu-vực-cho-cừu-ăn-gần-hồ.jpg', 'Khu vực cho cừu ăn gần hồ', 'Khu vực cho cừu ăn gần hồ', 'Khu vực cho cừu ăn gần hồ', '2020-05-06 13:58:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5378, 'https://media.huynhhieutravel.com/khung-cảnh-yên-bình-tại-hồ-sông-sắt-ninh-thuận.jpg', 'Khung cảnh bình yên ở hồ Song Sắt Ninh Thuận', 'Khung cảnh bình yên ở hồ Song Sắt Ninh Thuận', 'Khung cảnh bình yên ở hồ Song Sắt Ninh Thuận', '2020-05-06 13:57:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5377, 'https://media.huynhhieutravel.com/khung-cảnh-ở-hồ-song-sắt-giã-rửa-ninh-thuận.jpg', 'Khung cảnh ở hồ Song Sắt ở thôn Rã Giữa', 'Khung cảnh ở hồ Song Sắt ở thôn Rã Giữa', 'Khung cảnh ở hồ Song Sắt ở thôn Rã Giữa', '2020-05-06 13:57:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5376, 'https://media.huynhhieutravel.com/không-gian-núi-non-tuyệt-vời.jpg', 'Không gian núi non tuyệt vời', 'Không gian núi non tuyệt vời', 'Không gian núi non tuyệt vời', '2020-05-06 13:57:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5375, 'https://media.huynhhieutravel.com/hồ-đẹp-nhất-ninh-thuận.jpg', 'Hồ đẹp nhất Ninh Thuận', 'Hồ đẹp nhất Ninh Thuận', 'Hồ đẹp nhất Ninh Thuận', '2020-05-06 13:57:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5374, 'https://media.huynhhieutravel.com/đón-bình-minh-ở-hồ-đẹp-nhất-ninh-thuận.jpg', 'Đón bình minh ở hồ đẹp nhất Ninh Thuận', 'Đón bình minh ở hồ đẹp nhất Ninh Thuận', 'Đón bình minh ở hồ đẹp nhất Ninh Thuận', '2020-05-06 13:57:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5373, 'https://media.huynhhieutravel.com/dọc-theo-con-đường-mòn-tuyệt-đẹp-đến-hồ.jpg', 'Dọc theo con đường mòn tuyệt đẹp đến hồ', 'Dọc theo con đường mòn tuyệt đẹp đến hồ', 'Dọc theo con đường mòn tuyệt đẹp đến hồ', '2020-05-06 13:57:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5372, 'https://media.huynhhieutravel.com/đàn-cừu-ở-ninh-thuận.jpg', 'Đàn cừu ở Ninh Thuận', 'Đàn cừu ở Ninh Thuận', 'Đàn cừu ở Ninh Thuận', '2020-05-06 13:56:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5371, 'https://media.huynhhieutravel.com/đàn-cừu-ở-hồ-đẹp-nhất-ninh-thuận.jpg', 'Đàn cừu ở hồ đẹp nhất Ninh Thuận', 'Đàn cừu ở hồ đẹp nhất Ninh Thuận', 'Đàn cừu ở hồ đẹp nhất Ninh Thuận', '2020-05-06 13:56:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5370, 'https://media.huynhhieutravel.com/chăn-cừu-ở-gần-hồ-ninh-thuận.jpg', 'Chăn cừu ở gần hồ Ninh Thuận', 'Chăn cừu ở gần hồ Ninh Thuận', 'Chăn cừu ở gần hồ Ninh Thuận', '2020-05-06 13:56:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5369, 'https://media.huynhhieutravel.com/bình-minh-ninh-thuận.jpg', 'Bình minh Ninh Thuận', 'Bình minh Ninh Thuận', 'Bình minh Ninh Thuận', '2020-05-06 13:56:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5364, 'https://media.huynhhieutravel.com/favicon-2020-mientaycogi.jpg', '', '', '', '2020-04-17 01:15:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5357, 'https://media.huynhhieutravel.com/đánh-giá-của-khách-tham-quan-về-kdl-phú-an-khang.jpg', 'Đánh giá của khách tham quan về kdl Phú An Khang', 'Đánh giá của khách tham quan về kdl Phú An Khang', 'Đánh giá của khách tham quan về kdl Phú An Khang', '2020-03-28 03:45:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5355, 'https://media.huynhhieutravel.com/trái-cây-tại-khu-nông-nghiệp.jpg', 'Trái cây tại khu nông nghiệp', 'Trái cây tại khu nông nghiệp', 'Trái cây tại khu nông nghiệp', '2020-03-28 03:31:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5354, 'https://media.huynhhieutravel.com/thử-thách-đua-xuồng.jpg', 'Thử thách bơi xuồng', 'Thử thách bơi xuồng', 'Thử thách bơi xuồng', '2020-03-28 03:31:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5353, 'https://media.huynhhieutravel.com/nướng-chuối-sau-khi-chơi-team-building.jpg', 'Nướng chuối sau khi chơi team building', 'Nướng chuối sau khi chơi team building', 'Nướng chuối sau khi chơi team building', '2020-03-28 03:30:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5352, 'https://media.huynhhieutravel.com/món-tôm-càng-xanh-nướng.jpg', 'Nướng tôm càng xanh', 'Nướng tôm càng xanh', 'Nướng tôm càng xanh', '2020-03-28 03:30:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5351, 'https://media.huynhhieutravel.com/món-gà-quay.jpg', 'Gà quay', 'Gà quay', 'Gà quay', '2020-03-28 03:30:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5350, 'https://media.huynhhieutravel.com/menu-tiệc-tại-phú-an-khang.jpg', 'Menu tiệc tại Phú An Khang', 'Menu tiệc tại Phú An Khang', 'Menu tiệc tại Phú An Khang', '2020-03-28 03:30:42');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5349, 'https://media.huynhhieutravel.com/khu-du-lịch-có-dịch-vụ-xe-điện.jpg', 'Khu du lịch có dịch vụ xe điện', 'Khu du lịch có dịch vụ xe điện', 'Khu du lịch có dịch vụ xe điện', '2020-03-28 03:30:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5348, 'https://media.huynhhieutravel.com/đi-xuồng-ba-lá-tham-quan.jpg', 'Đi xuồng ba lá tham quan', 'Đi xuồng ba lá tham quan', 'Đi xuồng ba lá tham quan', '2020-03-28 03:30:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5347, 'https://media.huynhhieutravel.com/cổng-vào-kdl-phú-an-khang.jpg', 'Cổng vào kdl Phú An Khang', 'Cổng vào kdl Phú An Khang', 'Cổng vào kdl Phú An Khang', '2020-03-28 03:30:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5346, 'https://media.huynhhieutravel.com/chơi-trò-chơi-tại-kdl-bến-tre.jpg', 'Chơi trò chơi tại kdl Bến Tre', 'Chơi trò chơi tại kdl Bến Tre', 'Chơi trò chơi tại kdl Bến Tre', '2020-03-28 03:30:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5345, 'https://media.huynhhieutravel.com/chơi-trò-chơi-dân-gian-tại-kdl-phú-an-khang-bến-tre.jpg', 'Chơi trò chơi dân gian tại kdl Phú An Khang Bến Tre', 'Chơi trò chơi dân gian tại kdl Phú An Khang Bến Tre', 'Chơi trò chơi dân gian tại kdl Phú An Khang Bến Tre', '2020-03-28 03:30:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5311, 'https://media.huynhhieutravel.com/từ-sâu-trong-đôi-mắt-em-gái-nhỏ.jpg', 'Em nhỏ xinh đẹp nhất vùng Ninh Thuận', 'Em nhỏ xinh đẹp nhất vùng Ninh Thuận', 'Em nhỏ xinh đẹp nhất vùng Ninh Thuận', '2020-01-08 08:35:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5310, 'https://media.huynhhieutravel.com/trẻ-em-Raglai.jpg', 'Trẻ em Raglai', 'Trẻ em Raglai', 'Trẻ em Raglai', '2020-01-08 08:35:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5309, 'https://media.huynhhieutravel.com/trẻ-em-ở-vùng-khó-khăn-ninh-thuận.jpg', 'Trẻ em vùng khó khăn Ninh Thuận', 'Trẻ em vùng khó khăn Ninh Thuận', 'Trẻ em vùng khó khăn Ninh Thuận', '2020-01-08 08:35:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5308, 'https://media.huynhhieutravel.com/trẻ-em-người-raglai.jpg', 'Trẻ em người Raglai', 'Trẻ em người Raglai', 'Trẻ em người Raglai', '2020-01-08 08:35:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5307, 'https://media.huynhhieutravel.com/thành-viên-clb-tia-sáng-chụp-ảnh-cùng-nhau.jpg', 'Thành viên clb Tia Sáng chụp ảnh cùng nhau', 'Thành viên clb Tia Sáng chụp ảnh cùng nhau', 'Thành viên clb Tia Sáng chụp ảnh cùng nhau', '2020-01-08 08:34:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5306, 'https://media.huynhhieutravel.com/núi-rừng-ninh-thuạn.jpg', 'Núi Rừng Ninh Thuận', 'Núi Rừng Ninh Thuận', 'Núi Rừng Ninh Thuận', '2020-01-08 08:34:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5305, 'https://media.huynhhieutravel.com/những-thành-viên-vui-tươi-chụp-ảnh-tự-sướng.jpg', 'Những thành viên vui tươi chụp ảnh tự sướng', 'Những thành viên vui tươi chụp ảnh tự sướng', 'Những thành viên vui tươi chụp ảnh tự sướng', '2020-01-08 08:34:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5304, 'https://media.huynhhieutravel.com/những-nụ-cười-hớn-hở-của-các-em-nhỏ-thôn-rã-giữa-xã-phước-trung-huyện-bác-ái-tỉnh-ninh-thuận.jpg', 'Những nụ cười hớn hở của em nhõ thôn Rã Giữa xã Phước Trung huyện Bác Ái Ninh Thuận', 'Những nụ cười hớn hở của em nhõ thôn Rã Giữa xã Phước Trung huyện Bác Ái Ninh Thuận', 'Những nụ cười hớn hở của em nhõ thôn Rã Giữa xã Phước Trung huyện Bác Ái Ninh Thuận', '2020-01-08 08:34:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5303, 'https://media.huynhhieutravel.com/những-em-nhỏ-vui-đùa-bên-hàng-rào.jpg', 'Những em nhỏ vui đùa bên hàng rào', 'Những em nhỏ vui đùa bên hàng rào', 'Những em nhỏ vui đùa bên hàng rào', '2020-01-08 08:34:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5302, 'https://media.huynhhieutravel.com/những-đứa-trẻ-em-khó-khăn-ở-ninh-thuận.jpg', 'Những đứa trẻ em khó khăn ở Ninh Thuận', 'Những đứa trẻ em khó khăn ở Ninh Thuận', 'Những đứa trẻ em khó khăn ở Ninh Thuận', '2020-01-08 08:33:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5301, 'https://media.huynhhieutravel.com/những-cô-gái-tình-nguyện-xinh-đẹp-của-clb-tia-sáng.jpg', 'Những cô gái tình nguyện xinh đẹp của clb Tia Sáng', 'Những cô gái tình nguyện xinh đẹp của clb Tia Sáng', 'Những cô gái tình nguyện xinh đẹp của clb Tia Sáng', '2020-01-08 08:33:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5300, 'https://media.huynhhieutravel.com/người-dân-nuôi-dê-ninh-thuận.jpg', 'Người dân nuôi dê Ninh Thuận', 'Người dân nuôi dê Ninh Thuận', 'Người dân nuôi dê Ninh Thuận', '2020-01-08 08:33:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5299, 'https://media.huynhhieutravel.com/người-dân-làm-nông-nghiệp-là-chủ-yếu-ở-thôn-rã-giữa.jpg', 'Người dân làm nông nghiệp là chủ yếu ở thôn Rã Giữa', 'Người dân làm nông nghiệp là chủ yếu ở thôn Rã Giữa', 'Người dân làm nông nghiệp là chủ yếu ở thôn Rã Giữa', '2020-01-08 08:33:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5298, 'https://media.huynhhieutravel.com/một-cậu-bé-người-dân-tộc.jpg', 'Một cậu bé người dân tộc ở Ninh Thuận', 'Một cậu bé người dân tộc ở Ninh Thuận', 'Một cậu bé người dân tộc ở Ninh Thuận', '2020-01-08 08:32:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5297, 'https://media.huynhhieutravel.com/mắt-biếc.jpg', 'Mắt biếc', 'Mắt biếc', 'Mắt biếc', '2020-01-08 08:32:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5296, 'https://media.huynhhieutravel.com/họp-team-game-clb-tia-sáng.jpg', 'Họp team game CLB Tia Sáng', 'Họp team game CLB Tia Sáng', 'Họp team game CLB Tia Sáng', '2020-01-08 08:32:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5295, 'https://media.huynhhieutravel.com/dân-quân-một-lòng.jpg', 'Dân quân một lòng', 'Dân quân một lòng', 'Dân quân một lòng', '2020-01-08 08:32:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5294, 'https://media.huynhhieutravel.com/clb-tia-sáng-và-công-an-thôn-rã-giữa-ở-ninh-thuận.jpg', 'CLB Tia Sáng và công an thôn Rã Giữa ở Ninh Thuận', 'CLB Tia Sáng và công an thôn Rã Giữa ở Ninh Thuận', 'CLB Tia Sáng và công an thôn Rã Giữa ở Ninh Thuận', '2020-01-08 08:31:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5293, 'https://media.huynhhieutravel.com/clb-tia-sáng-chuẩn-bị-quà-tặng-các-trẻ-em-Raglai.jpg', 'CLB Tia Sáng chuản bị quà tặng các trẻ em Raglai', 'CLB Tia Sáng chuản bị quà tặng các trẻ em Raglai', 'CLB Tia Sáng chuản bị quà tặng các trẻ em Raglai', '2020-01-08 08:31:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5292, 'https://media.huynhhieutravel.com/clb-họp-nhóm-dưới-bóng-cây.jpg', 'CLB Tia Sáng họp nhóm dưới bóng cây', 'CLB Tia Sáng họp nhóm dưới bóng cây', 'CLB Tia Sáng họp nhóm dưới bóng cây', '2020-01-08 08:31:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5291, 'https://media.huynhhieutravel.com/chụp-ảnh.jpg', 'Chụp ảnh bà cụ ở nơi từ thiện', 'Chụp ảnh bà cụ ở nơi từ thiện', 'Chụp ảnh bà cụ ở nơi từ thiện', '2020-01-08 08:31:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5290, 'https://media.huynhhieutravel.com/chuẩn-bị-cho-các-em-nhỏ-chơi-trò-chơi.jpg', 'Chuẩn bị cho các em nhỏ chơi trò chơi', 'Chuẩn bị cho các em nhỏ chơi trò chơi', 'Chuẩn bị cho các em nhỏ chơi trò chơi', '2020-01-08 08:31:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5289, 'https://media.huynhhieutravel.com/chăn-dê.jpg', 'Chăn dê', 'Chăn dê', 'Chăn dê', '2020-01-08 08:30:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5288, 'https://media.huynhhieutravel.com/cậu-bé-người-dân-tộc-raglai.jpg', 'Cậu bé người dân tộc Raglai', 'Cậu bé người dân tộc Raglai', 'Cậu bé người dân tộc Raglai', '2020-01-08 08:30:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5287, 'https://media.huynhhieutravel.com/các-em-nhỏ-chờ-đợi-tới-giờ-tổ-chức-trò-chơi.jpg', 'Các em nhỏ chờ đợi tới giờ tổ chức trò chơi', 'Các em nhỏ chờ đợi tới giờ tổ chức trò chơi', 'Các em nhỏ chờ đợi tới giờ tổ chức trò chơi', '2020-01-08 08:30:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5286, 'https://media.huynhhieutravel.com/bà-cụ-người-Raglai.jpg', 'Bà cụ người Raglai', 'Bà cụ người Raglai', 'Bà cụ người Raglai', '2020-01-08 08:30:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5277, 'https://media.huynhhieutravel.com/thiên-nhiên-xinh-đẹp-ở-hồ-dak-ke.jpg', 'Thiên nhiên xinh đẹp tại hồ Dak Ke', 'Thiên nhiên xinh đẹp tại hồ Dak Ke', 'Thiên nhiên xinh đẹp tại hồ Dak Ke', '2019-12-31 05:28:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5276, 'https://media.huynhhieutravel.com/nhà-sàn-truyền-thống-người-dân-tộc-ở-hồ-dak-ke-măng-đen.jpg', 'Nhà sàn truyền thống dân tộc ở hồ Dak Ke Măng Đen', 'Nhà sàn truyền thống dân tộc ở hồ Dak Ke Măng Đen', 'Nhà sàn truyền thống dân tộc ở hồ Dak Ke Măng Đen', '2019-12-31 05:28:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5275, 'https://media.huynhhieutravel.com/nhà-sàn-truyền-thống-dân-tộc-miền-trung.jpg', 'Nhà truyền thống dân tộc miền Trung ở Măng Đen', 'Nhà truyền thống dân tộc miền Trung ở Măng Đen', 'Nhà truyền thống dân tộc miền Trung ở Măng Đen', '2019-12-31 05:28:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5274, 'https://media.huynhhieutravel.com/nhà-rông-truyền-thống-măng-đen.jpg', 'Nhà rông truyền thống Măng Đen', 'Nhà rông truyền thống Măng Đen', 'Nhà rông truyền thống Măng Đen', '2019-12-31 05:27:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5273, 'https://media.huynhhieutravel.com/hồ-dak-ke-thanh-bình-và-xinh-đẹp.jpg', 'Hồ Dak Ke thanh bình và xinh đẹp', 'Hồ Dak Ke thanh bình và xinh đẹp', 'Hồ Dak Ke thanh bình và xinh đẹp', '2019-12-31 05:27:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5272, 'https://media.huynhhieutravel.com/hồ-đak-ke-nhìn-từ-trên-cao.jpg', 'Hồ Đak Ke nhìn từ trên cao', 'Hồ Đak Ke nhìn từ trên cao', 'Hồ Đak Ke nhìn từ trên cao', '2019-12-31 05:27:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5271, 'https://media.huynhhieutravel.com/hồ-dak-ke-măng-đen-kon-tum.jpg', 'Hồ Dak Ke Măng Đen Kon Tum', 'Hồ Dak Ke Măng Đen Kon Tum', 'Hồ Dak Ke Măng Đen Kon Tum', '2019-12-31 05:27:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5270, 'https://media.huynhhieutravel.com/hồ-dak-ke-măng-đen.jpg', 'Hồ Dak Ke Măng Đen', 'Hồ Dak Ke Măng Đen', 'Hồ Dak Ke Măng Đen', '2019-12-31 05:27:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5269, 'https://media.huynhhieutravel.com/hồ-dak-ke-có-trưng-bày-một-nhà-rông-truyền-thống.jpg', 'Hồ Dak Ke có trưng bày nhà rông truyền thống Tây Nguyên', 'Hồ Dak Ke có trưng bày nhà rông truyền thống Tây Nguyên', 'Hồ Dak Ke có trưng bày nhà rông truyền thống Tây Nguyên', '2019-12-31 05:27:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5243, 'https://media.huynhhieutravel.com/vẻ-đẹp-thiên-nhiên-ở-măng-đen.jpg', 'Vẻ đẹp thiên nhiên ở Măng Đen', 'Vẻ đẹp thiên nhiên ở Măng Đen', 'Vẻ đẹp thiên nhiên ở Măng Đen', '2019-12-27 10:14:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5242, 'https://media.huynhhieutravel.com/thung-lũng-xanh-ngát-ở-măng-đen.jpg', 'Thung lũng xanh ngát ở Măng Đen', 'Thung lũng xanh ngát ở Măng Đen', 'Thung lũng xanh ngát ở Măng Đen', '2019-12-27 10:13:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5241, 'https://media.huynhhieutravel.com/thiên-nhiên-măng-đen.jpg', 'Thiên nhiên Măng Đen', 'Thiên nhiên Măng Đen', 'Thiên nhiên Măng Đen', '2019-12-27 10:13:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5240, 'https://media.huynhhieutravel.com/thánh-giá-xuất-hiện-trên-bầu-trời-măng-đen.jpg', 'Thánh giá xuất hiện trên bầu trời Măng Đen', 'Thánh giá xuất hiện trên bầu trời Măng Đen', 'Thánh giá xuất hiện trên bầu trời Măng Đen', '2019-12-27 10:13:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5239, 'https://media.huynhhieutravel.com/rừng-thông-che-phủ-bóng-mát-ở-măng-đen.jpg', 'Rừng thông che phủ bóng mát ở Măng Đen', 'Rừng thông che phủ bóng mát ở Măng Đen', 'Rừng thông che phủ bóng mát ở Măng Đen', '2019-12-27 10:13:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5238, 'https://media.huynhhieutravel.com/rừng-rậm-trùng-điệp-khắp-nơi.jpg', 'Rừng rậm trùng điệp khắp nơi', 'Rừng rậm trùng điệp khắp nơi', 'Rừng rậm trùng điệp khắp nơi', '2019-12-27 10:13:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5237, 'https://media.huynhhieutravel.com/nước-suối-trong-mát-tại-măng-đen.jpg', 'Suối ở đây khá trong', 'Suối ở đây khá trong', 'Suối ở đây khá trong', '2019-12-27 10:12:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5236, 'https://media.huynhhieutravel.com/núi-rừng-măng-đen.jpg', 'Núi rừng Măng Đen', 'Núi rừng Măng Đen', 'Núi rừng Măng Đen', '2019-12-27 10:12:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5235, 'https://media.huynhhieutravel.com/những-ngôi-nhà-nằm-dưới-ngọn-núi-măng-đen-hùng-vĩ.jpg', 'Những ngôi nhà nằm dưới ngọn núi hùng vĩ ở Măng Đen', 'Những ngôi nhà nằm dưới ngọn núi hùng vĩ ở Măng Đen', 'Những ngôi nhà nằm dưới ngọn núi hùng vĩ ở Măng Đen', '2019-12-27 10:12:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5234, 'https://media.huynhhieutravel.com/những-mõm-đá-trên-nền-cỏ-xanh-măng-đen.jpg', 'Những mõm đá trên nền cỏ xanh Măng Đen', 'Những mõm đá trên nền cỏ xanh Măng Đen', 'Những mõm đá trên nền cỏ xanh Măng Đen', '2019-12-27 10:12:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5233, 'https://media.huynhhieutravel.com/những-con-đường-luôn-ngập-tràn-màu-xanh-của-núi-rừng.jpg', 'Những con đường luôn ngập tràn màu xanh của núi rừng', 'Những con đường luôn ngập tràn màu xanh của núi rừng', 'Những con đường luôn ngập tràn màu xanh của núi rừng', '2019-12-27 10:11:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5232, 'https://media.huynhhieutravel.com/nhìn-từ-xa-cây-cầu-dây-văng-lệch-nhịp-măng-đen.jpg', 'Nhìn từ xa cây cầu dây văng lệch nhịp trên con đường uốn lượng như rắn', 'Nhìn từ xa cây cầu dây văng lệch nhịp trên con đường uốn lượng như rắn', 'Nhìn từ xa cây cầu dây văng lệch nhịp trên con đường uốn lượng như rắn', '2019-12-27 10:11:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5231, 'https://media.huynhhieutravel.com/nhà-bên-đồi-măng-đen.jpg', 'Nhà bên đồi Măng Đen', 'Nhà bên đồi Măng Đen', 'Nhà bên đồi Măng Đen', '2019-12-27 10:11:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5230, 'https://media.huynhhieutravel.com/người-dân-trồng-rau-ở-ruộng-bậc-thang-măng-đen.jpg', 'Người dân trồng rau ở ruộng bậc than giữa núi rừng Măng Đen', 'Người dân trồng rau ở ruộng bậc than giữa núi rừng Măng Đen', 'Người dân trồng rau ở ruộng bậc than giữa núi rừng Măng Đen', '2019-12-27 10:11:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5229, 'https://media.huynhhieutravel.com/ngôi-nhà-ở-miền-quê-thơ-mộng-măng-đen.jpg', 'Ngôi nhà ở miền quê thơ mộng Măng Đen', 'Ngôi nhà ở miền quê thơ mộng Măng Đen', 'Ngôi nhà ở miền quê thơ mộng Măng Đen', '2019-12-27 10:11:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5228, 'https://media.huynhhieutravel.com/một-khu-vực-dân-cư-mới-tại-măng-đen.jpg', 'Một khu vực dân cư mới tại Măng Đen', 'Một khu vực dân cư mới tại Măng Đen', 'Một khu vực dân cư mới tại Măng Đen', '2019-12-27 10:10:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5227, 'https://media.huynhhieutravel.com/một-con-suối-măng-đen.jpg', 'Một con suối xanh mát tại Măng Đen', 'Một con suối xanh mát tại Măng Đen', 'Một con suối xanh mát tại Măng Đen', '2019-12-27 10:10:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5226, 'https://media.huynhhieutravel.com/măng-đen-còn-được-xem-là-đà-lạt-thứ-hai.jpg', 'Măng Đen còn được xem là Đà Lạt thứ 2', 'Măng Đen còn được xem là Đà Lạt thứ 2', 'Măng Đen còn được xem là Đà Lạt thứ 2', '2019-12-27 10:10:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5225, 'https://media.huynhhieutravel.com/lẩu-xuyên-tiêu-măng-đen.jpg', 'Lẩu xuyên tiêu &#8211; món ăn phải thử khi du lịch Măng Đen', 'Lẩu xuyên tiêu &#8211; món ăn phải thử khi du lịch Măng Đen', 'Lẩu xuyên tiêu - món ăn phải thử khi du lịch Măng Đen', '2019-12-27 10:10:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5224, 'https://media.huynhhieutravel.com/làn-khói-giữa-núi-rừng-măng-đen.jpg', 'Làn khói giữa núi rừng Măng Đen', 'Làn khói giữa núi rừng Măng Đen', 'Làn khói giữa núi rừng Măng Đen', '2019-12-27 10:09:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5223, 'https://media.huynhhieutravel.com/khu-37-hộ-măng-đen.jpg', 'Khu 37 hộ Măng Đen', 'Khu 37 hộ Măng Đen', 'Khu 37 hộ Măng Đen', '2019-12-27 10:09:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5221, 'https://media.huynhhieutravel.com/hoàng-hôn-măng-đen-kontum.jpg', 'Hoàng Hôn Măng Đen Kon Plong Kon Tum', 'Hoàng Hôn Măng Đen Kon Plong Kon Tum', 'Hoàng Hôn Măng Đen Kon Plong Kon Tum', '2019-12-27 10:09:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5220, 'https://media.huynhhieutravel.com/hoàng-hôn-măng-đen-đẹp-như-tranh-vẽ.jpg', 'Hoàng hôn Măng Đen đẹp như tranh vẽ', 'Hoàng hôn Măng Đen đẹp như tranh vẽ', 'Hoàng hôn Măng Đen đẹp như tranh vẽ', '2019-12-27 10:09:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5219, 'https://media.huynhhieutravel.com/gà-nướng-cơm-lam-măng-đen.jpg', 'Gà nướng cơm lam Măng Đen', 'Gà nướng cơm lam Măng Đen', 'Gà nướng cơm lam Măng Đen', '2019-12-27 10:08:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5218, 'https://media.huynhhieutravel.com/du-lịch-măng-đen-thưởng-thức-thiên-nhiên-tuyệt-vời.jpg', 'Du lịch Măng Đen thưởng thức thiên nhiên tuyệt vời', 'Du lịch Măng Đen thưởng thức thiên nhiên tuyệt vời', 'Du lịch Măng Đen thưởng thức thiên nhiên tuyệt vời', '2019-12-27 10:08:42');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5217, 'https://media.huynhhieutravel.com/du-lịch-măng-đen-cho-những-ai-yêu-thiên-nhiên.jpg', 'Du lịch Măng Đen cho những ai yêu thiên nhiên', 'Du lịch Măng Đen cho những ai yêu thiên nhiên', 'Du lịch Măng Đen cho những ai yêu thiên nhiên', '2019-12-27 10:08:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5216, 'https://media.huynhhieutravel.com/du-lịch-măng-đen-chỉ-ngắm-nhìn-thiên-nhiên-đã-đủ-mê.jpg', 'Du lịch Măng Đen chỉ ngắm nhìn thiên nhiên đã đủ mê', 'Du lịch Măng Đen chỉ ngắm nhìn thiên nhiên đã đủ mê', 'Du lịch Măng Đen chỉ ngắm nhìn thiên nhiên đã đủ mê', '2019-12-27 10:08:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5215, 'https://media.huynhhieutravel.com/đón-hoàng-hôn-ở-măng-đen.jpg', 'Đón hoàng hôn ở Măng Đen', 'Đón hoàng hôn ở Măng Đen', 'Đón hoàng hôn ở Măng Đen', '2019-12-27 10:08:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5214, 'https://media.huynhhieutravel.com/đoạn-đường-đèo-măng-đen.jpg', 'Đoạn đường đèo Măng Đen', 'Đoạn đường đèo Măng Đen', 'Đoạn đường đèo Măng Đen', '2019-12-27 10:07:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5213, 'https://media.huynhhieutravel.com/cung-đường-thác-và-núi-rừng-tại-măng-đen.jpg', 'Du lịch Măng Đen cực kỳ đẹp', 'Du lịch Măng Đen cực kỳ đẹp', 'Du lịch Măng Đen cực kỳ đẹp', '2019-12-27 10:07:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5212, 'https://media.huynhhieutravel.com/con-đường-xinh-đẹp-Măng-Đen-nhìn-từ-cao.jpg', 'Con đường cây cối phủ xanh nhìn từ trên cao', 'Con đường cây cối phủ xanh nhìn từ trên cao', 'Con đường cây cối phủ xanh nhìn từ trên cao', '2019-12-27 10:07:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5211, 'https://media.huynhhieutravel.com/con-đường-quốc-lộ-măng-đen.jpg', 'Con đường quốc lộ Măng Đen', 'Con đường quốc lộ Măng Đen', 'Con đường quốc lộ Măng Đen', '2019-12-27 10:07:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5210, 'https://media.huynhhieutravel.com/con-dốc-tại-măng-đen.jpg', 'Con dốc tại Măng Đen', 'Con dốc tại Măng Đen', 'Con dốc tại Măng Đen', '2019-12-27 10:07:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5209, 'https://media.huynhhieutravel.com/chợ-kong-plong-măng-đen.jpg', 'Chợ Kong Plông Măng Đen', 'Chợ Kong Plông Măng Đen', 'Chợ Kong Plông Măng Đen', '2019-12-27 10:06:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5208, 'https://media.huynhhieutravel.com/cây-cỏ-xanh-tươi-tại-măng-đen.jpg', 'Cây cỏ xanh tươi tại Măng Đen', 'Cây cỏ xanh tươi tại Măng Đen', 'Cây cỏ xanh tươi tại Măng Đen', '2019-12-27 10:06:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5207, 'https://media.huynhhieutravel.com/cây-côn-đơn-măng-đen.jpg', 'Cây cô đơn Măng Đen', 'Cây cô đơn Măng Đen', 'Cây cô đơn Măng Đen', '2019-12-27 10:06:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5206, 'https://media.huynhhieutravel.com/cây-cối-phủ-xanh-đồi-núi-ở-măng-đen.jpg', 'Cây cối phủ xanh đồi núi ở Măng Đen', 'Cây cối phủ xanh đồi núi ở Măng Đen', 'Cây cối phủ xanh đồi núi ở Măng Đen', '2019-12-27 10:06:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5205, 'https://media.huynhhieutravel.com/cầu-dây-văng-lệch-nhịp-măng-đen.jpg', 'Cầu dây văng lệch nhịp Măng Đen', 'Cầu dây văng lệch nhịp Măng Đen', 'Cầu dây văng lệch nhịp Măng Đen', '2019-12-27 10:05:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5204, 'https://media.huynhhieutravel.com/cầu-dây-văng.jpg', 'Cầu dây văng', 'Cầu dây văng', 'Cầu dây văng', '2019-12-27 10:05:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5203, 'https://media.huynhhieutravel.com/bản-đồ-du-lịch-măng-đen-kontum.jpg', 'Bản đồ du lịch Măng Đen', 'Bản đồ du lịch Măng Đen', 'Bản đồ du lịch Măng Đen', '2019-12-27 10:05:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5201, 'https://media.huynhhieutravel.com/sum-villa-măng-đen-về-đêm.jpg', 'Sum Villa Măng Đen về đêm', 'Sum Villa Măng Đen về đêm', 'Sum Villa Măng Đen về đêm', '2019-12-27 07:25:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5198, 'https://media.huynhhieutravel.com/xích-đu-tại-sum-villa.jpg', 'Xích đu tại Sum Villa', 'Xích đu tại Sum Villa', 'Xích đu tại Sum Villa', '2019-12-27 02:33:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5197, 'https://media.huynhhieutravel.com/vườn-sau-sum.jpg', 'Vườn sau của Sum Villa', 'Vườn sau của Sum Villa', 'Vườn sau của Sum Villa', '2019-12-27 02:33:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5196, 'https://media.huynhhieutravel.com/sum-villa-nhìn-từ-trên-cao.jpg', 'Sum Villa nhìn từ trên cao', 'Sum Villa nhìn từ trên cao', 'Sum Villa nhìn từ trên cao', '2019-12-27 02:33:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5195, 'https://media.huynhhieutravel.com/sum-villa-măng-đen.jpg', 'Sum Villa Măng Đen', 'Sum Villa Măng Đen', 'Sum Villa Măng Đen', '2019-12-27 02:33:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5194, 'https://media.huynhhieutravel.com/sum-villa-flycam.jpg', 'Sum Villa Flycam', 'Sum Villa Flycam', 'Sum Villa Flycam', '2019-12-27 02:32:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5193, 'https://media.huynhhieutravel.com/sum-villa-có-trồng-nhiều-cây-xanh.jpg', 'Sum Villa có trồng nhiều cây xanh', 'Sum Villa có trồng nhiều cây xanh', 'Sum Villa có trồng nhiều cây xanh', '2019-12-27 02:32:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5192, 'https://media.huynhhieutravel.com/sum-villa.jpg', 'Sum Villa', 'Sum Villa', 'Sum Villa', '2019-12-27 02:32:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5191, 'https://media.huynhhieutravel.com/phía-sau-sum-villa-măng-đen.jpg', 'Sum Villa nhìn từ phía sau', 'Sum Villa nhìn từ phía sau', 'Sum Villa nhìn từ phía sau', '2019-12-27 02:32:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5190, 'https://media.huynhhieutravel.com/ô-cửa-sổ.jpg', 'Ô cửa sổ', 'Ô cửa sổ', 'Ô cửa sổ', '2019-12-27 02:32:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5189, 'https://media.huynhhieutravel.com/nơi-uống-trà-khá-tuyệt-vời-sau-vườn-sum-villa-măng-đen.jpg', 'Nơi uống trà khá tuyệt vời Sum Villa Măng Đen', 'Nơi uống trà khá tuyệt vời Sum Villa Măng Đen', 'Nơi uống trà khá tuyệt vời Sum Villa Măng Đen', '2019-12-27 02:31:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5188, 'https://media.huynhhieutravel.com/nơi-tiệc-nướng-bbq.jpg', 'Nơi tiệc nướng BBQ', 'Nơi tiệc nướng BBQ', 'Nơi tiệc nướng BBQ', '2019-12-27 02:31:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5187, 'https://media.huynhhieutravel.com/nhà-của-gỗ-sum-villa-măng-đen.jpg', 'Nhà của gỗ Sum Villa Măng Đen', 'Nhà của gỗ Sum Villa Măng Đen', 'Nhà của gỗ Sum Villa Măng Đen', '2019-12-27 02:31:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5186, 'https://media.huynhhieutravel.com/khung-cảnh-yên-bình-ngoài-vườn-của-sum-villa.jpg', 'Khung cảnh yên bình ngoài vườn Sum Villa', 'Khung cảnh yên bình ngoài vườn Sum Villa', 'Khung cảnh yên bình ngoài vườn Sum Villa', '2019-12-27 02:31:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5185, 'https://media.huynhhieutravel.com/giường-dorm-sum-villa.jpg', 'Giường dorm Sum Villa', 'Giường dorm Sum Villa', 'Giường dorm Sum Villa', '2019-12-27 02:30:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5184, 'https://media.huynhhieutravel.com/căn-biệt-thự-sum-villa.jpg', 'Căn biệt thự Sum Villa', 'Căn biệt thự Sum Villa', 'Căn biệt thự Sum Villa', '2019-12-27 02:30:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5183, 'https://media.huynhhieutravel.com/cafe-sữa-sum-villa.jpg', 'Cafe sữa Sum Villa', 'Cafe sữa Sum Villa', 'Cafe sữa Sum Villa', '2019-12-27 02:30:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5182, 'https://media.huynhhieutravel.com/bàn-ghế-gỗ-tại-sum-villa.jpg', 'Bàn ghế gỗ tại Sum Villa', 'Bàn ghế gỗ tại Sum Villa', 'Bàn ghế gỗ tại Sum Villa', '2019-12-27 02:30:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5179, 'https://media.huynhhieutravel.com/đánh-giá-khách-du-lịch-về-sum-villa-măng-đen.jpg', 'Đánh giá khách du lịch về Sum Villa Măng Đen', 'Đánh giá khách du lịch về Sum Villa Măng Đen', 'Đánh giá khách du lịch về Sum Villa Măng Đen', '2019-12-27 01:31:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5156, 'https://media.huynhhieutravel.com/thác-pa-sỹ-măng-đen.jpg', 'Thác Pa Sỹ Măng Đen', 'Thác Pa Sỹ Măng Đen', 'Thác Pa Sỹ Măng Đen', '2019-12-25 05:37:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5155, 'https://media.huynhhieutravel.com/thác-pa-sỹ.jpg', 'Thác Pa Sỹ', 'Thác Pa Sỹ', 'Thác Pa Sỹ', '2019-12-25 05:37:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5154, 'https://media.huynhhieutravel.com/nhiều-cây-cầu-nối-qua-thác.jpg', 'Nhiều cây cầu nối qua con suối', 'Nhiều cây cầu nối qua con suối', 'Nhiều cây cầu nối qua con suối', '2019-12-25 05:36:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5153, 'https://media.huynhhieutravel.com/nhà-truyền-thống-ở-thác-pa-sỹ.jpg', 'Nhà truyền thống ở thác Pa Sỹ', 'Nhà truyền thống ở thác Pa Sỹ', 'Nhà truyền thống ở thác Pa Sỹ', '2019-12-25 05:36:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5152, 'https://media.huynhhieutravel.com/khu-du-lịch-thác-pa-sỹ.jpg', 'Khu du lịch thác Pa Sỹ', 'Khu du lịch thác Pa Sỹ', 'Khu du lịch thác Pa Sỹ', '2019-12-25 05:36:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5151, 'https://media.huynhhieutravel.com/khách-du-lịch-tham-quan-thác-pa-sỹ.jpg', 'Khách du lịch tham quan thác Pa Sỹ', 'Khách du lịch tham quan thác Pa Sỹ', 'Khách du lịch tham quan thác Pa Sỹ', '2019-12-25 05:36:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5150, 'https://media.huynhhieutravel.com/khách-du-lịch-chụp-hình-tại-thác-pa-sỹ-măng-đen.jpg', 'Khách du lịch chụp hình tại thác Pa Sỹ Măng Đen', 'Khách du lịch chụp hình tại thác Pa Sỹ Măng Đen', 'Khách du lịch chụp hình tại thác Pa Sỹ Măng Đen', '2019-12-25 05:35:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5149, 'https://media.huynhhieutravel.com/kdl-thác-pa-sỹ-trồng-nhiều-hoa.jpg', 'Kdl thác Pa Sỹ trồng khá nhiều hoa', 'Kdl thác Pa Sỹ trồng khá nhiều hoa', 'Kdl thác Pa Sỹ trồng khá nhiều hoa', '2019-12-25 05:35:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5148, 'https://media.huynhhieutravel.com/kdl-thác-pa-sỹ-măng-đen.jpg', 'Kdl thác Pa Sỹ Măng Đen', 'Kdl thác Pa Sỹ Măng Đen', 'Kdl thác Pa Sỹ Măng Đen', '2019-12-25 05:35:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5147, 'https://media.huynhhieutravel.com/chủ-mèo-sưởi-ấm.jpg', 'Chú mèo sưởi ấm dưới chỗ nướng đồ ăn', 'Chú mèo sưởi ấm dưới chỗ nướng đồ ăn', 'Chú mèo sưởi ấm dưới chỗ nướng đồ ăn', '2019-12-25 05:35:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5141, 'https://media.huynhhieutravel.com/đánh-giá-khách-du-lịch-về-thác-pa-sỹ.jpg', 'Đánh giá khách du lịch về thác Pa Sỹ', 'Đánh giá khách du lịch về thác Pa Sỹ', 'Đánh giá khách du lịch về thác Pa Sỹ', '2019-12-25 04:17:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5135, 'https://media.huynhhieutravel.com/tượng-quan-âm-bồ-tát-bên-ngoài-khuôn-viên-chùa-khánh-lâm.jpg', 'Tượng Quan Âm Bồ Tát bên ngoài khuôn viên chùa', 'Tượng Quan Âm Bồ Tát bên ngoài khuôn viên chùa', 'Tượng Quan Âm Bồ Tát bên ngoài khuôn viên chùa', '2019-12-24 09:56:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5134, 'https://media.huynhhieutravel.com/từ-chợ-kon-plong-bạn-cũng-nhìn-thấy-chùa-khánh-lâm-từ-xa.jpg', 'Từ chợ Kon Plong nhìn thấy xa xa là chùa Khánh Lâm', 'Từ chợ Kon Plong nhìn thấy xa xa là chùa Khánh Lâm', 'Từ chợ Kon Plong nhìn thấy xa xa là chùa Khánh Lâm', '2019-12-24 09:56:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5133, 'https://media.huynhhieutravel.com/trước-chùa-có-nhiều-la-hán-đẹp.jpg', 'Trước chùa có nhiều tượng La Hán đẹp', 'Trước chùa có nhiều tượng La Hán đẹp', 'Trước chùa có nhiều tượng La Hán đẹp', '2019-12-24 09:55:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5132, 'https://media.huynhhieutravel.com/kiến-trúc-chùa-rất-đẹp.jpg', 'Kiến trúc chùa rất đẹp', 'Kiến trúc chùa rất đẹp', 'Kiến trúc chùa rất đẹp', '2019-12-24 09:55:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5131, 'https://media.huynhhieutravel.com/cổng-tam-quan-chùa-khánh-lâm.jpg', 'Cổng tam quan chùa Khánh Lâm', 'Cổng tam quan chùa Khánh Lâm', 'Cổng tam quan chùa Khánh Lâm', '2019-12-24 09:55:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5130, 'https://media.huynhhieutravel.com/chùa-khánh-lâm-trên-ngọn-đồi-cao.jpg', 'Chùa Khánh Lâm trên ngọn đồi cao', 'Chùa Khánh Lâm trên ngọn đồi cao', 'Chùa Khánh Lâm trên ngọn đồi cao', '2019-12-24 09:55:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5129, 'https://media.huynhhieutravel.com/chùa-khánh-lâm-rất-đẹp.jpg', 'Chùa Khánh Lâm tuyệt đẹp', 'Chùa Khánh Lâm tuyệt đẹp', 'Chùa Khánh Lâm tuyệt đẹp', '2019-12-24 09:55:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5128, 'https://media.huynhhieutravel.com/chùa-khánh-lâm-măng-đen.jpg', 'Chùa Khánh Lâm Măng Đen', 'Chùa Khánh Lâm Măng Đen', 'Chùa Khánh Lâm Măng Đen', '2019-12-24 09:54:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5127, 'https://media.huynhhieutravel.com/chùa-khánh-lâm.jpg', 'Chùa Khánh Lâm', 'Chùa Khánh Lâm', 'Chùa Khánh Lâm', '2019-12-24 09:54:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5126, 'https://media.huynhhieutravel.com/chánh-điện-chùa-khánh-lâm.jpg', 'Chánh điện chùa Khánh Lâm', 'Chánh điện chùa Khánh Lâm', 'Chánh điện chùa Khánh Lâm', '2019-12-24 09:54:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5125, 'https://media.huynhhieutravel.com/các-bậc-thang-lên-chùa-khánh-lâm.jpg', 'Các bậc thang lên chánh điện', 'Các bậc thang lên chánh điện', 'Các bậc thang lên chánh điện', '2019-12-24 09:54:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5124, 'https://media.huynhhieutravel.com/200-bậc-thang-lên-chùa-khánh-lâm.jpg', '200 bậc thang lên chùa Khánh Lâm', '200 bậc thang lên chùa Khánh Lâm', '200 bậc thang lên chùa Khánh Lâm', '2019-12-24 09:53:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5078, 'https://media.huynhhieutravel.com/giới-thiệu-ngày-hội-văn-hóa-chợ-nổi-cái-răng.jpg', 'Giơí thiệu lễ hội chợ nổi Cái Răng 2019', 'Giơí thiệu lễ hội chợ nổi Cái Răng 2019', 'Giơí thiệu lễ hội chợ nổi Cái Răng 2019', '2019-07-02 04:17:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5077, 'https://media.huynhhieutravel.com/lịch-trình-ngày-hội-văn-hóa-chợ-nổi-cái-răng-8-tháng-7.jpg', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 8 tháng 7', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 8 tháng 7', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 8 tháng 7', '2019-07-02 03:43:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5076, 'https://media.huynhhieutravel.com/lịch-trình-ngày-hội-văn-hóa-chợ-nổi-cái-răng-7-tháng-7.jpg', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 7 tháng 7', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 7 tháng 7', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 7 tháng 7', '2019-07-02 03:43:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5075, 'https://media.huynhhieutravel.com/lịch-trình-ngày-hội-văn-hóa-chợ-nổi-cái-răng-6-tháng-7.jpg', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 6 tháng 7', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 6 tháng 7', 'Lịch trình ngày hội văn hóa chợ nổi Cái Răng ngày 6 tháng 7', '2019-07-02 03:43:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5074, 'https://media.huynhhieutravel.com/le-hoi-cho-noi-cai-rang-2019-nucuoimekong.jpg', '', '', '', '2019-07-02 03:42:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5021, 'https://media.huynhhieutravel.com/lễ-hội-phủ-giầy-thập-niên-90.jpg', 'Lễ hội Phủ Giầy Nam Định thập niên 90', 'Lễ hội Phủ Giầy Nam Định thập niên 90', 'Lễ hội Phủ Giầy Nam Định thập niên 90', '2019-06-07 05:48:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5020, 'https://media.huynhhieutravel.com/lễ-rước-Mẫu-phủ-giầy.jpg', 'Lễ rước Mẫu Phủ Giầy ngày xưa', 'Lễ rước Mẫu Phủ Giầy', 'Lễ rước Mẫu Phủ Giầy ngày xưa', '2019-06-07 05:48:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5019, 'https://media.huynhhieutravel.com/đoàn-rước-lễ-hội-phủ-giầy-nam-định.jpg', 'Rước Mẫu lễ hội Phủ Giầy', 'Rước Mẫu lễ hội Phủ Giầy', 'Rước Mẫu lễ hội Phủ Giầy', '2019-06-07 05:48:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5018, 'https://media.huynhhieutravel.com/đoàn-rước-lễ-hội-phủ-giầy.jpg', 'Đoàn rước lễ hội Phủ Giầy', 'Đoàn rước lễ hội Phủ Giầy', 'Đoàn rước lễ hội Phủ Giầy', '2019-06-07 05:47:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5017, 'https://media.huynhhieutravel.com/trò-chơi-kéo-chữ-phủ-giầy.jpg', 'Trò chơi kéo chữ Phủ Giầy', 'Trò chơi kéo chữ Phủ Giầy', 'Trò chơi kéo chữ Phủ Giầy', '2019-06-07 05:47:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5016, 'https://media.huynhhieutravel.com/lễ-khai-mạc-hội-phủ-giầy.jpg', 'Lễ khai mạc lễ hội Phủ Giầy', 'Lễ khai mạc lễ hội Phủ Giầy', 'Lễ khai mạc lễ hội Phủ Giầy', '2019-06-07 05:47:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5015, 'https://media.huynhhieutravel.com/lễ-hội-phủ-giầy-được-tổ-chức-hoành-tráng.jpg', 'Lễ hội Phủ Giầy được tổ chức hoành tráng năm 2019', 'Lễ hội Phủ Giầy được tổ chức hoành tráng năm 2019', 'Lễ hội Phủ Giầy được tổ chức hoành tráng năm 2019', '2019-06-07 05:47:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5014, 'https://media.huynhhieutravel.com/phủ-giầy.jpg', 'Phủ Giầy', '', 'Phủ Giầy', '2019-06-07 05:47:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (5013, 'https://media.huynhhieutravel.com/giới-thiệu-lễ-hội-phủ-giầy.jpg', 'Giới thiệu lễ hội Phủ Giầy', 'Giới thiệu lễ hội Phủ Giầy', 'Giới thiệu lễ hội Phủ Giầy', '2019-06-07 05:47:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4994, 'https://media.huynhhieutravel.com/sầu-riêng-ri6.jpg', 'Sầu riêng ri6', 'Sầu riêng ri6', 'Sầu riêng ri6', '2019-06-02 12:31:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4993, 'https://media.huynhhieutravel.com/những-trái-sầu-riêng-ngon-lành-còn-trên-cây.jpg', 'Những trái sầu riêng ngon lành còn trên cây', 'Những trái sầu riêng ngon lành còn trên cây', 'Những trái sầu riêng ngon lành còn trên cây', '2019-06-02 12:31:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4992, 'https://media.huynhhieutravel.com/vườn-sầu-riêng-cần-thơ-huynhhieutravel.jpg', 'Vườn sầu riêng Cần Thơ', 'Vườn sầu riêng Cần Thơ', 'Vườn sầu riêng Cần Thơ', '2019-06-02 12:31:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4991, 'https://media.huynhhieutravel.com/cây-sầu-riêng-đầy-trái-ở-cần-thơ.jpg', 'Cây sầu riêng đầy trái ở Cần Thơ', 'Cây sầu riêng đầy trái ở Cần Thơ', 'Cây sầu riêng đầy trái ở Cần Thơ', '2019-06-02 12:31:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4989, 'https://media.huynhhieutravel.com/article-lễ-hội-nghinh-cô.jpg', 'Article Lễ Hội Nghinh Cô', 'Article Lễ Hội Nghinh Cô', 'Article Lễ Hội Nghinh Cô', '2019-06-02 10:30:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4987, 'https://media.huynhhieutravel.com/toàn-cảnh-dinh-cô.jpg', 'Toàn cảnh Dinh Cô', 'Toàn cảnh Dinh Cô', 'Toàn cảnh Dinh Cô', '2019-06-02 10:20:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4986, 'https://media.huynhhieutravel.com/bên-trong-mộ-cô-long-hải-bà-rịa.jpg', 'Bên trong Mộ Cô ở Long Hải', 'Bên trong Mộ Cô ở Long Hải', 'Bên trong Mộ Cô ở Long Hải', '2019-06-02 10:20:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4985, 'https://media.huynhhieutravel.com/dinh-cô.jpg', 'Dinh Cô', 'Dinh Cô', 'Dinh Cô', '2019-06-02 10:20:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4984, 'https://media.huynhhieutravel.com/biển-dinh-cô.jpg', 'Biển Dinh Cô', 'Biển Dinh Cô', 'Biển Dinh Cô', '2019-06-02 10:20:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4983, 'https://media.huynhhieutravel.com/lễ-hội-dinh-cô.jpg', 'Lễ hội Dinh Cô', 'Lễ hội Dinh Cô', 'Lễ hội Dinh Cô', '2019-06-02 10:20:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4982, 'https://media.huynhhieutravel.com/mộ-cô-long-hải.jpg', 'Mộ Cô Long Hải', 'Mộ Cô Long Hải', 'Mộ Cô Long Hải', '2019-06-02 10:20:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4981, 'https://media.huynhhieutravel.com/thông-tin-lễ-hội-nghinh-cô.jpg', 'Thông tin lễ hội Nghinh Cô', 'Thông tin lễ hội Nghinh Cô', 'Thông tin lễ hội Nghinh Cô', '2019-06-02 10:19:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4832, 'https://media.huynhhieutravel.com/huynhhieutravel-logo-size300x300.jpg', 'Huynh Hieu Travel Favicon', 'Huynh Hieu Travel logo size 300&#215;300', 'Huynh Hieu Travel logo size 300x300', '2019-05-04 01:26:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4821, 'https://media.huynhhieutravel.com/favicon-huynhhieutravel-size-nho.jpg', '', '', '', '2019-05-02 06:50:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4820, 'https://media.huynhhieutravel.com/huynh-hieu-travel-logo-black-sizenho.png', '', '', '', '2019-05-02 06:46:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4704, 'https://media.huynhhieutravel.com/banner-sidebar.jpg', '', '', '', '2019-05-02 06:18:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4703, 'https://media.huynhhieutravel.com/banner-post.jpg', '', '', '', '2019-05-02 06:18:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4702, 'https://media.huynhhieutravel.com/health-footer.png', '', '', '', '2019-05-02 06:18:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4701, 'https://media.huynhhieutravel.com/health-header.png', '', '', '', '2019-05-02 06:18:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4700, 'https://media.huynhhieutravel.com/p4.jpg', '', '', '', '2019-05-02 06:18:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4699, 'https://media.huynhhieutravel.com/p3.jpg', '', '', '', '2019-05-02 06:18:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4698, 'https://media.huynhhieutravel.com/p2.jpg', '', '', '', '2019-05-02 06:18:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4697, 'https://media.huynhhieutravel.com/p1.jpg', '', '', '', '2019-05-02 06:18:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4696, 'https://media.huynhhieutravel.com/10.jpg', '', '', '', '2019-05-02 06:18:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4695, 'https://media.huynhhieutravel.com/9.jpg', '', '', '', '2019-05-02 06:18:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4694, 'https://media.huynhhieutravel.com/8.jpg', '', '', '', '2019-05-02 06:18:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4693, 'https://media.huynhhieutravel.com/7.jpg', '', '', '', '2019-05-02 06:18:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4692, 'https://media.huynhhieutravel.com/6.jpg', '', '', '', '2019-05-02 06:18:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4691, 'https://media.huynhhieutravel.com/5.jpg', '', '', '', '2019-05-02 06:18:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4690, 'https://media.huynhhieutravel.com/4.jpg', '', '', '', '2019-05-02 06:18:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4689, 'https://media.huynhhieutravel.com/3.jpg', '', '', '', '2019-05-02 06:18:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4688, 'https://media.huynhhieutravel.com/2.jpg', '', '', '', '2019-05-02 06:18:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4687, 'https://media.huynhhieutravel.com/1.jpg', '', '', '', '2019-05-02 06:18:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4578, 'https://media.huynhhieutravel.com/đánh-giá-hòn-tằm-nha-trang-trên-google-maps.jpg', 'Đánh giá Hòn Tằm Nha Trang trên Google Maps', 'Đánh giá Hòn Tằm Nha Trang trên Google Maps', 'Đánh giá Hòn Tằm Nha Trang trên Google Maps', '2019-03-25 05:53:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4577, 'https://media.huynhhieutravel.com/resort-có-nhiều-nơi-nghỉ-dưỡng-tuyệt-vời.jpg', 'Resort có nhiều dịch vụ dành cho nghỉ dưỡng', 'Resort có nhiều dịch vụ dành cho nghỉ dưỡng', 'Resort có nhiều dịch vụ dành cho nghỉ dưỡng', '2019-03-25 05:45:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4576, 'https://media.huynhhieutravel.com/dịch-vụ-spa-hòn-tằm.jpg', 'Dịch vụ Spa ở Hòn Tằm', 'Dịch vụ Spa ở Hòn Tằm', 'Dịch vụ Spa ở Hòn Tằm', '2019-03-25 05:45:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4575, 'https://media.huynhhieutravel.com/giới-thiệu-hòn-tằm-nha-trang.jpg', 'Giới thiệu Hòn Tằm Nha Trang', 'Giới thiệu Hòn Tằm Nha Trang', 'Giới thiệu Hòn Tằm Nha Trang', '2019-03-25 05:45:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4574, 'https://media.huynhhieutravel.com/hòn-tằm-nha-trang.jpg', 'Hòn Tằm Nha Trang', 'Hòn Tằm Nha Trang', 'Hòn Tằm Nha Trang', '2019-03-25 05:45:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4573, 'https://media.huynhhieutravel.com/resort-khá-tiện-nghi.jpg', 'Resort khá tiện nghi', 'Resort khá tiện nghi', 'Resort khá tiện nghi', '2019-03-25 05:45:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4572, 'https://media.huynhhieutravel.com/kiến-trúc-độc-đáo-của-các-resort.jpg', 'Kiến trúc độc đáo của các resort', 'Kiến trúc độc đáo của các resort', 'Kiến trúc độc đáo của các resort', '2019-03-25 05:45:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4571, 'https://media.huynhhieutravel.com/chuẩn-bị-tiệc-cưới-ở-hòn-tằm.jpg', 'Chuẩn bị tiệc cưới ở Hòn Tằm', 'Chuẩn bị tiệc cưới ở Hòn Tằm', 'Chuẩn bị tiệc cưới ở Hòn Tằm', '2019-03-25 05:45:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4570, 'https://media.huynhhieutravel.com/tiệc-ở-hòn-tằm.jpg', 'Tiệc ở Hòn Tằm', 'Tiệc ở Hòn Tằm', 'Tiệc ở Hòn Tằm', '2019-03-25 05:45:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4569, 'https://media.huynhhieutravel.com/menu-dịch-vụ-spa.jpg', 'Menu dịch vụ spa', 'Menu dịch vụ spa', 'Menu dịch vụ spa', '2019-03-25 05:45:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4559, 'https://media.huynhhieutravel.com/khach-du-lich-bai-dai.jpg', 'Khách du lịch ở bãi Dài', 'Khách du lịch ở bãi Dài', 'Khách du lịch ở bãi Dài', '2019-03-15 02:02:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4558, 'https://media.huynhhieutravel.com/bai-tam-trong-xanh-o-bai-dai.jpg', 'Bãi tắm trong xanh ở bãi Dài', 'Bãi tắm trong xanh ở bãi Dài', 'Bãi tắm trong xanh ở bãi Dài', '2019-03-15 02:02:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4557, 'https://media.huynhhieutravel.com/resort-o-bai-dai.jpg', 'Resort ở bãi Dài', 'Resort ở bãi Dài', 'Resort ở bãi Dài', '2019-03-15 02:02:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4556, 'https://media.huynhhieutravel.com/bai-dai-nha-trang.jpg', 'Bãi dài Nha Trang', 'Bãi dài Nha Trang', 'Bãi dài Nha Trang', '2019-03-15 02:02:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4555, 'https://media.huynhhieutravel.com/giới-thiệu-bãi-dài-nha-trang.jpg', 'Giới thiệu bãi Dài Nha Trang', 'Giới thiệu bãi Dài Nha Trang', 'Giới thiệu bãi Dài Nha Trang', '2019-03-15 02:02:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4554, 'https://media.huynhhieutravel.com/khung-canh-bai-dai.jpg', 'Khung cảnh ở bãi Dài Nha Trang', 'Khung cảnh ở bãi Dài Nha Trang', 'Khung cảnh ở bãi Dài Nha Trang', '2019-03-15 02:02:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4553, 'https://media.huynhhieutravel.com/tam-nang-o-bai-dai.jpg', 'Tắm nắng ở bãi Dài', 'Tắm nắng ở bãi Dài', 'Tắm nắng ở bãi Dài', '2019-03-15 02:01:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4552, 'https://media.huynhhieutravel.com/bai-dai-cung-la-noi-chup-anh-cuoi-cua-nhieu-cap-doi.jpg', 'Bãi Dài cũng là nơi chụp ảnh cưới của nhiều cặp đôi', 'Bãi Dài cũng là nơi chụp ảnh cưới của nhiều cặp đôi', 'Bãi Dài cũng là nơi chụp ảnh cưới của nhiều cặp đôi', '2019-03-15 02:01:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4551, 'https://media.huynhhieutravel.com/bai-dai-ve-dem.jpg', 'Bãi Dài về đêm', 'Bãi Dài về đêm', 'Bãi Dài về đêm', '2019-03-15 02:01:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4550, 'https://media.huynhhieutravel.com/bai-dai-co-nhieu-khu-nghi-duong-tuyet-dep.jpg', 'Bãi Dài có nhiều khu nghỉ dưỡng tuyệt đẹp', 'Bãi Dài có nhiều khu nghỉ dưỡng tuyệt đẹp', 'Bãi Dài có nhiều khu nghỉ dưỡng tuyệt đẹp', '2019-03-15 02:01:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4519, 'https://media.huynhhieutravel.com/xe-lửa-mini-đưa-đón-từ-cổng-vào-đến-trung-tâm-thác-yang-bay.jpg', 'Xe lửa mini đưa đón từ cổng vào đến trung tâm thác Yang Bay', 'Xe lửa mini đưa đón từ cổng vào đến trung tâm thác Yang Bay', 'Xe lửa mini đưa đón từ cổng vào đến trung tâm thác Yang Bay', '2019-02-13 06:22:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4518, 'https://media.huynhhieutravel.com/tổng-quan-thác-yang-bay-nha-trang.jpg', 'Tổng quan thác Yang Bay Nha Trang', 'Tổng quan thác Yang Bay Nha Trang', 'Tổng quan thác Yang Bay Nha Trang', '2019-02-13 06:22:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4517, 'https://media.huynhhieutravel.com/thác-yang-bay-nha-trang.jpg', 'Thác Yang Bay Nha Trang', 'Thác Yang Bay Nha Trang', 'Thác Yang Bay Nha Trang', '2019-02-13 06:22:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4516, 'https://media.huynhhieutravel.com/thác-yang-bay.jpg', 'Thác Yang Bay', 'Thác Yang Bay', 'Thác Yang Bay', '2019-02-13 06:22:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4515, 'https://media.huynhhieutravel.com/tắm-bùn-khu-du-lịch-yang-bay.jpg', 'Tắm bùn khu du lịch Yang Bay', 'Tắm bùn khu du lịch Yang Bay', 'Tắm bùn khu du lịch Yang Bay', '2019-02-13 06:22:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4514, 'https://media.huynhhieutravel.com/những-chiếc-nón-đầy-màu-sắc-trang-trí-trong-khu-yang-bay.jpg', 'Những chiếc nón đầy màu sắc trang trí trong khu Yang Bay', 'Những chiếc nón đầy màu sắc trang trí trong khu Yang Bay', 'Những chiếc nón đầy màu sắc trang trí trong khu Yang Bay', '2019-02-13 06:22:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4513, 'https://media.huynhhieutravel.com/một-khung-cảnh-nhiều-cây-xanh-ở-thác-yang-bay.jpg', 'Một khung cảnh nhiều cây xanh ở thác Yang Bay', 'Một khung cảnh nhiều cây xanh ở thác Yang Bay', 'Một khung cảnh nhiều cây xanh ở thác Yang Bay', '2019-02-13 06:22:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4512, 'https://media.huynhhieutravel.com/khu-du-lịch-thác-yang-bay.jpg', 'Khu du lịch thác Yang Bay', 'Khu du lịch thác Yang Bay', 'Khu du lịch thác Yang Bay', '2019-02-13 06:22:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4511, 'https://media.huynhhieutravel.com/giới-thiệu-khu-du-lịch-thác-yang-bay-nha-trang.jpg', 'Giới thiệu khu du lịch thác Yang Bay Nha Trang', 'Giới thiệu khu du lịch thác Yang Bay Nha Trang', 'Giới thiệu khu du lịch thác Yang Bay Nha Trang', '2019-02-13 06:22:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4510, 'https://media.huynhhieutravel.com/cưỡi-đà-điểu-ở-khu-vui-chơi.jpg', 'Cưỡi đà điểu ở khu vui chơi', 'Cưỡi đà điểu ở khu vui chơi', 'Cưỡi đà điểu ở khu vui chơi', '2019-02-13 06:22:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4509, 'https://media.huynhhieutravel.com/công-viên-giải-trí-thác-yang-bay-nha-trang.jpg', 'Công viên giải trí thác Yang Bay Nha Trang', 'Công viên giải trí thác Yang Bay Nha Trang', 'Công viên giải trí thác Yang Bay Nha Trang', '2019-02-13 06:22:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4508, 'https://media.huynhhieutravel.com/cánh-đồng-hoa-hướng-dương-ở-khu-du-lịch.jpg', 'Cánh đồng hoa hướng dương ở khu du lịch Yang Bay', 'Cánh đồng hoa hướng dương ở khu du lịch Yang Bay', 'Cánh đồng hoa hướng dương ở khu du lịch Yang Bay', '2019-02-13 06:22:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4507, 'https://media.huynhhieutravel.com/cảm-nghĩ-về-yang-bay.jpg', 'Cảm nghĩ về Yang Bay', 'Cảm nghĩ về Yang Bay', 'Cảm nghĩ về Yang Bay', '2019-02-13 06:22:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4505, 'https://media.huynhhieutravel.com/review-thác-yang-bay-nha-trang.jpg', 'Review thác Yang Bay Nha Trang', 'Review thác Yang Bay Nha Trang', 'Review thác Yang Bay Nha Trang', '2019-02-12 14:30:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4494, 'https://media.huynhhieutravel.com/review-khu-du-lịch-bãi-dài-NHATRANG.jpg', 'Review Khu du lịch Bãi Dài Nha Trang', 'Review Khu du lịch Bãi Dài Nha Trang', 'Review Khu du lịch Bãi Dài Nha Trang', '2019-02-09 08:48:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4485, 'https://media.huynhhieutravel.com/du-khách-vui-vẻ-bên-bãi-biển-khu-du-lịch-dốc-lết.jpg', 'Du khách vui vẻ bên bãi biển khu du lịch Dốc Lết', 'Du khách vui vẻ bên bãi biển khu du lịch Dốc Lết', 'Du khách vui vẻ bên bãi biển khu du lịch Dốc Lết', '2019-02-08 15:53:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4484, 'https://media.huynhhieutravel.com/bãi-biển-dốc-lết-ở-một-khu-resort.jpg', 'Bãi biển Dốc Lết ở một khu resort', 'Bãi biển Dốc Lết ở một khu resort', 'Bãi biển Dốc Lết ở một khu resort', '2019-02-08 15:53:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4483, 'https://media.huynhhieutravel.com/một-bàn-tiệc-hải-sản-hấp-dẫn.jpg', 'Một bàn tiệc hải sản hấp dẫn', 'Một bàn tiệc hải sản hấp dẫn', 'Một bàn tiệc hải sản hấp dẫn', '2019-02-08 15:53:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4482, 'https://media.huynhhieutravel.com/dốc-lết.jpg', 'Dốc Lết', 'Dốc Lết', 'Dốc Lết', '2019-02-08 15:53:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4481, 'https://media.huynhhieutravel.com/khu-du-lịch-dốc-lết-nha-trang.jpg', 'Khu du lịch Dốc Lết Nha Trang', 'Khu du lịch Dốc Lết Nha Trang', 'Khu du lịch Dốc Lết Nha Trang', '2019-02-08 15:53:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4480, 'https://media.huynhhieutravel.com/tổng-quan-khu-du-lịch-dốc-lết-nha-trang.jpg', 'Tổng quan khu du lịch Dốc Lết Nha Trang', 'Tổng quan khu du lịch Dốc Lết Nha Trang', 'Tổng quan khu du lịch Dốc Lết Nha Trang', '2019-02-08 15:53:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4479, 'https://media.huynhhieutravel.com/chơi-dù-lượn-dốc-lết.jpg', 'Chơi dù lượn Dốc Lết', 'Chơi dù lượn Dốc Lết', 'Chơi dù lượn Dốc Lết', '2019-02-08 15:53:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4477, 'https://media.huynhhieutravel.com/review-bãi-biển-dốc-lết-nha-trang.jpg', 'Review bãi biển Dốc Lết Nha Trang', 'Review bãi biển Dốc Lết Nha Trang', 'Review bãi biển Dốc Lết Nha Trang', '2019-02-08 14:37:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4464, 'https://media.huynhhieutravel.com/các-quả-trứng-ở-khu-du-lịch-trăm-trứng.jpg', 'Các quả trứng ở khu du lịch Trăm Trứng', 'Các quả trứng ở khu du lịch Trăm Trứng', 'Các quả trứng ở khu du lịch Trăm Trứng', '2019-02-07 10:10:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4463, 'https://media.huynhhieutravel.com/khung-cảnh-đốt-lửa-trại.jpg', 'Khung cảnh đốt lửa trại', 'Khung cảnh đốt lửa trại', 'Khung cảnh đốt lửa trại', '2019-02-07 10:10:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4461, 'https://media.huynhhieutravel.com/thiết-kế-phong-cách-châu-âu-cùng-trứng.jpg', 'Thiết kế phong cách châu Âu cùng trứng', 'Thiết kế phong cách châu Âu cùng trứng', 'Thiết kế phong cách châu Âu cùng trứng', '2019-02-07 10:04:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4460, 'https://media.huynhhieutravel.com/những-quả-trứng-sặc-sở-sắc-màu.jpg', 'Những quả trứng sặc sở sắc màu', 'Những quả trứng sặc sở sắc màu', 'Những quả trứng sặc sở sắc màu', '2019-02-07 10:04:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4459, 'https://media.huynhhieutravel.com/một-góc-hồ-bơi-nhìn-từ-trên-cao.jpg', 'Một góc hồ bơi nhìn từ trên cao', 'Một góc hồ bơi nhìn từ trên cao', 'Một góc hồ bơi nhìn từ trên cao', '2019-02-07 10:04:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4458, 'https://media.huynhhieutravel.com/khu-vực-lakkonku.jpg', 'Khu vực Lakkonku', 'Khu vực Lakkonku', 'Khu vực Lakkonku', '2019-02-07 10:04:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4457, 'https://media.huynhhieutravel.com/khung-cảnh-thiên-nhiên-với-vườn-chuối.jpg', 'Khung cảnh thiên nhiên với cầu dây và cây chuối', 'Khung cảnh thiên nhiên với cầu dây và cây chuối', 'Khung cảnh thiên nhiên với cầu dây và cây chuối', '2019-02-07 10:04:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4456, 'https://media.huynhhieutravel.com/khu-du-lịch-trăm-trứng-NHATRANG.jpg', 'Khu du lịch trăm trứng Nha Trang', 'Khu du lịch trăm trứng Nha Trang', 'Khu du lịch trăm trứng Nha Trang', '2019-02-07 10:04:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4455, 'https://media.huynhhieutravel.com/khách-du-lịch-khám-phá-vẻ-đẹp-thiên-nhiên-ở-kdl-trăm-trứng.jpg', 'Khách du lịch khám phá vẻ đẹp thiên nhiên', 'Khách du lịch khám phá vẻ đẹp thiên nhiên', 'Khách du lịch khám phá vẻ đẹp thiên nhiên', '2019-02-07 10:04:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4454, 'https://media.huynhhieutravel.com/góc-nhìn-toàn-cảnh-khu-du-lịch-trăm-trứng.jpg', 'Góc nhìn toàn cảnh khu du lịch Trăm Trứng', 'Góc nhìn toàn cảnh khu du lịch Trăm Trứng', 'Góc nhìn toàn cảnh khu du lịch Trăm Trứng', '2019-02-07 10:03:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4453, 'https://media.huynhhieutravel.com/giới-thiệu-kdl-trăm-trứng-NhaTrang.jpg', 'Giới thiệu khu du lịch Trăm Trứng', 'Giới thiệu khu du lịch Trăm Trứng', 'Giới thiệu khu du lịch Trăm Trứng', '2019-02-07 09:58:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4452, 'https://media.huynhhieutravel.com/tổng-quan-khu-du-lịch-trăm-trứng.jpg', 'Tổng quan khu du lịch Trăm Trứng', 'Tổng quan khu du lịch Trăm Trứng', 'Tổng quan khu du lịch Trăm Trứng', '2019-02-07 09:58:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4449, 'https://media.huynhhieutravel.com/review-khu-du-lịch-trăm-trứng-NHATRANG.jpg', 'Review Khu du lịch Trăm Trứng Nha Trang', 'Review Khu du lịch Trăm Trứng Nha Trang', 'Review Khu du lịch Trăm Trứng Nha Trang', '2019-02-07 09:12:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4424, 'https://media.huynhhieutravel.com/xe-ngựa-kéo-ở-lâu-đài-rượu-vang.jpg', 'Xe ngựa kéo ở lâu đài rượu vang', 'Xe ngựa kéo ở lâu đài rượu vang', 'Xe ngựa kéo ở lâu đài rượu vang', '2019-02-04 09:06:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4423, 'https://media.huynhhieutravel.com/wine-castle-phan-thiết.jpg', 'Wine Castle Phan Thiết', 'Wine Castle Phan Thiết', 'Wine Castle Phan Thiết', '2019-02-04 09:06:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4422, 'https://media.huynhhieutravel.com/vườn-nho-phan-thiết.jpg', 'Vườn nho Phan Thiết', 'Vườn nho Phan Thiết', 'Vườn nho Phan Thiết', '2019-02-04 09:06:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4421, 'https://media.huynhhieutravel.com/uống-rượu-vang.jpg', 'Uống rượu vang', 'Uống rượu vang', 'Uống rượu vang', '2019-02-04 09:06:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4420, 'https://media.huynhhieutravel.com/trưng-bày-ở-lâu-dài-rượu-vang.jpg', 'Trưng bày ở lâu đài rượu vang', 'Trưng bày ở lâu đài rượu vang', 'Trưng bày ở lâu đài rượu vang', '2019-02-04 09:06:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4419, 'https://media.huynhhieutravel.com/thác-nước-nhỏ-ở-lâu-đài-rượu-vang.jpg', 'Thác nước nhỏ ở lâu đài rượu vang', 'Thác nước nhỏ ở lâu đài rượu vang', 'Thác nước nhỏ ở lâu đài rượu vang', '2019-02-04 09:06:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4418, 'https://media.huynhhieutravel.com/sân-vườn-ở-lâu-đài-rượu-vang-phan-thiết.jpg', 'Sân vườn ở lâu đài rượu vang Phan Thiết', 'Sân vườn ở lâu đài rượu vang Phan Thiết', 'Sân vườn ở lâu đài rượu vang Phan Thiết', '2019-02-04 09:06:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4417, 'https://media.huynhhieutravel.com/resort-phan-thiết.jpg', 'Resort Phan Thiết', 'Resort Phan Thiết', 'Resort Phan Thiết', '2019-02-04 09:06:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4416, 'https://media.huynhhieutravel.com/phòng-tiếp-khách-lâu-đài-rượu-vang-phan-thiết.jpg', 'Phòng tiếp khách lâu đài rượu vang Phan Thiết', 'Phòng tiếp khách lâu đài rượu vang Phan Thiết', 'Phòng tiếp khách lâu đài rượu vang Phan Thiết', '2019-02-04 09:06:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4415, 'https://media.huynhhieutravel.com/ở-lâu-đài-rượu-vang-có-nhiều-cây-xanh.jpg', 'Ở lâu đài rượu vang cso nhiều cây xanh', 'Ở lâu đài rượu vang cso nhiều cây xanh', 'Ở lâu đài rượu vang cso nhiều cây xanh', '2019-02-04 09:06:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4414, 'https://media.huynhhieutravel.com/những-thùng-lớn-chế-tạo-rượu-vang.jpg', 'Những thùng lớn chế tạo rượu vang', 'Những thùng lớn chế tạo rượu vang', 'Những thùng lớn chế tạo rượu vang', '2019-02-04 09:05:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4413, 'https://media.huynhhieutravel.com/một-chú-cừu-ngồi-nghỉ.jpg', 'Một chú cừu ngồi nghỉ ngơi', 'Một chú cừu ngồi nghỉ ngơi', 'Một chú cừu ngồi nghỉ ngơi', '2019-02-04 09:05:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4412, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-thời-hiện-đại-5.jpg', 'Mô hình làm rượu vang nho hiện đại 5', 'Mô hình làm rượu vang nho hiện đại 5', 'Mô hình làm rượu vang nho hiện đại 5', '2019-02-04 09:05:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4411, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-thời-hiện-đại-4.jpg', 'Mô hình làm rượu vang nho hiện đại 4', 'Mô hình làm rượu vang nho hiện đại 4', 'Mô hình làm rượu vang nho hiện đại 4', '2019-02-04 09:05:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4410, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-thời-hiện-đại-3-với-các-thùng-chứa-hiện-đại.jpg', 'Mô hình làm rượu vang nho hiện đại 3', 'Mô hình làm rượu vang nho hiện đại 3', 'Mô hình làm rượu vang nho hiện đại 3', '2019-02-04 09:05:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4409, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-thời-hiện-đại-2-với-máy-cày.jpg', 'Mô hình làm rượu vang nho hiện đại 2', 'Mô hình làm rượu vang nho hiện đại 2', 'Mô hình làm rượu vang nho hiện đại 2', '2019-02-04 09:05:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4408, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-thời-hiện-đại-1.jpg', 'Mô hình làm rượu vang nho hiện đại 1', 'Mô hình làm rượu vang nho hiện đại 1', 'Mô hình làm rượu vang nho hiện đại 1', '2019-02-04 09:05:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4407, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-hoàn-thành-với-bữa-tiệc-cùng-rượu-vang.jpg', 'Mô hình dùng tiệc cùng rượu vang nho', 'Mô hình dùng tiệc cùng rượu vang nho', 'Mô hình dùng tiệc cùng rượu vang nho', '2019-02-04 09:05:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4406, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-giai-đoạn-cuối-dùng-tiệc-cùng-rượu-nho.jpg', 'Mô hình dùng tiệc ngày xưa cùng rượu vang', 'Mô hình dùng tiệc ngày xưa cùng rượu vang', 'Mô hình dùng tiệc ngày xưa cùng rượu vang', '2019-02-04 09:05:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4405, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-giai-đoạn-6-chưng-cất-nho.jpg', 'Mô hình làm rượu vang truyền thống giai đoạn ép để vào thùng chưng cất', 'Mô hình làm rượu vang truyền thống giai đoạn ép để vào thùng chưng cất', 'Mô hình làm rượu vang truyền thống giai đoạn ép để vào thùng chưng cất', '2019-02-04 09:05:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4404, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-giai-đoạn-5-dùng-máy-ép-nho-lại.jpg', 'Mô hình làm rượu vang truyền thống giai đoạn ép nho thành nước 2', 'Mô hình làm rượu vang truyền thống giai đoạn ép nho thành nước 2', 'Mô hình làm rượu vang truyền thống giai đoạn ép nho thành nước 2', '2019-02-04 09:05:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4403, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-giai-đoạn-4-ép-nho-thành-nước.jpg', 'Mô hình làm rượu vang truyền thống giai đoạn ép nho thành nước', 'Mô hình làm rượu vang truyền thống giai đoạn ép nho thành nước', 'Mô hình làm rượu vang truyền thống giai đoạn ép nho thành nước', '2019-02-04 09:05:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (4402, 'https://media.huynhhieutravel.com/mô-hình-trồng-nho-giai-đoạn-3-cho-nho-vào-thùng.jpg', 'Mô hình làm rượu vang truyền thống giai đoạn đưa nho về', 'Mô hình làm rượu vang truyền thống giai đoạn đưa nho về', 'Mô hình làm rượu vang truyền thống giai đoạn đưa nho về', '2019-02-04 09:05:33');

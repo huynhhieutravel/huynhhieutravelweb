@@ -1,0 +1,301 @@
+---
+import { env } from "cloudflare:workers";
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+
+
+let links: any[] = [];
+let total = 0;
+let page = 1;
+let limit = 20;
+let totalPages = 1;
+
+try {
+  const url = new URL(Astro.request.url);
+  page = parseInt(url.searchParams.get('page') || '1');
+  const offset = (page - 1) * limit;
+
+  const d1Db = env.DB;
+  if (d1Db) {
+    const totalCountResult = await d1Db.prepare("SELECT COUNT(*) as total FROM Link").first();
+    total = (totalCountResult?.total as number) || 0;
+    totalPages = Math.ceil(total / limit);
+
+    const { results } = await d1Db.prepare("SELECT * FROM Link ORDER BY createdAt DESC LIMIT ? OFFSET ?").bind(limit, offset).all();
+    links = results || [];
+  }
+} catch (e) {
+  console.error('Error fetching links', e);
+}
+---
+
+<AdminLayout title="Quản lý Link Chuyển Hướng" activeMenu="system" activeSubmenu="links">
+<style>
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .header h2 { font-size: 24px; font-weight: 700; }
+  
+  .layout-grid { display: grid; grid-template-columns: 350px 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 768px) { .layout-grid { grid-template-columns: 1fr; } }
+  
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; }
+  
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 6px; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; outline: none; font-family: inherit; }
+  .form-group input[type="checkbox"] { width: auto; margin-right: 8px; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #2563eb; box-shadow: 0 0 0 2px #bfdbfe; }
+  .form-group .hint { display: block; font-size: 12px; color: #64748b; margin-top: 4px; line-height: 1.4; }
+  
+  .btn-submit { background: #2563eb; color: #fff; font-weight: 600; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; width: 100%; }
+  .btn-submit:hover { background: #1d4ed8; }
+  
+  table { width: 100%; border-collapse: collapse; }
+  thead th { text-align: left; padding: 12px 14px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; border-bottom: 1px solid #e2e8f0; background: #f8fafc; }
+  tbody td { padding: 12px 14px; font-size: 13px; border-bottom: 1px solid #f1f5f9; }
+  tbody tr:hover { background: #f8fafc; }
+  
+  .action-link { font-size: 12px; border: none; background: none; cursor: pointer; padding: 0; display: inline-block; margin-right: 8px; }
+  .action-edit { color: #2563eb; }
+  .action-delete { color: #ef4444; }
+  
+  .status-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .status-active { background: #dcfce7; color: #166534; }
+  .status-inactive { background: #fee2e2; color: #991b1b; }
+</style>
+
+<div class="header">
+  <h2>Link Manager (Short URLs)</h2>
+</div>
+
+<div class="layout-grid">
+  <!-- Add New Form -->
+  <div class="card">
+    <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 16px;" id="formTitle">Thêm Link Mới</h3>
+    <form id="linkForm">
+      <div class="form-group">
+        <label for="label">Tên hiển thị (Label)</label>
+        <input type="text" id="label" name="label" required placeholder="Ví dụ: Facebook Chính" />
+      </div>
+      <div class="form-group">
+        <label for="slug">Đường dẫn tắt (Slug)</label>
+        <div style="display: flex; align-items: center; border: 1px solid #cbd5e1; border-radius: 6px; overflow: hidden; background: #f8fafc;">
+          <span style="padding: 8px; color: #64748b; font-size: 13px;">fittour.vn/</span>
+          <input type="text" id="slug" name="slug" required placeholder="facebook" style="border: none; border-radius: 0; outline: none; background: #fff;" />
+        </div>
+        <span class="hint">Ví dụ: fittour.vn/facebook</span>
+      </div>
+      <div class="form-group">
+        <label for="url">URL Đích (Bắt buộc dùng http/https)</label>
+        <input type="url" id="url" name="url" required placeholder="https://facebook.com/fittour" />
+      </div>
+      <div class="form-group" style="display: flex; gap: 16px;">
+        <div style="flex: 1;">
+          <label for="statusCode">Chuyển hướng</label>
+          <select id="statusCode" name="statusCode">
+            <option value="302" selected>302 (Found - Tạm thời, Marketing)</option>
+            <option value="307">307 (Temporary - Tracking/QC)</option>
+            <option value="301">301 (Permanent - Tốt cho SEO, Lưu cache)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="target">Thẻ Target</label>
+        <select id="target" name="target">
+          <option value="_blank">_blank (Mở tab mới)</option>
+          <option value="_self">_self (Mở tab hiện tại)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="rel">Thẻ Rel (SEO)</label>
+        <input type="text" id="rel" name="rel" value="nofollow sponsored" />
+      </div>
+      <div class="form-group" style="display: flex; align-items: center;">
+        <input type="checkbox" id="isActive" name="isActive" checked />
+        <label for="isActive" style="margin: 0; cursor: pointer;">Kích hoạt (Cho phép redirect)</label>
+      </div>
+      <button type="submit" class="btn-submit" id="submitBtn">Tạo Link</button>
+    </form>
+  </div>
+
+  <!-- List Table -->
+  <div class="card" style="padding: 0; overflow: hidden; overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Tên Link & Slug</th>
+          <th>URL Đích</th>
+          <th>Cấu hình SEO</th>
+          <th>Trạng thái</th>
+          <th style="width: 100px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {links.length === 0 && (
+          <tr><td colspan="5" style="text-align: center; color: #94a3b8; padding: 24px;">Chưa có link nào.</td></tr>
+        )}
+        {links.map(link => (
+          <tr>
+            <td>
+              <div style="font-weight: 600; color: #0f172a;">{link.label}</div>
+              <div style="font-size: 11px; color: #64748b; margin-top: 2px;">/{link.slug}</div>
+            </td>
+            <td>
+              <a href={link.url} target="_blank" style="color: #2563eb; text-decoration: underline; max-width: 200px; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{link.url}</a>
+            </td>
+            <td>
+              <div style="font-size: 11px; color: #475569;">
+                <span style="font-weight: 600;">{link.statusCode}</span> | {link.target} <br/>
+                <span style="color: #94a3b8;">{link.rel}</span>
+              </div>
+            </td>
+            <td>
+              {link.isActive 
+                ? <span class="status-badge status-active">Active</span> 
+                : <span class="status-badge status-inactive">Disabled</span>
+              }
+            </td>
+            <td>
+              <button class="action-link action-edit" onclick={`editLink(${JSON.stringify(link).replace(/'/g, "&apos;")})`}>Sửa</button>
+              <button class="action-link action-delete" onclick={`deleteLink('${link.slug}')`}>Xóa</button>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    
+    <!-- Pagination -->
+    {totalPages > 1 && (
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px; border-top: 1px solid #e2e8f0; background: #f8fafc;">
+        <span style="font-size: 13px; color: #64748b;">Hiển thị trang {page} / {totalPages} (Tổng: {total} links)</span>
+        <div style="display: flex; gap: 8px;">
+          {page > 1 ? (
+            <a href={`/admin/links?page=${page - 1}`} style="padding: 6px 12px; font-size: 13px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #334155; text-decoration: none;">Trước</a>
+          ) : (
+            <span style="padding: 6px 12px; font-size: 13px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f1f5f9; color: #94a3b8;">Trước</span>
+          )}
+          
+          {page < totalPages ? (
+            <a href={`/admin/links?page=${page + 1}`} style="padding: 6px 12px; font-size: 13px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #334155; text-decoration: none;">Sau</a>
+          ) : (
+            <span style="padding: 6px 12px; font-size: 13px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f1f5f9; color: #94a3b8;">Sau</span>
+          )}
+        </div>
+      </div>
+    )}
+  </div>
+</div>
+
+<script is:inline>
+  let editingSlug = null;
+
+  document.getElementById('linkForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const payload = {
+      label: document.getElementById('label').value,
+      slug: document.getElementById('slug').value,
+      url: document.getElementById('url').value,
+      statusCode: parseInt(document.getElementById('statusCode').value),
+      target: document.getElementById('target').value,
+      rel: document.getElementById('rel').value,
+      isActive: document.getElementById('isActive').checked,
+    };
+
+    const btn = document.getElementById('submitBtn');
+    const originalText = btn.innerText;
+
+    btn.innerText = 'Đang lưu...';
+    btn.disabled = true;
+
+    try {
+      const url = editingSlug ? '/api/admin/links' : '/api/admin/links'; // Using same endpoint
+      const method = editingSlug ? 'PATCH' : 'POST';
+      
+      // If patching, ensure slug is included in body
+      if (editingSlug) {
+        payload.slug = editingSlug; // Prevent changing slug
+      }
+
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      
+      const resData = await res.json();
+
+      if (res.ok && resData.success) {
+        window.location.reload();
+      } else {
+        window.AppModal?.alert(resData.error || 'Lỗi khi lưu link', 'error') || alert(resData.error);
+      }
+    } catch (err) {
+      window.AppModal?.alert('Lỗi kết nối máy chủ', 'error') || alert('Lỗi kết nối máy chủ');
+    } finally {
+      btn.innerText = originalText;
+      btn.disabled = false;
+    }
+  });
+
+  function editLink(linkStr) {
+    let linkObj = typeof linkStr === 'string' ? JSON.parse(linkStr) : linkStr;
+    editingSlug = linkObj.slug;
+    
+    document.getElementById('label').value = linkObj.label || '';
+    document.getElementById('slug').value = linkObj.slug;
+    document.getElementById('slug').disabled = true; // Block slug change
+    document.getElementById('url').value = linkObj.url;
+    document.getElementById('statusCode').value = linkObj.statusCode;
+    document.getElementById('target').value = linkObj.target;
+    document.getElementById('rel').value = linkObj.rel;
+    document.getElementById('isActive').checked = linkObj.isActive;
+    
+    document.getElementById('submitBtn').innerText = 'Cập nhật Link';
+    document.getElementById('formTitle').innerText = 'Sửa Link: ' + linkObj.slug;
+    
+    if (!document.getElementById('cancelEditBtn')) {
+      const cancelBtn = document.createElement('button');
+      cancelBtn.id = 'cancelEditBtn';
+      cancelBtn.type = 'button';
+      cancelBtn.innerText = 'Hủy';
+      cancelBtn.style.marginTop = '8px';
+      cancelBtn.style.padding = '8px 16px';
+      cancelBtn.style.width = '100%';
+      cancelBtn.style.background = '#f1f5f9';
+      cancelBtn.style.border = '1px solid #cbd5e1';
+      cancelBtn.style.borderRadius = '6px';
+      cancelBtn.style.cursor = 'pointer';
+      cancelBtn.onclick = () => {
+        editingSlug = null;
+        document.getElementById('linkForm').reset();
+        document.getElementById('slug').disabled = false;
+        document.getElementById('submitBtn').innerText = 'Tạo Link';
+        document.getElementById('formTitle').innerText = 'Thêm Link Mới';
+        cancelBtn.remove();
+      };
+      document.getElementById('submitBtn').after(cancelBtn);
+    }
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  async function deleteLink(slug) {
+    const confirmed = window.AppModal ? await window.AppModal.confirm(`Bạn có chắc muốn xóa /${slug}?`) : confirm(`Bạn có chắc muốn xóa /${slug}?`);
+    if (!confirmed) return;
+    try {
+      const res = await fetch(`/api/admin/links`, { 
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug })
+      });
+      const resData = await res.json();
+      if (res.ok && resData.success) {
+        window.location.reload();
+      } else {
+        window.AppModal?.alert(resData.error || 'Lỗi khi xóa', 'error') || alert(resData.error);
+      }
+    } catch (err) {
+      window.AppModal?.alert('Lỗi kết nối máy chủ', 'error') || alert('Lỗi kết nối máy chủ');
+    }
+  }
+</script>
+</AdminLayout>

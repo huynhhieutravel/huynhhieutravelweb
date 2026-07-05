@@ -6,7 +6,7 @@
     {
       "binding": "DB",
       "database_name": "huynhhieutravel-db",
-      "database_id": "YOUR_DATABASE_ID",
+      "database_id": "fb3540ab-a246-415d-9e8e-825125f4ff01",
       "migrations_dir": "migrations"
     }
   ],

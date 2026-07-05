@@ -1,0 +1,666 @@
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1506, 'https://media.huynhhieutravel.com/Review-Thác-Datanla.jpg', 'Review thác Datanla của khách du lịch', 'Review thác Datanla của khách du lịch', 'Review thác Datanla của khách du lịch', '2018-08-14 05:06:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1500, 'https://media.huynhhieutravel.com/review-nong-trai-cho-da-lat.png', 'Review của khách du lịch về nông trại thú cưng Black Rock Garden', 'Review của khách du lịch về nông trại thú cưng Black Rock Garden', 'Review của khách du lịch về nông trại thú cưng Black Rock Garden', '2018-08-13 09:59:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1499, 'https://media.huynhhieutravel.com/Nông-Trại-Thú-Nuôi-Đà-Lạt.jpg', 'Nông trại thú cưng Đà Lạt', 'Nông trại thú cưng Đà Lạt', 'Nông trại thú cưng Đà Lạt', '2018-08-13 09:59:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1498, 'https://media.huynhhieutravel.com/Nông-trại-thú-cưng-đà-lạt3.jpg', 'Nông trại chó Đà Lạt', 'Nông trại chó Đà Lạt', 'Nông trại chó Đà Lạt', '2018-08-13 09:59:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1497, 'https://media.huynhhieutravel.com/Nông-trại-thú-cưng-đà-lạt2.jpg', 'Nông trại chó cưng Black Rock Garden', 'Nông trại chó cưng Black Rock Garden &#8211; Đà Lạt', 'Nông trại chó cưng Black Rock Garden', '2018-08-13 09:59:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1496, 'https://media.huynhhieutravel.com/Nông-trại-thú-cưng-đà-lạt.jpg', 'Nông trại thú cưng Black Rock Garden Đà Lạt', 'Nông trại thú cưng Black Rock Garden Đà Lạt', 'Nông trại thú cưng Black Rock Garden Đà Lạt', '2018-08-13 09:59:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1495, 'https://media.huynhhieutravel.com/nông-trại-thú-cưng.jpg', 'Nông trại thú cưng Black Rock Garden', 'Nông trại thú cưng Black Rock Garden &#8211; Đà Lạt', 'Nông trại thú cưng Black Rock Garden', '2018-08-13 09:59:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1494, 'https://media.huynhhieutravel.com/Nông-trại-đà-lạt.jpg', 'Nông trại cún cưng Black Rock Garden', 'Nông trại cún cưng Black Rock Garden &#8211; Đà Lạt', 'Nông trại cún cưng Black Rock Garden', '2018-08-13 09:59:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1493, 'https://media.huynhhieutravel.com/Nông-Trại-Black-Rock-Garden.jpg', 'Những chú chó đáng yêu ở đây', 'Những chú chó đáng yêu ở đây &#8211; Đà Lạt', 'Những chú chó đáng yêu ở đây', '2018-08-13 09:59:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1492, 'https://media.huynhhieutravel.com/Black-Rock-Garden2.jpg', 'Một chú chó cầm gáo tướng đi ngáo ngáo ở Black Rock Garden', 'Một chú chó cầm gáo tướng đi ngáo ngáo ở Black Rock Garden &#8211; Đà Lạt', 'Một chú chó cầm gáo tướng đi ngáo ngáo ở Black Rock Garden', '2018-08-13 09:59:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1491, 'https://media.huynhhieutravel.com/Black-Rock-Garden.jpg', 'Lều ngủ ở Nông trại Black Rock Garden', 'Lều ngủ ở Nông trại Black Rock Garden &#8211; Đà Lạt', 'Lều ngủ ở Nông trại Black Rock Garden', '2018-08-13 09:59:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1486, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc11.jpg', 'Cảnh sắc tuyệt vời của tuyệt tình cốc Đà Lạt', 'Cảnh sắc tuyệt vời của tuyệt tình cốc Đà Lạt', 'Cảnh sắc tuyệt vời của tuyệt tình cốc Đà Lạt', '2018-08-13 07:15:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1485, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc10.jpg', 'Review của người du lịch từng đến tuyệt tình cốc', 'Review của người du lịch từng đến tuyệt tình cốc', 'Review của người du lịch từng đến tuyệt tình cốc', '2018-08-13 07:15:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1484, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc9.jpg', 'Chụp hình trên bè trái tim ở Tuyệt Tình Cốc', 'Chụp hình trên bè trái tim ở Tuyệt Tình Cốc &#8211; Đà Lạt', 'Chụp hình trên bè trái tim ở Tuyệt Tình Cốc', '2018-08-13 07:15:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1483, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc8.jpg', 'Một bạn nữ chụp hình tuyệt đẹp ở đây', 'Một bạn nữ chụp hình tuyệt đẹp ở đây &#8211; Đà Lạt', 'Một bạn nữ chụp hình tuyệt đẹp ở đây', '2018-08-13 07:15:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1482, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc7.jpg', 'Chiếc bè hình trái tim ở tuyệt tình cốc', 'Chiếc bè hình trái tim ở tuyệt tình cốc &#8211; Đà Lạt', 'Chiếc bè hình trái tim ở tuyệt tình cốc', '2018-08-13 07:15:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1481, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc6.jpg', 'Bạn có thể chụp ảnh tuyệt đẹp trên bè ở Đà Lạt', 'Bạn có thể chụp ảnh tuyệt đẹp trên bè ở Đà Lạt', 'Bạn có thể chụp ảnh tuyệt đẹp trên bè ở Đà Lạt', '2018-08-13 07:15:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1480, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc5.jpg', 'Chụp cùng chiếc xích đu', 'Chụp cùng chiếc xích đu &#8211; Đà Lạt', 'Chụp cùng chiếc xích đu', '2018-08-13 07:15:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1479, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc4.jpg', 'Tuyệt tình cốc có những góc chụp rất đẹp', 'Tuyệt tình cốc có những góc chụp rất đẹp &#8211; Đà Lạt', 'Tuyệt tình cốc có những góc chụp rất đẹp', '2018-08-13 07:15:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1478, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc3.jpg', 'Một bạn trẻ chụp từ góc trên cao xuống', 'Một bạn trẻ chụp từ góc trên cao xuống &#8211; Đà Lạt', 'Một bạn trẻ chụp từ góc trên cao xuống', '2018-08-13 07:15:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1477, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc2.jpg', 'Tuyệt tình cốc đà lạt', 'Tuyệt tình cốc đà lạt', 'Tuyệt tình cốc đà lạt', '2018-08-13 07:15:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1476, 'https://media.huynhhieutravel.com/Tuyệt-tình-cốc.jpg', 'Kinh nghiệm đi Tuyệt Tình Cốc Đà Lạt', 'Kinh nghiệm đi Tuyệt Tình Cốc Đà Lạt', 'Kinh nghiệm đi Tuyệt Tình Cốc Đà Lạt', '2018-08-13 07:15:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1469, 'https://media.huynhhieutravel.com/Hội-hoa-đăng-Cần-Thơ4.jpg', 'Văn nghệ hội hoa đăng', 'Văn nghệ hội hoa đăng', 'Văn nghệ hội hoa đăng', '2018-08-12 15:46:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1468, 'https://media.huynhhieutravel.com/Hội-hoa-đăng-Cần-Thơ3.jpg', 'Lễ hội hoa đăng Cần Thơ', 'Lễ hội hoa đăng Cần Thơ', 'Lễ hội hoa đăng Cần Thơ', '2018-08-12 15:45:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1467, 'https://media.huynhhieutravel.com/Hội-hoa-đăng-Cần-Thơ2.jpg', 'Một du khách chờ đón lễ hội khai mạc', 'Một du khách chờ đón lễ hội khai mạc', 'Một du khách chờ đón lễ hội khai mạc', '2018-08-12 15:44:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1463, 'https://media.huynhhieutravel.com/hội-hoa-đăng-Cần-Thơ.jpg', '', '', '', '2018-08-10 11:26:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1462, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ14.jpg', 'Lễ hội hoa đăng cần thơ', 'Lễ hội hoa đăng cần thơ', 'Lễ hội hoa đăng cần thơ', '2018-08-10 11:20:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1461, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ13.jpg', 'Gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', '2018-08-10 11:20:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1460, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ12.jpg', 'Cầu tình yêu Cần Thơ', 'Cầu tình yêu Cần Thơ', 'Cầu tình yêu Cần Thơ', '2018-08-10 11:19:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1459, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ10.jpg', 'Gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', '2018-08-10 11:19:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1458, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ9.jpg', 'Gian hàng lễ hội hoa đăng cần thơ', 'Gian hàng lễ hội hoa đăng cần thơ', 'Gian hàng lễ hội hoa đăng cần thơ', '2018-08-10 11:19:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1457, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ8.jpg', 'Những gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', 'Những gian hàng hoa đăng cần thơ', '2018-08-10 11:19:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1456, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ7.jpg', 'Gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', 'Gian hàng hoa đăng cần thơ', '2018-08-10 11:19:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1455, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ6.jpg', '', '', '', '2018-08-10 11:19:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1454, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ5.jpg', '', '', '', '2018-08-10 11:19:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1453, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ4.jpg', 'Chuẩn bị văn nghệ lễ hoa đăng', 'Chuẩn bị văn nghệ lễ hoa đăng', 'Chuẩn bị văn nghệ lễ hoa đăng', '2018-08-10 11:18:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1452, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ3.jpg', 'Tiểu cảnh chợ Cần Thơ', 'Tiểu cảnh ở lễ hội hoa đăng', 'Tiểu cảnh ở lễ hội hoa đăng', '2018-08-10 11:18:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1450, 'https://media.huynhhieutravel.com/Lễ-hội-hoa-đăng-cần-thơ.jpg', '', '', '', '2018-08-10 11:16:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1446, 'https://media.huynhhieutravel.com/Chương-trình-thực-tế-việt-nam.jpg', '', '', '', '2018-08-09 10:51:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1445, 'https://media.huynhhieutravel.com/Chương-trình-thực-tế-việt-nam-H.jpg', 'Danh sách các chương trình thực tế ở Việt Nam', 'Danh sách các chương trình thực tế Việt Nam từ trước đến nay', 'infographic danh sách các chương trình thực tế ở Việt Nam', '2018-08-09 10:40:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1428, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-221.jpg', 'Đại Đức Thích An Đạt sinh hoạt về nội quy hội trại tuổi trẻ phật giáo lần 13', 'Đại Đức Thích An Đạt sinh hoạt về nội quy hội trại tuổi trẻ phật giáo lần 13', 'Đại Đức Thích An Đạt sinh hoạt về nội quy hội trại tuổi trẻ phật giáo lần 13', '2018-07-27 16:16:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1427, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-220.jpg', 'Trại sinh chụp hình ở chùa Bửu Sơn', 'Trại sinh chụp hình ở chùa Bửu Sơn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh chụp hình ở chùa Bửu Sơn', '2018-07-27 16:16:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1426, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-219.jpg', 'Đại Đức Thích An Đạt và Đại Đức Thích Trí Trơn', 'Đại Đức Thích An Đạt và Đại Đức Thích Trí Trơn &#8211; Hội trại tuổi trẻ phật giáo', 'Đại Đức Thích An Đạt và Đại Đức Thích Trí Trơn', '2018-07-27 16:16:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1425, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-218.jpg', 'Một trại sinh hỏi về phật pháp trong hội trại', 'Một trại sinh hỏi về phật pháp trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Một trại sinh hỏi về phật pháp trong hội trại', '2018-07-27 16:16:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1424, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-217.jpg', 'Trại sinh Hội trại tuổi trẻ phật giáo nghe Đại Đức Thích Trí Chơn giảng pháp', 'Trại sinh Hội trại tuổi trẻ phật giáo nghe Đại Đức Thích Trí Chơn giảng pháp', 'Trại sinh Hội trại tuổi trẻ phật giáo nghe Đại Đức Thích Trí Chơn giảng pháp', '2018-07-27 16:16:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1423, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-216.jpg', 'Hội trại tuổi trẻ phật giáo ở chùa Bửu Sơn', 'Hội trại tuổi trẻ phật giáo ở chùa Bửu Sơn', 'Hội trại tuổi trẻ phật giáo ở chùa Bửu Sơn', '2018-07-27 16:16:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1422, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-215.jpg', 'Cung thỉnh đại đức Thích Trí Chơn đến giảng pháp ở chùa Bửu Sơn &#8211; Phan Thiết', 'Cung thỉnh đại đức Thích Trí Chơn đến giảng pháp ở chùa Bửu Sơn &#8211; Phan Thiết &#8211; Hội trại tuổi trẻ phật giáo', 'Cung thỉnh đại đức Thích Trí Chơn đến giảng pháp ở chùa Bửu Sơn - Phan Thiết', '2018-07-27 16:16:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1421, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-214.jpg', 'Trại sinh chăm chú nghe thuyết pháp phật giáo ở hội trại tuổi trẻ phật giáo 2018', 'Trại sinh chăm chú nghe thuyết pháp phật giáo ở hội trại tuổi trẻ phật giáo 2018', 'Trại sinh chăm chú nghe thuyết pháp phật giáo ở hội trại tuổi trẻ phật giáo 2018', '2018-07-27 16:16:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1420, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-213.jpg', 'Trại sinh viết thư gửi yêu thương với chủ đề tuổi thanh xuân', 'Trại sinh viết thư gửi yêu thương với chủ đề tuổi thanh xuân &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh viết thư gửi yêu thương với chủ đề tuổi thanh xuân', '2018-07-27 16:16:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1419, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-212.jpg', 'Trại sinh nghe thuyết giảng phật giáo ở chùa Bửu Sơn', 'Trại sinh nghe thuyết giảng phật giáo ở chùa Bửu Sơn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh nghe thuyết giảng phật giáo ở chùa Bửu Sơn', '2018-07-27 16:16:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1418, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-211.jpg', 'Cụm Thanh Tịnh ở buổi thuyết giảng', 'Cụm Thanh Tịnh ở buổi thuyết giảng &#8211; Hội trại tuổi trẻ phật giáo', 'Cụm Thanh Tịnh ở buổi thuyết giảng', '2018-07-27 16:16:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1417, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-210.jpg', 'Chào đón đại đức đến từ Hàn Quốc', 'Chào đón đại đức đến từ Hàn Quốc &#8211; Hội trại tuổi trẻ phật giáo', 'Chào đón đại đức đến từ Hàn Quốc', '2018-07-27 16:16:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1416, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-209.jpg', 'Trại sinh tuổi trẻ phật giáo ở bửu sơn tự', 'Trại sinh tuổi trẻ phật giáo ở bửu sơn tự &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tuổi trẻ phật giáo ở bửu sơn tự', '2018-07-27 16:16:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1415, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-208.jpg', 'Mọi người vui vẻ sinh hoạt khóa tu mùa hè', 'Mọi người vui vẻ sinh hoạt khóa tu mùa hè &#8211; Hội trại tuổi trẻ phật giáo', 'Mọi người vui vẻ sinh hoạt khóa tu mùa hè', '2018-07-27 16:16:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1414, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-207.jpg', 'Hội trại tuổi trẻ phật giáo', 'Một điệu nhảy ở hội trại hè phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Một điệu nhảy ở hội trại hè phật giáo', '2018-07-27 16:16:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1413, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-206.jpg', 'Trại sinh vui vẻ ở Hội trại tuổi trẻ phật giáo Phan Thiết 13', 'Trại sinh vui vẻ ở Hội trại tuổi trẻ phật giáo phan thiết &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ ở Hội trại tuổi trẻ phật giáo Phan Thiết 13', '2018-07-27 16:16:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1412, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-205.jpg', 'Trại sinh vui vẻ ở Hội trại tuổi trẻ phật giáo phan thiết', 'Trại sinh vui vẻ ở Hội trại tuổi trẻ phật giáo phan thiết &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ ở Hội trại tuổi trẻ phật giáo phan thiết', '2018-07-27 16:16:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1411, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-204.jpg', 'Mọi người cùng chơi đùa với bột', 'Mọi người cùng chơi đùa với bột &#8211; Hội trại tuổi trẻ phật giáo', 'Mọi người cùng chơi đùa với bột', '2018-07-27 16:16:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1410, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-203.jpg', 'Tiểu trại thanh tịnh 1', 'Tiểu trại thanh tịnh 1 &#8211; Hội trại tuổi trẻ phật giáo', 'Tiểu trại thanh tịnh 1', '2018-07-27 16:16:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1409, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-202.jpg', 'Nước mưa trong hội trại', 'Nước mưa trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Nước mưa trong hội trại', '2018-07-27 16:16:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1408, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-201.jpg', 'Trại sinh hân hoan chơi trò chơi', 'Trại sinh hân hoan chơi trò chơi &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh hân hoan chơi trò chơi', '2018-07-27 16:16:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1407, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo-200.jpg', 'Trò chơi bột của trại sinh', 'Trò chơi bột của trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi bột của trại sinh', '2018-07-27 16:16:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1406, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo199.jpg', 'Trại sinh đón bình minh và thiền định ở hội trại tuổi trẻ 2018', 'Trại sinh đón bình minh và thiền định ở hội trại tuổi trẻ 2018 &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh đón bình minh và thiền định ở hội trại tuổi trẻ 2018', '2018-07-27 16:16:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1405, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo198.jpg', 'Trại sinh tham gia trò chơi lớn gánh nước', 'Trại sinh tham gia trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia trò chơi lớn gánh nước', '2018-07-27 16:16:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1404, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo197.jpg', 'Trại sinh ăn dưa hấu', 'Trại sinh ăn dưa hấu &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh ăn dưa hấu', '2018-07-27 16:16:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1403, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo196.jpg', 'Trại sinh hưng phấn tham gia Trò chơi lớn ở hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia Trò chơi lớn ở hội trại tuổi trẻ phật giáo', 'Trại sinh hưng phấn tham gia Trò chơi lớn ở hội trại tuổi trẻ phật giáo', '2018-07-27 16:16:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1402, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo195.jpg', 'Trại sinh tham gia Trò chơi lớn ở hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia Trò chơi lớn ở hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia Trò chơi lớn ở hội trại tuổi trẻ phật giáo', '2018-07-27 16:16:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1401, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo194.jpg', 'Những trại sinh vui vẻ ở trò chơi lớn', 'Một trại sinh vui vẻ ở trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Những trại sinh vui vẻ ở trò chơi lớn', '2018-07-27 16:16:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1400, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo193.jpg', 'Trò chơi lớn', 'Trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi lớn', '2018-07-27 16:16:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1399, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo192.jpg', 'Bảng tên game trong trò chơi lớn', 'Bảng tên game trong trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Bảng tên game trong trò chơi lớn', '2018-07-27 16:16:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1398, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo191.jpg', 'Trại sinh cẩn thận tham gia trò chơi lớn', 'Trại sinh tham gia trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh cẩn thận tham gia trò chơi lớn', '2018-07-27 16:16:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1397, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo190.jpg', 'Trại sinh tham gia trò chơi lớn đi qua phao nước', 'Trại sinh tham gia trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia trò chơi lớn đi qua phao nước', '2018-07-27 16:16:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1396, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo189.jpg', 'Trại sinh tham gia trò chơi lớn', 'Trại sinh tham gia trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia trò chơi lớn', '2018-07-27 16:16:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1395, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo188.jpg', 'Tình nguyện viên vui vẻ nhảy cùng nhau', 'Tình nguyện viên vui vẻ nhảy cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Tình nguyện viên vui vẻ nhảy cùng nhau', '2018-07-27 16:16:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1394, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo187.jpg', 'Trò chơi nhỏ đưa banh vào thau', 'Trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi nhỏ đưa banh vào thau', '2018-07-27 16:16:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1393, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo186.jpg', 'Trò chơi game 3', 'Trò chơi game 3 &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi game 3', '2018-07-27 16:16:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1392, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo185.jpg', 'Đại đức Thích Thiện Bảo dẫn đầu đoàn trại sinh hướng ra biển', 'Đại đức Thích Thiện Bảo dẫn đầu đoàn trại sinh hướng ra biển &#8211; Hội trại tuổi trẻ phật giáo', 'Đại đức Thích Thiện Bảo dẫn đầu đoàn trại sinh hướng ra biển', '2018-07-27 16:15:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1391, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo184.jpg', 'Đại đức Thích Thiện Bảo hướng dẫn trại sinh thiền định ở hội trại tuổi trẻ phật giáo lần thứ 13', 'Đại đức Thích Thiện Bảo hướng dẫn trại sinh thiền định ở hội trại tuổi trẻ phật giáo lần thứ 13', 'Đại đức Thích Thiện Bảo hướng dẫn trại sinh thiền định ở hội trại tuổi trẻ phật giáo lần thứ 13', '2018-07-27 16:15:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1390, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo183.jpg', 'Tuổi thanh xuân', 'Hội trại tuổi trẻ phật giáo', 'Tuổi thanh xuân', '2018-07-27 16:15:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1389, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo182.jpg', 'Đi bộ đón bình minh ở biển', 'Đi bộ đón bình minh ở biển &#8211; Hội trại tuổi trẻ phật giáo', 'Đi bộ đón bình minh ở biển', '2018-07-27 16:15:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1388, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo181.jpg', 'Ca sĩ Phan Duy Anh', 'Ca sĩ Phan Duy Anh &#8211; Hội trại tuổi trẻ phật giáo', 'Ca sĩ Phan Duy Anh', '2018-07-27 16:15:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1387, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo180.jpg', 'Trại sinh làm dáng', 'Trại sinh làm dáng &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh làm dáng', '2018-07-27 16:15:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1386, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo179.jpg', 'Trại sinh hội trại tuổi trẻ phật giáo phan thiết bình thuận', 'Trại sinh hội trại tuổi trẻ phật giáo phan thiết bình thuận', 'Trại sinh hội trại tuổi trẻ phật giáo phan thiết bình thuận', '2018-07-27 16:15:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1385, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo178.jpg', 'Trò chơi nhỏ thú vị', 'Trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi nhỏ', '2018-07-27 16:15:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1384, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo177.jpg', 'Trại sinh tham gia trò chơi nhỏ', 'Trại sinh vui vẻ tham gia trò chơi nhỏ- Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ tham gia trò chơi nhỏ', '2018-07-27 16:15:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1383, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo176.jpg', 'Trại sinh vui vẻ bên nhau', 'Trại sinh vui vẻ bên nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ bên nhau', '2018-07-27 16:15:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1382, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo175.jpg', 'Trò chơi nhỏ', 'Trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi nhỏ', '2018-07-27 16:15:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1381, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo174.jpg', 'Trò chơi nhỏ', 'Trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia chơi trò chơi nhỏ', '2018-07-27 16:15:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1380, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo173.jpg', 'Một bạn được kéo đi trong trò chơi nhỏ', 'Một bạn được kéo đi trong trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn được kéo đi trong trò chơi nhỏ', '2018-07-27 16:15:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1379, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo172.jpg', 'Vui quá các bạn ơi', 'Vui quá các bạn ơi &#8211; Hội trại tuổi trẻ phật giáo', 'Vui quá các bạn ơi', '2018-07-27 16:15:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1378, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo171.jpg', 'Những thời trang của tiểu trại', 'Những thời trang của tiểu trại &#8211; Hội trại tuổi trẻ phật giáo', 'Những thời trang của tiểu trại', '2018-07-27 16:15:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1377, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo170.jpg', 'Một nữ trại sinh đang chơi game', 'Một trại sinh đang chơi game &#8211; Hội trại tuổi trẻ phật giáo', 'Một nữ trại sinh đang chơi game', '2018-07-27 16:15:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1376, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo169.jpg', 'Một trại sinh đang chơi game', 'Một trại sinh đang chơi game &#8211; Hội trại tuổi trẻ phật giáo', 'Một trại sinh đang chơi game', '2018-07-27 16:15:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1375, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo168.jpg', 'Trò chơi nhảy bao bố', 'Trò chơi nhảy bao bố &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi nhảy bao bố', '2018-07-27 16:15:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1374, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo167.jpg', 'Trại sinh cùng nhau vui chơi', 'Trại sinh cùng nhau vui chơi &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh cùng nhau vui chơi', '2018-07-27 16:15:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1373, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo166.jpg', 'Trại sinh hội trại tuổi trẻ phật giáo', 'Trại sinh hội trại tuổi trẻ phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh hội trại tuổi trẻ phật giáo', '2018-07-27 16:15:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1372, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo165.jpg', 'Đại Đức Thích An Đạt &#8211; Linh hồn của hội trại tuổi trẻ Phật giáo', 'Đại Đức Thích An Đạt &#8211; Linh hồn của hội trại tuổi trẻ Phật giáo', 'Đại Đức Thích An Đạt - Linh hồn của hội trại tuổi trẻ Phật giáo', '2018-07-27 16:15:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1371, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo164.jpg', 'Team game diễn bài hát dân vũ ở đất trại', 'Team game diễn bài hát dân vũ ở đất trại &#8211; Hội trại tuổi trẻ phật giáo', 'Team game diễn bài hát dân vũ ở đất trại', '2018-07-27 16:15:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1370, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo163.jpg', 'Đại Đức Thích Thiện Bảo ra mắt hội trại', 'Đại Đức Thích Thiện Bảo ra mắt hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Đại Đức Thích Thiện Bảo ra mắt hội trại', '2018-07-27 16:15:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1369, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo162.jpg', 'Trò chơi lăn bao bố', 'Trò chơi lăn bao bố &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi lăn bao bố', '2018-07-27 16:15:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1368, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo161.jpg', 'Các bạn trại sinh vui vẻ bên nhau', 'Các bạn trại sinh vui vẻ bên nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh vui vẻ bên nhau', '2018-07-27 16:15:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1367, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo160.jpg', 'Con đường lên chùa Bửu Sơn', 'Con đường lên chùa Bửu Sơn &#8211; Hội trại tuổi trẻ phật giáo', 'Con đường lên chùa Bửu Sơn', '2018-07-27 16:15:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1366, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo159.jpg', 'Sự nhiệt tình của tuổi trẻ', 'Sự nhiệt tình của tuổi trẻ &#8211; Hội trại tuổi trẻ phật giáo', 'Sự nhiệt tình của tuổi trẻ', '2018-07-27 16:15:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1365, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo158.jpg', 'Xếp hình trái tim', 'Xếp hình trái tim &#8211; Hội trại tuổi trẻ phật giáo', 'Xếp hình trái tim', '2018-07-27 16:15:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1364, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo157.jpg', 'Các bạn trại sinh vui vẻ chụp hình cùng nhau', 'Các bạn trại sinh vui vẻ chụp hình cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh vui vẻ chụp hình cùng nhau', '2018-07-27 16:15:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1363, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo156.jpg', 'Sinh hoạt ở đất trại', 'Sinh hoạt ở đất trại &#8211; Hội trại tuổi trẻ phật giáo', 'Sinh hoạt ở đất trại', '2018-07-27 16:15:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1362, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo155.jpg', 'Những đóa hoa của hội trại tuổi trẻ 2018', 'Những đóa hoa của hội trại tuổi trẻ 2018 &#8211; Hội trại tuổi trẻ phật giáo', 'Những đóa hoa của hội trại tuổi trẻ 2018', '2018-07-27 16:15:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1361, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo154.jpg', 'Các bạn trại sinh ở chùa Vĩnh Nghiêm', 'Các bạn trại sinh ở chùa Vĩnh Nghiêm &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh ở chùa Vĩnh Nghiêm', '2018-07-27 16:15:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1360, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo153.jpg', 'Trại sinh vui vẻ hướng về đất trại', 'Trại sinh vui vẻ hướng về đất trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ hướng về đất trại', '2018-07-27 16:15:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1359, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo152.jpg', 'Tiểu trại trí tuệ lưu niệm cùng Tháp Chàm', 'Tiểu trại trí tuệ lưu niệm cùng Tháp Chàm &#8211; Hội trại tuổi trẻ phật giáo', 'Tiểu trại trí tuệ lưu niệm cùng Tháp Chàm', '2018-07-27 16:15:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1358, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo151.jpg', 'Lưu niệm cùng tháp Chăm', 'Lưu niệm cùng tháp Chăm &#8211; Hội trại tuổi trẻ phật giáo', 'Lưu niệm cùng tháp Chăm', '2018-07-27 16:15:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1357, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo150.jpg', 'Chuẩn bị balo hướng về hội trại', 'Chuẩn bị balo hướng về hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Chuẩn bị balo hướng về hội trại', '2018-07-27 16:15:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1356, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo149.jpg', 'Trại sinh tham quan tháp Chăm', 'Trại sinh tham quan tháp Chăm &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tham quan tháp Chăm', '2018-07-27 16:15:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1355, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo148.jpg', 'Một bạn trại sinh giữ bảng Cụm Tinh Tấn', 'Một bạn trại sinh giữ bảng Cụm Tinh Tấn &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn trại sinh giữ bảng Cụm Tinh Tấn', '2018-07-27 16:15:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1354, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo147.jpg', 'Tham quan Tháp Chăm', 'Tham quan Tháp Chăm &#8211; Hội trại tuổi trẻ phật giáo', 'Tham quan Tháp Chăm', '2018-07-27 16:15:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1353, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo146.jpg', 'Trại sinh chụp hình lưu niềm cùng tháp Chăm', 'Trại sinh chụp hình lưu niềm cùng tháp Chăm &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh chụp hình lưu niềm cùng tháp Chăm', '2018-07-27 16:15:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1352, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo145.jpg', 'Trại sinh bay nhảy chụp hình lưu niềm cùng tháp Chăm', 'Trại sinh bay nhảy chụp hình lưu niềm cùng tháp Chăm &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh bay nhảy chụp hình lưu niềm cùng tháp Chăm', '2018-07-27 16:15:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1351, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo144.jpg', 'Một bạn trại sinh trẻ tuổi', 'Một bạn trại sinh trẻ tuổi &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn trại sinh trẻ tuổi', '2018-07-27 16:15:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1350, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo143.jpg', 'Tuổi trẻ không ngại gì mưa gió', 'Tuổi trẻ không ngại gì mưa gió &#8211; Hội trại tuổi trẻ phật giáo', 'Tuổi trẻ không ngại gì mưa gió', '2018-07-27 16:15:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1349, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo142.jpg', 'Trại sinh thể hiện sự đoàn kết', 'Trại sinh thể hiện sự đoàn kết &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh thể hiện sự đoàn kết', '2018-07-27 16:15:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1348, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo141.jpg', 'Các trại sinh chụp hình cùng nhau', 'Các trại sinh chụp hình cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Các trại sinh chụp hình cùng nhau', '2018-07-27 16:15:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1347, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo140.jpg', 'Hơn 1000 trại sinh bên nhau', 'Hơn 1000 trại sinh bên nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Hơn 1000 trại sinh bên nhau', '2018-07-27 16:15:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1346, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo139.jpg', 'Các trại sinh chơi vẽ màu', 'Các trại sinh chơi vẽ màu &#8211; Hội trại tuổi trẻ phật giáo', 'Các trại sinh chơi vẽ màu', '2018-07-27 16:15:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1345, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo138.jpg', 'Liên minh tiểu trại 7 và 8', 'Liên minh tiểu trại 7 và 8 &#8211; Hội trại tuổi trẻ phật giáo', 'Liên minh tiểu trại 7 và 8', '2018-07-27 16:15:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1344, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo137.jpg', 'Một trại sinh trẻ tuổi', 'Một trại sinh trẻ tuổi &#8211; Hội trại tuổi trẻ phật giáo', 'Một trại sinh trẻ tuổi', '2018-07-27 16:15:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1343, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo136.jpg', 'Ban quản trại của hội trại tuổi trẻ phật giáo lần thứ 13', 'Ban quản trại của hội trại tuổi trẻ phật giáo lần thứ 13', 'Ban quản trại của hội trại tuổi trẻ phật giáo lần thứ 13', '2018-07-27 16:14:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1342, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo135.jpg', 'Trang trí chủ đề tuổi thanh xuân của tiểu trại', 'Trang trí chủ đề tuổi thanh xuân của tiểu trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trang trí chủ đề tuổi thanh xuân của tiểu trại', '2018-07-27 16:14:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1341, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo134.jpg', 'Ngày chia tay đượm buồn', 'Ngày chia tay đượm buồn &#8211; Hội trại tuổi trẻ phật giáo', 'Ngày chia tay đượm buồn', '2018-07-27 16:14:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1340, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo133.jpg', 'Màn tung bột của trại sinh', 'Màn tung bột của trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Màn tung bột của trại sinh', '2018-07-27 16:14:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1339, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo132.jpg', 'Trại sinh chơi bột khói', 'Trại sinh chơi bột khói &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh chơi bột khói', '2018-07-27 16:14:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1338, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo131.jpg', 'Các bạn trại sinh chụp hình tập thể', 'Các bạn trại sinh chụp hình tập thể &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh chụp hình tập thể', '2018-07-27 16:14:48');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1337, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo130.jpg', '1000 trại sinh chụp hình cùng nhau', '1000 trại sinh chụp hình cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', '1000 trại sinh chụp hình cùng nhau', '2018-07-27 16:14:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1336, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo129.jpg', 'Trại sinh vui vẻ cùng bột và khói', 'Trại sinh vui vẻ cùng bột và khói &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ cùng bột và khói', '2018-07-27 16:14:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1334, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo127.jpg', 'Tuổi trẻ phạt giáo và giây phút lầy lội', 'Tuổi trẻ phạt giáo và giây phút lầy lội &#8211; Hội trại tuổi trẻ phật giáo', 'Tuổi trẻ phạt giáo và giây phút lầy lội', '2018-07-27 16:14:42');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1333, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo126.jpg', 'Trại sinh vui vẻ chơi trò chơi', 'Trại sinh vui vẻ chơi trò chơi &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ chơi trò chơi', '2018-07-27 16:14:41');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1332, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo125.jpg', 'Sau trận chiến bột mìn', 'Sau trận chiến bột mìn &#8211; Hội trại tuổi trẻ phật giáo', 'Sau trận chiến bột mìn', '2018-07-27 16:14:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1331, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo124.jpg', 'Trận chiến bột mìn', 'Trận chiến bột mìn &#8211; Hội trại tuổi trẻ phật giáo', 'Trận chiến bột mìn', '2018-07-27 16:14:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1330, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo123.jpg', 'Hội trại tuổi trẻ phật giáo tuổi thanh xuân', 'Hội trại tuổi trẻ phật giáo tuổi thanh xuân &#8211; Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo tuổi thanh xuân', '2018-07-27 16:14:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1329, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo122.jpg', 'Trại sinh dùng bột để chơi game', 'Trại sinh dùng bột để chơi game &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh dùng bột để chơi game', '2018-07-27 16:14:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1328, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo121.jpg', 'Trại sinh vui vẻ bên nhau', 'Trại sinh vui vẻ bên nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ bên nhau', '2018-07-27 16:14:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1327, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo120.jpg', 'Trại sinh nhảy cùng nhau', 'Trại sinh nhảy cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh nhảy cùng nhau', '2018-07-27 16:14:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1326, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo119.jpg', 'Trại sinh sinh hoạt cùng nhau', 'Trại sinh sinh hoạt cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh sinh hoạt cùng nhau', '2018-07-27 16:14:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1325, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo118.jpg', 'Tiểu trại Tinh Tấn chụp hình cùng nhau', 'Tiểu trại Tinh Tấn chụp hình cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Tiểu trại Tinh Tấn chụp hình cùng nhau', '2018-07-27 16:14:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1324, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo117.jpg', 'Một trại sinh suýt ngã khi tham gia trò chơi dưới nước', 'Một trại sinh suýt ngã khi tham gia trò chơi dưới nước &#8211; Hội trại tuổi trẻ phật giáo', 'Một trại sinh suýt ngã khi tham gia trò chơi dưới nước', '2018-07-27 16:14:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1323, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo116.jpg', 'Một trại sinh ngã khi tham gia trò chơi lớn ở hội trại', 'Một trại sinh ngã khi tham gia trò chơi lớn ở hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Một trại sinh ngã khi tham gia trò chơi lớn ở hội trại', '2018-07-27 16:14:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1322, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo115.jpg', 'Các trại sinh họp sức chơi trò chơi lớn', 'Các trại sinh họp sức chơi trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Các trại sinh họp sức chơi trò chơi lớn', '2018-07-27 16:14:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1321, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo114.jpg', 'Con diều được trại sinh trang trí', 'Con diều được trại sinh trang trí &#8211; Hội trại tuổi trẻ phật giáo', 'Con diều được trại sinh trang trí', '2018-07-27 16:14:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1320, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo113.jpg', 'Phiếu thông hành chơi trò chơi lớn', 'Phiếu thông hành chơi trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Phiếu thông hành chơi trò chơi lớn', '2018-07-27 16:14:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1319, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo112.jpg', 'Trại sinh gánh nước ở trò chơi lớn', 'Trại sinh gánh nước ở trò chơi lớn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh gánh nước ở trò chơi lớn', '2018-07-27 16:14:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1318, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo111.jpg', 'Tập nhảy bài dân vũ', 'Tập nhảy bài dân vũ &#8211; Hội trại tuổi trẻ phật giáo', 'Tập nhảy bài dân vũ', '2018-07-27 16:14:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1317, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo110.jpg', 'Phiếu thông hành', 'Phiếu thông hành &#8211; Hội trại tuổi trẻ phật giáo', 'Phiếu thông hành', '2018-07-27 16:14:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1316, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo109.jpg', 'Giải mật thư của team game', 'Giải mật thư của team game &#8211; Hội trại tuổi trẻ phật giáo', 'Giải mật thư của team game', '2018-07-27 16:14:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1315, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo108.jpg', 'Trại sinh tập trung giải mật thư', 'Trại sinh tập trung giải mật thư &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tập trung giải mật thư', '2018-07-27 16:14:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1314, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo107.jpg', 'Giải mật thư', 'Giải mật thư &#8211; Hội trại tuổi trẻ phật giáo', 'Giải mật thư', '2018-07-27 16:14:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1313, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo106.jpg', 'Đêm lửa trại ở hội trại tuổi trẻ phật giáo', 'Đêm lửa trại ở hội trại tuổi trẻ phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Đêm lửa trại ở hội trại tuổi trẻ phật giáo', '2018-07-27 16:14:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1312, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo105.jpg', 'Mọi người hướng ra biển đón bình minh', 'Mọi người hướng ra biển đón bình minh &#8211; Hội trại tuổi trẻ phật giáo', 'Mọi người hướng ra biển đón bình minh', '2018-07-27 16:14:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1311, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo104.jpg', 'Trại sinh đón bình minh ở biển', 'Trại sinh đón bình minh ở biển &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh đón bình minh ở biển', '2018-07-27 16:14:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1310, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo103.jpg', 'Trại sinh thiền định ở htttpg', 'Trại sinh thiền định ở htttpg &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh thiền định ở htttpg', '2018-07-27 16:14:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1309, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo102.jpg', 'Trại sinh tập trung ngồi thiền ở hội trại', 'Trại sinh tập trung ngồi thiền ở hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tập trung ngồi thiền ở hội trại', '2018-07-27 16:14:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1308, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo101.jpg', 'Đi bộ ở bãi biển Bồng Lai', 'Đi bộ ở bãi biển Bồng Lai &#8211; Hội trại tuổi trẻ phật giáo', 'Đi bộ ở bãi biển Bồng Lai', '2018-07-27 16:14:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1307, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo100.jpg', 'Trại sinh thảo luận về trò chơi giải mật thư', 'Trại sinh thảo luận về trò chơi giải mật thư &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh thảo luận về trò chơi giải mật thư', '2018-07-27 16:14:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1306, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo99.jpg', 'Đêm lửa trại quây quần bên nhau', 'Đêm lửa trại quây quần bên nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Đêm lửa trại quây quần bên nhau', '2018-07-27 16:14:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1305, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo98.jpg', 'Mọi người trở lại trại từ biển', 'Mọi người trở lại trại từ biển &#8211; Hội trại tuổi trẻ phật giáo', 'Mọi người trở lại trại từ biển', '2018-07-27 16:14:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1304, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo97.jpg', 'Lửa trại tuổi trẻ phật giáo với chủ đề tuổi thanh xuân', 'Lửa trại tuổi trẻ phật giáo với chủ đề tuổi thanh xuân &#8211; Hội trại tuổi trẻ phật giáo', 'Lửa trại tuổi trẻ phật giáo với chủ đề tuổi thanh xuân', '2018-07-27 16:14:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1303, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo96.jpg', 'Mọi người hân hoan bên lửa trại', 'Mọi người hân hoan bên lửa trại &#8211; Hội trại tuổi trẻ phật giáo', 'Mọi người hân hoan bên lửa trại', '2018-07-27 16:14:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1302, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo95.jpg', 'Lửa trại được thắp lên', 'Lửa trại được thắp lên &#8211; Hội trại tuổi trẻ phật giáo', 'Lửa trại được thắp lên', '2018-07-27 16:14:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1301, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo94.jpg', 'Chuẩn bị nghi thức đốt lửa trại', 'Chuẩn bị nghi thức đốt lửa trại &#8211; Hội trại tuổi trẻ phật giáo', 'Chuẩn bị nghi thức đốt lửa trại', '2018-07-27 16:14:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1300, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo93.jpg', 'Ca sĩ Bảo Uyên biểu diễn ở hội trại', 'Ca sĩ Bảo Uyên biểu diễn ở hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Ca sĩ Bảo Uyên biểu diễn ở hội trại', '2018-07-27 16:14:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1299, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo92.jpg', 'Võ nhạc hội trại tuổi trẻ', 'Võ nhạc hội trại tuổi trẻ &#8211; Hội trại tuổi trẻ phật giáo', 'Võ nhạc hội trại tuổi trẻ', '2018-07-27 16:14:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1298, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo91.jpg', 'MC chuẩn bị chương trình ở hội trại', 'MC chuẩn bị chương trình ở hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'MC chuẩn bị chương trình ở hội trại', '2018-07-27 16:14:22');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1297, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo90.jpg', 'Các bạn trại sinh chơi trò xếp cát', 'Các bạn trại sinh chơi trò xếp cát &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh chơi trò xếp cát', '2018-07-27 16:14:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1296, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo89.jpg', 'Trại sinh xếp hình trái tim', 'Trại sinh xếp hình trái tim &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh xếp hình trái tim', '2018-07-27 16:14:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1295, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo88.jpg', 'Trại sinh và hình trang trí của mình', 'Trại sinh và hình trang trí của mình &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh và hình trang trí của mình', '2018-07-27 16:14:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1294, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo87.jpg', 'Trại sinh vui chơi ở biển', 'Trại sinh vui chơi ở biển &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui chơi ở biển', '2018-07-27 16:14:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1293, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo86.jpg', 'Trại sinh chụp hình tập thể bay ở biển', 'Trại sinh chụp hình tập thể bay ở biển &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh chụp hình tập thể bay ở biển', '2018-07-27 16:14:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1292, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo85.jpg', 'Trại sinh xây tháp ở biển', 'Trại sinh xây tháp ở biển &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh xây tháp ở biển', '2018-07-27 16:14:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1291, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo84.jpg', 'Xây tháp người ở biển', 'Xây tháp người ở biển &#8211; Hội trại tuổi trẻ phật giáo', 'Xây tháp người ở biển', '2018-07-27 16:14:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1290, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo83.jpg', 'Hai trại sinh chụp hình khi tham quan khu cắm trại', 'Hai trại sinh chụp hình khi tham quan khu cắm trại &#8211; Hội trại tuổi trẻ phật giáo', 'Hai trại sinh chụp hình khi tham quan khu cắm trại', '2018-07-27 16:14:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1289, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo82.jpg', 'Trại sinh hội trại tuổi trẻ phật giáo tuổi thanh xuân', 'Trại sinh hội trại tuổi trẻ phật giáo tuổi thanh xuân &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh hội trại tuổi trẻ phật giáo tuổi thanh xuân', '2018-07-27 16:14:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1288, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo81.jpg', 'Quang cảnh khu dã ngoại Bồng Lai nhìn từ trên cao', 'Quang cảnh khu dã ngoại Bồng Lai nhìn từ trên cao &#8211; Hội trại tuổi trẻ phật giáo', 'Quang cảnh khu dã ngoại Bồng Lai nhìn từ trên cao', '2018-07-27 16:14:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1287, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo80.jpg', 'Hình của một bạn trại sinh', 'Hình của một bạn trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Hình của một bạn trại sinh', '2018-07-27 16:13:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1286, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo79.jpg', 'Khung cảnh xinh đẹp của khu cắm trại', 'Khung cảnh xinh đẹp của khu cắm trại &#8211; Hội trại tuổi trẻ phật giáo', 'Khung cảnh xinh đẹp của khu cắm trại', '2018-07-27 16:13:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1285, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo78.jpg', 'Bạn nữ cười tươi sau trò chơi', 'Bạn nữ cười tươi sau trò chơi &#8211; Hội trại tuổi trẻ phật giáo', 'Bạn nữ cười tươi sau trò chơi', '2018-07-27 16:13:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1284, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo77.jpg', 'Nữ trại sinh chuẩn bị ném vòng', 'Nữ trại sinh chuẩn bị ném vòng &#8211; Hội trại tuổi trẻ phật giáo', 'Nữ trại sinh chuẩn bị ném vòng', '2018-07-27 16:13:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1283, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo76.jpg', 'Một bạn trại sinh chuẩn bị trò nhảy bao bố', 'Một bạn trại sinh chuẩn bị trò nhảy bao bố &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn trại sinh chuẩn bị trò nhảy bao bố', '2018-07-27 16:13:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1282, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo75.jpg', 'Hình ảnh bong bóng nước nổ', 'Hình ảnh bong bóng nước nổ &#8211; Hội trại tuổi trẻ phật giáo', 'Hình ảnh bong bóng nước nổ', '2018-07-27 16:13:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1281, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo74.jpg', 'Một bạn trại sinh tập trung chơi game', 'Một bạn trại sinh tập trung chơi game &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn trại sinh tập trung chơi game', '2018-07-27 16:13:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1280, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo73.jpg', 'Trại sinh tham gia trò chơi nhỏ', 'Trại sinh tham gia trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh tham gia trò chơi nhỏ', '2018-07-27 16:13:31');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1279, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo72.jpg', 'Trò chơi nhỏ', 'Trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi nhỏ', '2018-07-27 16:13:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1278, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo71.jpg', 'Một bạn chơi trò đội nón phá vỡ bong bóng', 'Một bạn chơi trò đội nón phá vỡ bong bóng &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn chơi trò đội nón phá vỡ bong bóng', '2018-07-27 16:13:28');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1277, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo70.jpg', 'Trò chơi ném vòng', 'Trò chơi ném vòng &#8211; Hội trại tuổi trẻ phật giáo', 'Trò chơi ném vòng', '2018-07-27 16:13:27');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1276, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo69.jpg', 'Hai bạn nữ truyền bánh trong trò chơi nhỏ', 'Hai bạn nữ truyền bánh trong trò chơi nhỏ &#8211; Hội trại tuổi trẻ phật giáo', 'Hai bạn nữ truyền bánh trong trò chơi nhỏ', '2018-07-27 16:13:25');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1275, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo68.jpg', 'Các bạn trại sinh chụp hình tập thể', 'Các bạn trại sinh chụp hình tập thể &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh chụp hình tập thể', '2018-07-27 16:13:24');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1274, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo67.jpg', 'Một bạn nữ ngã lăn ra khi chơi trò chơi', 'Một bạn nữ ngã lăn ra khi chơi trò chơi &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn nữ ngã lăn ra khi chơi trò chơi', '2018-07-27 16:13:23');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1273, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo66.jpg', 'Các trại sinh', 'Các trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Các trại sinh', '2018-07-27 16:13:21');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1272, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo65.jpg', 'Cụm Trí Tuệ trong buổi sinh hoạt', 'Cụm Trí Tuệ trong buổi sinh hoạt &#8211; Hội trại tuổi trẻ phật giáo', 'Cụm Trí Tuệ trong buổi sinh hoạt', '2018-07-27 16:13:20');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1271, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo64.jpg', 'Một bạn nữ chơi trò chơi trong hội trại', 'Một bạn nữ chơi trò chơi trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Một bạn nữ chơi trò chơi trong hội trại', '2018-07-27 16:13:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1270, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo63.jpg', 'Hội trại tuổi trẻ phật giáo Phan Thiết', 'Hội trại tuổi trẻ phật giáo Phan Thiết &#8211; Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo Phan Thiết', '2018-07-27 16:13:18');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1269, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo62.jpg', 'Phần thi vân nghệ múa nón lá', 'Phần thi vân nghệ múa nón lá &#8211; Hội trại tuổi trẻ phật giáo', 'Phần thi vân nghệ múa nón lá', '2018-07-27 16:13:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1268, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo61.jpg', 'Các bạn Malaysia giao lưu văn nghệ', 'Các bạn Malaysia giao lưu văn nghệ &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn Malaysia giao lưu văn nghệ', '2018-07-27 16:13:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1267, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo60.jpg', 'Quản trò sinh hoạt cùng trại sinh', 'Quản trò sinh hoạt cùng trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Quản trò sinh hoạt cùng trại sinh', '2018-07-27 16:13:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1266, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo59.jpg', 'Cụm Thanh Tịnh với chong chóng nhiều màu', 'Cụm Thanh Tịnh với chong chóng nhiều màu &#8211; Hội trại tuổi trẻ phật giáo', 'Cụm Thanh Tịnh với chong chóng nhiều màu', '2018-07-27 16:13:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1265, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo58.jpg', 'Các bạn trại sinh', 'Các bạn trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trại sinh', '2018-07-27 16:13:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1264, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo57.jpg', 'Trại sinh cười tươi trong ngày sinh hoạt', 'Trại sinh cười tươi trong ngày sinh hoạt &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh cười tươi trong ngày sinh hoạt', '2018-07-27 16:13:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1263, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo56.jpg', 'Hội trại tuổi trẻ phật giáo 2018', 'Hội trại tuổi trẻ phật giáo 2018 &#8211; Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo 2018', '2018-07-27 16:13:11');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1262, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo55.jpg', 'Cụm Thanh Tịnh trong buổi sinh hoạt trại', 'Cụm Thanh Tịnh trong buổi sinh hoạt trại &#8211; Hội trại tuổi trẻ phật giáo', 'Cụm Thanh Tịnh trong buổi sinh hoạt trại', '2018-07-27 16:13:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1261, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo54.jpg', 'Trại sinh đoàn kết cùng nhau', 'Trại sinh đoàn kết cùng nhau &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh đoàn kết cùng nhau', '2018-07-27 16:13:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1260, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo53.jpg', 'Trại sinh vui vẻ họp trại', 'Trại sinh vui vẻ họp trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui vẻ họp trại', '2018-07-27 16:13:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1259, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo52.jpg', 'Hình dùng trang trí cụm trại', 'Hình dùng trang trí cụm trại &#8211; Hội trại tuổi trẻ phật giáo', 'Hình dùng trang trí cụm trại', '2018-07-27 16:13:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1258, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo51.jpg', 'Trại sinh cụm Tinh Tấn', 'Trại sinh cụm Tinh Tấn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh cụm Tinh Tấn', '2018-07-27 16:13:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1257, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo50.jpg', 'Hội trại với chủ đề tuổi thanh xuân', 'Hội trại với chủ đề tuổi thanh xuân &#8211; Hội trại tuổi trẻ phật giáo', 'Hội trại với chủ đề tuổi thanh xuân', '2018-07-27 16:13:05');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1256, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo49.jpg', 'Hình ảnh của tuổi trẻ phật giáo', 'Hình ảnh của tuổi trẻ phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Hình ảnh của tuổi trẻ phật giáo', '2018-07-27 16:13:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1255, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo48.jpg', 'Trang trí cụm Thanh Tịnh', 'Trang trí cụm Thanh Tịnh &#8211; Hội trại tuổi trẻ phật giáo', 'Trang trí cụm Thanh Tịnh', '2018-07-27 16:13:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1254, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo47.jpg', 'Dán bảng trại', 'Dán bảng trại &#8211; Hội trại tuổi trẻ phật giáo', 'Dán bảng trại', '2018-07-27 16:13:02');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1253, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo46.jpg', 'Chuẩn bị trang trí trại', 'Chuẩn bị trang trí trại &#8211; Hội trại tuổi trẻ phật giáo', 'Chuẩn bị trang trí trại', '2018-07-27 16:13:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1252, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo45.jpg', 'Trại sinh', 'Trại sinh &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh', '2018-07-27 16:13:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1251, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo44.jpg', 'Leo lên cao dựng lều hội trại tuổi trẻ', 'Leo lên cao dựng lều hội trại tuổi trẻ &#8211; Hội trại tuổi trẻ phật giáo', 'Leo lên cao dựng lều hội trại tuổi trẻ', '2018-07-27 16:12:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1250, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo43.jpg', 'Chong chóng nhiều màu trong hội trại', 'Chong chóng nhiều màu trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Chong chóng nhiều màu trong hội trại', '2018-07-27 16:12:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1249, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo42.jpg', 'Tiểu trại Từ Bi', 'Tiểu trại Từ Bi &#8211; Hội trại tuổi trẻ phật giáo', 'Tiểu trại Từ Bi', '2018-07-27 16:12:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1248, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo41.jpg', 'Sự cuồng nhiệt của tuổi trẻ', 'Sự cuồng nhiệt của tuổi trẻ &#8211; Hội trại tuổi trẻ phật giáo', 'Sự cuồng nhiệt của tuổi trẻ', '2018-07-27 16:12:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1247, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo40.jpg', 'Trại sinh đưa tay chào hội trại', 'Trại sinh đưa tay chào hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh đưa tay chào hội trại', '2018-07-27 16:12:13');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1246, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo39.jpg', 'Đội hình tuổi trẻ phật giáo 2018', 'Đội hình tuổi trẻ phật giáo 2018 &#8211; Hội trại tuổi trẻ phật giáo', 'Đội hình tuổi trẻ phật giáo 2018', '2018-07-27 16:12:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1245, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo38.jpg', 'Trại sinh gửi yêu thương đến hội trại', 'Trại sinh gửi yêu thương đến hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh gửi yêu thương đến hội trại', '2018-07-27 16:12:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1244, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo37.jpg', 'Các bạn trẻ đưa tay trong sinh hoạt', 'Các bạn trẻ đưa tay trong sinh hoạt &#8211; Hội trại tuổi trẻ phật giáo', 'Các bạn trẻ đưa tay trong sinh hoạt', '2018-07-27 16:12:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1243, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo36.jpg', 'Trại sinh hòa mình cùng hội trại tuổi trẻ', 'Trại sinh hòa mình cùng hội trại tuổi trẻ &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh hòa mình cùng hội trại tuổi trẻ', '2018-07-27 16:12:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1242, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo35.jpg', 'Buổi sinh hoạt vui vẻ của tuổi trẻ', 'Buổi sinh hoạt vui vẻ của tuổi trẻ &#8211; Hội trại tuổi trẻ phật giáo', 'Buổi sinh hoạt vui vẻ của tuổi trẻ', '2018-07-27 16:12:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1241, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo34.jpg', 'Trại sinh sinh hoạt vui chơi ở đất trại', 'Trại sinh sinh hoạt vui chơi ở đất trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh sinh hoạt vui chơi ở đất trại', '2018-07-27 16:12:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1240, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo33.jpg', 'Hội trại tuổi trẻ phật giáo 2018', 'Hội trại tuổi trẻ phật giáo 2018 &#8211; Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo 2018', '2018-07-27 16:12:04');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1238, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo31.jpg', 'Đêm hoa đăng phật giáo', 'Đêm hoa đăng phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Đêm hoa đăng phật giáo', '2018-07-27 16:12:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1237, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo30.jpg', 'Trại sinh vui tươi sinh hoạt hội trại', 'Trại sinh vui tươi sinh hoạt hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui tươi sinh hoạt hội trại', '2018-07-27 16:12:01');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1236, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo29.jpg', 'Trại sinh ở Hội trại tuổi trẻ phật giáo 2018', 'Trại sinh ở Hội trại tuổi trẻ phật giáo 2018 &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh ở Hội trại tuổi trẻ phật giáo 2018', '2018-07-27 16:11:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1235, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo28.jpg', 'Trại sinh cầu nguyện với hoa đăng', 'Trại sinh cầu nguyện với hoa đăng &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh cầu nguyện với hoa đăng', '2018-07-27 16:11:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1234, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo27.jpg', 'Trại sinh chia sẽ lửa hoa đăng', 'Trại sinh chia sẽ lửa hoa đăng &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh chia sẽ lửa hoa đăng', '2018-07-27 16:11:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1233, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo26.jpg', 'Trại sinh hồi hướng tam bảo cầu nguyện', 'Trại sinh hồi hướng tam bảo cầu nguyện &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh hồi hướng tam bảo cầu nguyện', '2018-07-27 16:11:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1232, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo25.jpg', 'Trại sinh vỗ tay theo nhịp', 'Trại sinh vỗ tay theo nhịp &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vỗ tay theo nhịp', '2018-07-27 16:11:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1231, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo24.jpg', 'Ánh đèn trong đêm yêu thương', 'Ánh đèn trong đêm yêu thương &#8211; Hội trại tuổi trẻ phật giáo', 'Ánh đèn trong đêm yêu thương', '2018-07-27 16:11:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1230, 'https://media.huynhhieutravel.com/Hội-Trại-Tuổi-Trẻ-Phật-Giáo23.jpg', 'Trại sinh vui chơi tắm biển', 'Trại sinh vui chơi tắm biển &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh vui chơi tắm biển', '2018-07-27 16:11:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1229, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo22.jpg', 'Trại sinh nhảy theo bài hát', 'Trại sinh nhảy theo bài hát &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh nhảy theo bài hát', '2018-07-27 16:11:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1228, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo21.jpg', 'Ca sĩ Phương Anh idol biểu diễn', 'Ca sĩ Phương Anh idol biểu diễn &#8211; Hội trại tuổi trẻ phật giáo', 'Ca sĩ Phương Anh idol biểu diễn', '2018-07-27 16:11:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1227, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo20.jpg', 'Ca sĩ Phương Anh idol hát trong hội trại', 'Ca sĩ Phương Anh idol hát trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Ca sĩ Phương Anh idol hát trong hội trại', '2018-07-27 16:11:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1226, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo19.jpg', 'Ca sĩ Phương Anh biểu diễn trong đêm yêu thương', 'Ca sĩ Phương Anh biểu diễn trong đêm yêu thương &#8211; Hội trại tuổi trẻ phật giáo', 'Ca sĩ Phương Anh biểu diễn trong đêm yêu thương', '2018-07-27 16:11:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1225, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo18.jpg', 'Hội Trại Tuổi Trẻ Phật Giáo', 'Hội trại tuổi trẻ phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo', '2018-07-27 16:11:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1224, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo17.jpg', 'Hoa đăng cầu nguyện', 'Hoa đăng cầu nguyện &#8211; Hội trại tuổi trẻ phật giáo', 'Hoa đăng cầu nguyện', '2018-07-27 16:11:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1223, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo16.jpg', 'Trại sinh thắp hoa đăng cầu nguyện', 'Trại sinh thắp hoa đăng cầu nguyện &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh thắp hoa đăng cầu nguyện', '2018-07-27 16:11:42');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1222, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo15.jpg', 'Hai MC trong đêm yêu thương', 'Hai MC trong đêm yêu thương &#8211; Hội trại tuổi trẻ phật giáo', 'Hai MC trong đêm yêu thương', '2018-07-27 16:11:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1221, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo14.jpg', 'Phần thi kiến thức phật giáo thú vị', 'Phần thi kiến thức phật giáo thú vị &#8211; .Hội trại tuổi trẻ phật giáo', 'Phần thi kiến thức phật giáo thú vị', '2018-07-27 16:11:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1220, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo13.jpg', 'Các thí sinh thi kiến thức phật giáo sôi nổi', 'Các thí sinh thi kiến thức phật giáo sôi nổi &#8211; Hội trại tuổi trẻ phật giáo', 'Các thí sinh thi kiến thức phật giáo sôi nổi', '2018-07-27 16:11:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1219, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo12.jpg', 'Thi kiến thức phật giáo', 'Thi kiến thức phật giáo &#8211; Hội trại tuổi trẻ phật giáo', 'Thi kiến thức phật giáo', '2018-07-27 16:11:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1218, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo11.jpg', 'Cầu nguyện trong đêm yêu thương', 'Cầu nguyện trong đêm yêu thương', 'Cầu nguyện trong đêm yêu thương - Hội trại tuổi trẻ phật giáo', '2018-07-27 16:11:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1217, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo10.jpg', 'Trại sinh viết thư gửi yêu thương trên lưng bạn', 'Trại sinh viết thư gửi yêu thương trên lưng bạn &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh viết thư gửi yêu thương trên lưng bạn', '2018-07-27 16:11:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1216, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo9.jpg', 'Trại sinh viết thư gửi yêu thương', 'Trại sinh viết thư gửi yêu thương &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh viết thư gửi yêu thương', '2018-07-27 16:11:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1215, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo8.jpg', 'Thư gửi yêu thương tuổi thanh xuân', 'Thư gửi yêu thương tuổi thanh xuân &#8211; Hội trại tuổi trẻ phật giáo', 'Thư gửi yêu thương tuổi thanh xuân', '2018-07-27 16:11:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1214, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo7.jpg', 'Trại sinh hào hứng trong hội trại', 'Trại sinh hào hứng trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh hào hứng trong hội trại', '2018-07-27 16:11:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1213, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo6.jpg', 'Trại sinh làm theo hoạt náo viên', 'Trại sinh làm theo hoạt náo viên &#8211; Hội trại tuổi trẻ phật giáo', 'Trại sinh làm theo hoạt náo viên', '2018-07-27 16:11:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1212, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo5.jpg', 'Đêm yêu thương', 'Đêm yêu thương &#8211; Hội trại tuổi trẻ phật giáo', 'Đêm yêu thương', '2018-07-27 16:11:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1211, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo4.jpg', 'Vật trang trí trong hội trại', 'Vật trang trí trong hội trại &#8211; Hội trại tuổi trẻ phật giáo', 'Vật trang trí trong hội trại', '2018-07-27 16:11:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1210, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo3.jpg', 'Đại Đức Thích Thiện Bảo thắp hoa đăng cho tình nguyện viên', 'Đại Đức Thích Thiện Bảo thắp hoa đăng cho tình nguyện viên &#8211; Hội trại tuổi trẻ phật giáo', 'Đại Đức Thích Thiện Bảo thắp hoa đăng cho tình nguyện viên', '2018-07-27 16:11:32');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1209, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo2.jpg', 'Cụm trại Thanh Tịnh', 'Cụm trại Thanh Tịnh &#8211; Hội trại tuổi trẻ phật giáo', 'Cụm trại Thanh Tịnh', '2018-07-27 16:11:30');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1208, 'https://media.huynhhieutravel.com/Hội-trại-tuổi-trẻ-phật-giáo.jpg', 'Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo', 'Hội trại tuổi trẻ phật giáo', '2018-07-27 16:11:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1206, 'https://media.huynhhieutravel.com/Herne-the-Hunter5.jpg', 'Herne the Hunter', 'Herne the Hunter', 'Herne the Hunter', '2018-07-18 11:38:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1205, 'https://media.huynhhieutravel.com/Herne-the-Hunter4.jpg', 'Herne the Hunter', 'Herne the Hunter', 'Herne the Hunter', '2018-07-18 11:38:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1204, 'https://media.huynhhieutravel.com/Herne-the-Hunter3.jpg', 'Herne the Hunter', 'Herne the Hunter', 'Herne the Hunter', '2018-07-18 11:38:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1203, 'https://media.huynhhieutravel.com/Herne-the-Hunter2.jpg', 'Herne the Hunter', 'Herne the Hunter', 'Herne the Hunter', '2018-07-18 11:38:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1202, 'https://media.huynhhieutravel.com/Herne-the-Hunter.jpg', 'Herne the Hunter', 'Herne the Hunter', 'Herne the Hunter', '2018-07-18 11:38:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1197, 'https://media.huynhhieutravel.com/Cerberus-title2.jpg', '', '', '', '2018-07-18 09:43:26');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1196, 'https://media.huynhhieutravel.com/Cerberus-title.jpg', '', '', '', '2018-07-18 09:42:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1192, 'https://media.huynhhieutravel.com/Cerberus4.jpg', 'Cerberus mô hình hoạt họa', 'Cerberus', 'Cerberus', '2018-07-18 09:24:36');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1191, 'https://media.huynhhieutravel.com/Cerberus3.jpg', 'Cerberus', 'Cerberus', 'Cerberus', '2018-07-18 09:24:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1190, 'https://media.huynhhieutravel.com/Cerberus2.jpg', 'Cerberus', 'Cerberus', 'Cerberus', '2018-07-18 09:24:33');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1189, 'https://media.huynhhieutravel.com/Cerberus.jpg', 'Hình tượng Cerberus trong Harry Potter', 'Cerberus', 'Cerberus', '2018-07-18 09:24:29');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1183, 'https://media.huynhhieutravel.com/banshee-title3.jpg', '', '', '', '2018-07-18 07:40:03');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1182, 'https://media.huynhhieutravel.com/banshee-title2.jpg', '', '', '', '2018-07-18 07:39:16');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1181, 'https://media.huynhhieutravel.com/banshee-title.jpg', '', '', '', '2018-07-18 07:38:17');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1180, 'https://media.huynhhieutravel.com/Banshee5.jpg', 'Banshee', 'Banshee', 'Banshee', '2018-07-18 07:34:14');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1179, 'https://media.huynhhieutravel.com/Banshee4.jpg', 'Banshee', 'Banshee', 'Banshee', '2018-07-18 07:34:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1178, 'https://media.huynhhieutravel.com/Banshee3.jpg', 'Banshee', 'Banshee', 'Banshee', '2018-07-18 07:34:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1177, 'https://media.huynhhieutravel.com/Banshee2.png', 'Banshee', 'Banshee', 'Banshee', '2018-07-18 07:34:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1176, 'https://media.huynhhieutravel.com/Banshee.jpg', 'Banshee', 'Banshee', 'Banshee', '2018-07-18 07:34:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1173, 'https://media.huynhhieutravel.com/Khám-phá-phố-cổ-hội-an-title2.jpg', '', '', '', '2018-07-18 06:26:34');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1172, 'https://media.huynhhieutravel.com/Khám-phá-phố-cổ-hội-an-title.jpg', '', '', '', '2018-07-18 06:25:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1170, 'https://media.huynhhieutravel.com/Tìm-sự-bình-yên-ở-Đà-Lạt-title3.jpg', '', '', '', '2018-07-18 05:30:19');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1169, 'https://media.huynhhieutravel.com/Tìm-sự-bình-yên-ở-Đà-Lạt-title2.jpg', '', '', '', '2018-07-18 05:29:35');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1168, 'https://media.huynhhieutravel.com/Tìm-sự-bình-yên-ở-Đà-Lạt-title.jpg', '', '', '', '2018-07-18 05:28:49');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1166, 'https://media.huynhhieutravel.com/Du-lịch-không-hoàn-hảo-title3.jpg', '', '', '', '2018-07-18 05:26:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1165, 'https://media.huynhhieutravel.com/Du-lịch-không-hoàn-hảo-title2.jpg', '', '', '', '2018-07-18 05:23:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1164, 'https://media.huynhhieutravel.com/Du-lịch-không-hoàn-hảo-title.jpg', '', '', '', '2018-07-18 05:17:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1161, 'https://media.huynhhieutravel.com/Black-Shuck.jpg', 'Một bài báo về Black Shuck', 'Black Shuck', 'Black Shuck', '2018-07-18 04:13:12');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1160, 'https://media.huynhhieutravel.com/Black-Shuck6.png', 'Hình tượng cho là của Black Shuck trong Harry Potter', 'Black Shuck', 'Black Shuck', '2018-07-18 04:13:00');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1159, 'https://media.huynhhieutravel.com/Black-Shuck5.jpg', 'Black Shuck', 'Black Shuck', 'Black Shuck', '2018-07-18 04:12:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1158, 'https://media.huynhhieutravel.com/Black-Shuck4.jpg', 'Black Shuck', 'Black Shuck', 'Black Shuck', '2018-07-18 04:12:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1157, 'https://media.huynhhieutravel.com/Black-Shuck3.jpg', 'Bộ xương được cho là Black Shuck', 'Black Shuck', 'Black Shuck', '2018-07-18 04:12:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1156, 'https://media.huynhhieutravel.com/Black-Shuck2.jpg', 'Black Shuck', 'Black Shuck', 'Black Shuck', '2018-07-18 04:12:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1152, 'https://media.huynhhieutravel.com/Basilisk5.jpg', 'Tượng Basilisk ở Basel', 'Tượng Basilisk ở Basel', 'Basilisk', '2018-07-17 14:30:47');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1151, 'https://media.huynhhieutravel.com/Basilisk4.jpg', 'Basilisk trong phim Harry Potter', 'Basilisk', 'Basilisk', '2018-07-17 14:30:46');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1150, 'https://media.huynhhieutravel.com/Basilisk3.jpg', 'Basilisk', 'Basilisk', 'Basilisk', '2018-07-17 14:30:45');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1149, 'https://media.huynhhieutravel.com/Basilisk2.png', 'Basilisk', 'Basilisk', 'Basilisk', '2018-07-17 14:30:44');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1148, 'https://media.huynhhieutravel.com/Basilisk.jpg', 'Basilisk', 'Basilisk', 'Basilisk', '2018-07-17 14:30:43');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1144, 'https://media.huynhhieutravel.com/Kelpies5.jpg', 'Kelpie', 'Kelpie', 'Kelpie', '2018-07-17 12:16:10');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1143, 'https://media.huynhhieutravel.com/Kelpies4.png', 'Kelpie', 'Kelpie', 'Kelpie', '2018-07-17 12:16:09');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1142, 'https://media.huynhhieutravel.com/Kelpies3.jpg', 'Kelpie', 'Kelpie', 'Kelpie', '2018-07-17 12:16:08');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1141, 'https://media.huynhhieutravel.com/Kelpies2.jpg', 'Kelpie', 'Kelpie', 'Kelpie', '2018-07-17 12:16:07');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1140, 'https://media.huynhhieutravel.com/Kelpies.jpg', 'Kelpie', 'Kelpie', 'Tượng đài Kelpie', '2018-07-17 12:16:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1137, 'https://media.huynhhieutravel.com/Valkyrie-4.png', 'Nhân vật Valkyrie trong một trò chơi', 'Valkyrie', 'Valkyrie', '2018-07-16 09:30:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1136, 'https://media.huynhhieutravel.com/Valkyrie-3.jpg', 'Valkyrie', 'Valkyrie', 'Valkyrie', '2018-07-16 09:30:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1135, 'https://media.huynhhieutravel.com/Valkyrie2.jpg', 'Valkyrie', 'Valkyrie', 'Valkyrie', '2018-07-16 09:30:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1134, 'https://media.huynhhieutravel.com/Valkyrie.jpg', 'Valkyrie', 'Valkyrie', 'Valkyrie', '2018-07-16 09:30:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1077, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ19.jpg', '', '', '', '2018-07-11 07:03:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1076, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ18.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1075, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ17.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1074, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ16.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:59');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1073, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ15.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1072, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ14.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:58');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1071, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ13.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1070, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ12.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:57');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1069, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ11.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1068, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ10.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:56');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1067, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ9.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1066, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ8.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:55');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1065, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ7.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:54');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1064, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ6.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1063, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ5.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai nhìn ra thành phố Cần Thơ', '2018-07-11 06:57:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1062, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ4.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Các căn hộ lung linh ở Azerai Cần Thơ', '2018-07-11 06:57:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1061, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ3.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Đạp xe đạp quanh khách sạn', '2018-07-11 06:57:52');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1060, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ2.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Một cây cầu bắt ngang sông ở đây', '2018-07-11 06:57:51');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1059, 'https://media.huynhhieutravel.com/Khách-Sạn-Azerai-Cần-Thơ1.jpg', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', 'Khách Sạn Azerai Cần Thơ', '2018-07-11 06:57:50');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1055, 'https://media.huynhhieutravel.com/bikini3.jpg', 'Bikini', 'Bikini', 'Gái đẹp mặc Binini', '2018-07-10 03:26:40');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1054, 'https://media.huynhhieutravel.com/bikini2.jpg', 'Bikini', 'Bikini', 'Bikini', '2018-07-10 03:26:39');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1053, 'https://media.huynhhieutravel.com/bikini.jpg', '', '', '', '2018-07-10 03:26:38');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1045, 'https://media.huynhhieutravel.com/an-duong-vuong-1.jpg', 'An Dương Vương', 'An Dương Vương', 'An Dương Vương cưỡi ngựa', '2018-07-02 08:52:37');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1042, 'https://media.huynhhieutravel.com/Mạng-Xã-Hội-Minds4.jpg', 'Tạo địa chỉ ví', 'Mạng xã hội minds', 'Mạng xã hội minds bước 2', '2018-07-01 09:14:15');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1041, 'https://media.huynhhieutravel.com/mạng-xã-hội-minds2.jpg', 'Chức năng Newfeeds khá giống Facebook', 'Mạng xã hội minds', 'Mạng xã hội minds bước 1', '2018-07-01 08:28:53');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1040, 'https://media.huynhhieutravel.com/Mạng-Xã-Hội-Minds.jpg', 'Mạng xã hội Minds', 'Mạng xã hội Minds', 'Mạng xã hội Minds', '2018-07-01 07:50:06');
+
+INSERT OR IGNORE INTO Media (id, url, caption, description, altText, createdAt) VALUES (1036, 'https://media.huynhhieutravel.com/Chợ-Nổi-Cái-Răng8.jpg', 'Chợ Nổi Cái Răng &#8211; Huynh Hieu Travel', 'Chợ Nổi Cái Răng Cần Thơ', 'Tàu đầy khóm ở chợ nổi Cái Răng', '2018-06-29 05:00:31');

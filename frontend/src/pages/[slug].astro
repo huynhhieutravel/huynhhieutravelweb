@@ -1,11 +1,11 @@
 ---
+import { env } from "cloudflare:workers";
 import Layout from '../layouts/Layout.astro';
-import { env } from 'cloudflare:workers';
 
 const { slug } = Astro.params;
 
 // Access D1 from Cloudflare Workers env
-const db = env?.DB;
+const db = env.DB;
 
 let post = null;
 

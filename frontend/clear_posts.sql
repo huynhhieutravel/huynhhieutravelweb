@@ -1,0 +1,2 @@
+DELETE FROM PostTag;
+DELETE FROM Post;
