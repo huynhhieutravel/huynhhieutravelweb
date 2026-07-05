@@ -20,7 +20,7 @@ let failCount = 0;
 
 function uploadFile(file, retries = 3) {
   const filePath = path.join(mediaDir, file);
-  const cmd = `npx wrangler r2 object put ${bucketName}/"${file}" -f "${filePath}"`;
+  const cmd = `npx wrangler r2 object put ${bucketName}/"${file}" -f "${filePath}" --remote`;
 
   exec(cmd, (error, stdout, stderr) => {
     if (error) {

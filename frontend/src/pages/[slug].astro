@@ -11,8 +11,13 @@ let post = null;
 
 if (db) {
   try {
-    const stmt = db.prepare('SELECT * FROM Post WHERE slug = ?');
+    let stmt = db.prepare('SELECT * FROM Post WHERE slug = ?');
     post = await stmt.bind(slug).first();
+    
+    if (!post) {
+      stmt = db.prepare('SELECT * FROM Page WHERE slug = ?');
+      post = await stmt.bind(slug).first();
+    }
   } catch (e) {
     console.error("DB Error:", e);
   }
