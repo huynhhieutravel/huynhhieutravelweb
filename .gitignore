@@ -1,2 +1,13 @@
 node_modules/
 .env
+.env.production
+.DS_Store
+dist/
+.astro/
+
+# Wrangler local state (SQLite, cache, etc.)
+frontend/.wrangler/
+frontend/local.db
+
+# Build artifacts
+*.log
