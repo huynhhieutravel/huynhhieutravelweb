@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "huynhhieutravel",
+  "compatibility_date": "2024-04-05",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "huynhhieutravel-db",
+      "database_id": "YOUR_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA",
+      "bucket_name": "huynhhieutravel-media"
+    }
+  ]
+}

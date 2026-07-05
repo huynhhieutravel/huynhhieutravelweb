@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { env } from 'cloudflare:workers';
+
+const { slug } = Astro.params;
+
+// Access D1 from Cloudflare Workers env
+const db = env?.DB;
+
+let post = null;
+
+if (db) {
+  try {
+    const stmt = db.prepare('SELECT * FROM Post WHERE slug = ?');
+    post = await stmt.bind(slug).first();
+  } catch (e) {
+    console.error("DB Error:", e);
+  }
+} else {
+  console.log("No DB binding found, you might be running in a mode without platformProxy.");
+}
+
+if (!post) {
+  return Astro.redirect('/404');
+}
+
+---
+
+<Layout title={`${post.title} - Huỳnh Hiếu Travel`} description={post.excerpt} image={post.featuredImage}>
+  <article class="elementor elementor-page">
+    <div class="elementor-container">
+      <div set:html={post.content} />
+    </div>
+  </article>
+</Layout>

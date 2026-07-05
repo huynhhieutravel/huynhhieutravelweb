@@ -1,0 +1,57 @@
+DROP TABLE IF EXISTS PostCategory;
+DROP TABLE IF EXISTS PostTag;
+DROP TABLE IF EXISTS Post;
+DROP TABLE IF EXISTS Media;
+DROP TABLE IF EXISTS Category;
+DROP TABLE IF EXISTS Tag;
+
+CREATE TABLE Media (
+    id INTEGER PRIMARY KEY,
+    url TEXT NOT NULL,
+    caption TEXT,
+    description TEXT,
+    altText TEXT,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Category (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    slug TEXT NOT NULL UNIQUE,
+    description TEXT
+);
+
+CREATE TABLE Tag (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    slug TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE Post (
+    id INTEGER PRIMARY KEY,
+    title TEXT NOT NULL,
+    slug TEXT NOT NULL UNIQUE,
+    content TEXT,
+    excerpt TEXT,
+    featuredImage INTEGER,
+    type TEXT DEFAULT 'post',
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (featuredImage) REFERENCES Media(id)
+);
+
+CREATE TABLE PostCategory (
+    postId INTEGER,
+    categoryId INTEGER,
+    PRIMARY KEY (postId, categoryId),
+    FOREIGN KEY (postId) REFERENCES Post(id) ON DELETE CASCADE,
+    FOREIGN KEY (categoryId) REFERENCES Category(id) ON DELETE CASCADE
+);
+
+CREATE TABLE PostTag (
+    postId INTEGER,
+    tagId INTEGER,
+    PRIMARY KEY (postId, tagId),
+    FOREIGN KEY (postId) REFERENCES Post(id) ON DELETE CASCADE,
+    FOREIGN KEY (tagId) REFERENCES Tag(id) ON DELETE CASCADE
+);

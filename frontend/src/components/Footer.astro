@@ -1,0 +1,96 @@
+---
+// Footer.astro
+---
+
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-brand">
+      <img src="/media/huynhhieutravel-dark-logo.png" alt="Huỳnh Hiếu Travel" class="logo-img light-only" />
+      <img src="/media/huynhhieutravel-white-logo.png" alt="Huỳnh Hiếu Travel" class="logo-img dark-only" />
+      <p class="mt-4">Freelancer Website Design & Content. Thiết kế tinh tế, tối ưu trải nghiệm.</p>
+    </div>
+    
+    <div class="footer-social">
+      <h4>Kết nối</h4>
+      <div class="social-links">
+        <a href="https://www.facebook.com/huynhhieutravel/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/hieuhuynhtravel/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://x.com/TravelHieu" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {new Date().getFullYear()} Huynh Hieu Travel. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--glass-bg);
+    border-top: 1px solid var(--glass-border);
+    padding-top: 64px;
+    margin-top: 80px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+
+  .mt-4 {
+    margin-top: 16px;
+    color: var(--text-muted);
+  }
+
+  .footer-social h4 {
+    margin-bottom: 24px;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .social-links a {
+    color: var(--text-muted);
+  }
+  
+  .social-links a:hover {
+    color: var(--brand-primary);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--glass-border);
+    padding: 24px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
+
+  .dark-only { display: none; }
+  
+  @media (prefers-color-scheme: dark) {
+    .light-only { display: none; }
+    .dark-only { display: block; }
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+</style>

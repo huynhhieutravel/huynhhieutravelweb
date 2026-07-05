@@ -1,0 +1,297 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="FME Ecosystem Project - Huynh Hieu Travel">
+  <Header />
+  
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="section hero-section" style="min-height: 80vh; padding-top: 150px; align-items: start; display: block;">
+      <div class="container">
+        <!-- H1 Left Aligned and Huge -->
+        <h1 class="hero-title mb-5" style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 1.1; text-align: left; font-weight: 700;">FME Ecosystem Project</h1>
+        
+        <!-- 2 Column Layout for Intro -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 80px; margin-top: 60px;">
+          
+          <!-- Left Col: Text -->
+          <div class="prose" style="font-size: 1.125rem;">
+            <p>FME là một trung tâm Anh ngữ với tham vọng không chỉ dừng lại ở giảng dạy truyền thống, mà tiến lên trở thành một <strong>đối tác giáo dục toàn diện trong kỷ nguyên số</strong>.</p>
+            <p>Trong nhiều năm hoạt động, FME đã đào tạo hàng ngàn học viên, nhưng sự thay đổi nhanh chóng của công nghệ và nhu cầu học tập mới đặt ra một thách thức lớn: <strong>làm sao để hệ thống, tài liệu, và trải nghiệm học tập bắt kịp thời đại?</strong></p>
+          </div>
+          
+          <!-- Right Col: Meta Info -->
+          <div class="meta-info-col" style="display: flex; flex-direction: column; gap: 30px;">
+            <!-- Row 1: Services -->
+            <div style="display: flex; gap: 20px;">
+              <div style="width: 100px; font-weight: 700; flex-shrink: 0;">Dịch vụ</div>
+              <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <span style="border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 6px 20px; font-size: 0.9rem;">Sản phẩm mới</span>
+                <span style="border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 6px 20px; font-size: 0.9rem;">Code</span>
+                <span style="border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 6px 20px; font-size: 0.9rem;">Hệ thống</span>
+              </div>
+            </div>
+            <!-- Row 2: Date -->
+            <div style="display: flex; gap: 20px;">
+              <div style="width: 100px; font-weight: 700; flex-shrink: 0;">Date</div>
+              <div style="color: #ccc; font-size: 0.95rem; line-height: 1.6;">
+                Tháng 5 năm 2025 – Hiện nay<br/>(Tạo sản phẩm trên LMS liên tục)
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Role Section -->
+    <section class="section border-top">
+      <div class="container grid-1-2">
+        
+        <div class="problem-col">
+          <h2 class="section-heading mb-4">Problem</h2>
+          <div class="prose">
+            <p>Các mô hình giảng dạy cũ, giáo trình giấy và phương thức quản lý thủ công không còn phù hợp với thế hệ học viên hiện nay.</p>
+            <ul class="styled-list">
+              <li><strong>Học viên</strong> cần nền tảng số hoá để học tập mọi lúc, mọi nơi.</li>
+              <li><strong>Giáo viên</strong> cần công cụ hiện đại để quản lý lớp, bài tập và nội dung giảng dạy.</li>
+              <li><strong>Doanh nghiệp</strong> cần một hệ sinh thái khép kín để vận hành tinh gọn, minh bạch, sẵn sàng mở rộng.</li>
+            </ul>
+            <p>Thách thức chính là <strong>chuyển đổi FME từ trung tâm ngôn ngữ truyền thống thành một tổ chức EdTech</strong>, với hệ thống công nghệ và tài liệu học tập hiện đại.</p>
+          </div>
+        </div>
+        
+        <div class="role-col">
+          <h2 class="section-heading mb-4">Role & Process</h2>
+          <div class="prose">
+            <p>Tôi đảm nhận vai trò <strong>dẫn dắt toàn bộ quá trình chuyển đổi</strong>, từ hoạch định chiến lược đến triển khai sản phẩm:</p>
+            <ul class="styled-list">
+              <li>Đặt nền móng bằng <strong>OKRs</strong> để định hướng và đo lường tiến trình.</li>
+              <li>Thiết kế & triển khai hệ thống công nghệ (LMS, CRM mini).</li>
+              <li>Định hướng học thuật: xây dựng sách, giáo trình, lesson plan theo chuẩn TESOL.</li>
+              <li>Áp dụng <strong>Lean/Agile/Six Sigma</strong> để cải tiến liên tục, đảm bảo tính bền vững.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="container mt-5 pt-4">
+          <img src="/media/he-thong-xay-dung-fme-system.png" alt="Hệ thống xây dựng FME System" class="w-100 rounded-lg shadow-md" style="width: 100%; border-radius: 12px;" />
+      </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="section tabs-section" style="padding-top: 60px; padding-bottom: 120px;">
+      <div class="container">
+        
+        <!-- Tab Navigation -->
+        <div class="tab-nav" style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; justify-content: flex-start;">
+          <button class="tab-btn active" data-target="tab-lms">LMS – Learning Management System</button>
+          <button class="tab-btn" data-target="tab-books">Books & Materials</button>
+          <button class="tab-btn" data-target="tab-crm">CRM mini – Student Management</button>
+          <button class="tab-btn" data-target="tab-video">Video Learning</button>
+        </div>
+        
+        <!-- Tab Content 1: LMS -->
+        <div id="tab-lms" class="tab-content active">
+          <div class="prose mb-5">
+            <ul class="styled-list">
+              <li>Xây dựng trên <strong>WordPress + LearnDash</strong>.</li>
+              <li>Quản lý khoá học, quiz, lesson plan.</li>
+              <li>Tạo cầu nối giữa học tập offline và <strong>blended learning</strong>.</li>
+            </ul>
+            <p class="mt-4 mb-2"><strong>Sản phẩm:</strong></p>
+            <ul class="styled-list">
+              <li>Các khoá học LMS trình bày hiện đại, dễ theo dõi tiến độ học và tài liệu.</li>
+              <li>Các Đề thi được chấm trực tuyến, và có cung cấp giải thích.</li>
+              <li>Sản phẩm website hiện đại, dễ chỉnh sửa.</li>
+            </ul>
+          </div>
+          <div class="mt-5" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 30px;">
+            <div class="text-center">
+              <img src="/media/he-thong-lms-ung-dung.png" alt="Hệ thống LMS ứng dụng" style="width: 100%; margin-bottom: 12px;" />
+              <p class="text-sm italic text-muted">Hệ thống LMS ứng dụng</p>
+            </div>
+            <div class="text-center">
+              <img src="/media/he-thong-website-fme-hien-dai.png" alt="Hệ thống Website" style="width: 100%; margin-bottom: 12px;" />
+              <p class="text-sm italic text-muted">Hệ thống Website dễ nhìn, dễ tuỳ chỉnh</p>
+            </div>
+            <div class="text-center">
+              <img src="/media/lms-de-nhin.png" alt="LMS dễ học" style="width: 100%; margin-bottom: 12px;" />
+              <p class="text-sm italic text-muted">LMS dễ học, dễ theo dõi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 2: Books -->
+        <div id="tab-books" class="tab-content" style="display: none;">
+          <div class="prose mb-5">
+            <ul class="styled-list">
+              <li>Tôi giữ vai trò <strong>tác giả & định hướng nội dung</strong>, biên soạn sườn tài liệu ban đầu.</li>
+              <li>Bộ sách VSTEP B1 & B2 với graphic dễ hiểu, kết hợp LMS để tạo <strong>blended curriculum (Có QR Code dễ quét)</strong>.</li>
+              <li>Đặt nền móng cho chương trình giảng dạy hiện đại, dễ mở rộng.</li>
+            </ul>
+          </div>
+          <div class="mt-5" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 40px;">
+            <div class="text-center">
+              <img src="/media/sach-co-phong-cach-hien-dai.png" alt="Sách hiện đại" style="width: 100%; margin-bottom: 12px;" />
+              <p class="text-sm italic text-muted">Sách có phong cách hiện đại</p>
+            </div>
+            <div class="text-center">
+              <img src="/media/lms-de-nhin.png" alt="Video demo" style="width: 100%; margin-bottom: 12px;" />
+              <p class="text-sm italic text-muted">LMS dễ học, dễ theo dõi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 3: CRM -->
+        <div id="tab-crm" class="tab-content" style="display: none;">
+          <div class="prose mb-5">
+            <ul class="styled-list">
+               <li>Thấy ngay buổi học sắp tới và việc cần làm hôm nay.</li>
+               <li>Xem tài liệu theo từng buổi; nộp bài và nhận phản hồi rõ ràng.</li>
+               <li>Theo dõi điểm danh và tiến độ của riêng mình.</li>
+               <li>Tất cả gọn trong một bảng điều khiển dễ hiểu.</li>
+               <li>Quản lớp theo buổi học (session), tài liệu tập trung một chỗ.</li>
+               <li>Điểm danh nhanh; chấm bài theo rubric, phản hồi ngắn gọn.</li>
+               <li>Nhìn ra học viên cần hỗ trợ; gửi nhắc nhở ngay trong hệ thống.</li>
+               <li>Giảm thao tác lặp, tập trung vào chất lượng giảng dạy.</li>
+               <li>Toàn cảnh lớp và đội ngũ: tình hình dạy–học, điểm danh, nộp bài.</li>
+               <li>Nhận diện “điểm nghẽn” để kịp thời hỗ trợ giáo viên/lớp.</li>
+               <li>Chuẩn hóa tài liệu theo từng buổi để đảm bảo đồng nhất.</li>
+               <li>Vận hành gọn, minh bạch; dễ nhân rộng.</li>
+            </ul>
+          </div>
+          <div class="mt-5" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 40px;">
+            <div class="text-center">
+              <img src="/media/he-thong-crm-mini.png" alt="CRM mini" style="width: 100%; margin-bottom: 12px;" />
+            </div>
+            <div class="text-center">
+              <img src="/media/diem-danh-tren-he-thong.png" alt="Student View" style="width: 100%; margin-bottom: 12px;" />
+            </div>
+            <div class="text-center">
+              <img src="/media/check-bai-tap-tren-he-thong.png" alt="Teacher View" style="width: 100%; margin-bottom: 12px;" />
+            </div>
+            <div class="text-center">
+              <img src="/media/giao-dien-giao-vien.png" alt="Manager View" style="width: 100%; margin-bottom: 12px;" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 4: Video -->
+        <div id="tab-video" class="tab-content" style="display: none;">
+          <div class="prose mb-5">
+            <ul class="styled-list">
+              <li>Giai đoạn 1: sản xuất video Grammar, Speaking, Exam Tips.</li>
+              <li>Đóng vai trò foundation cho kênh nội dung số, tích hợp vào LMS.</li>
+            </ul>
+          </div>
+          <div class="mt-5">
+            <img src="/media/lms-de-nhin.png" alt="Video Learning" style="width: 100%;" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<style>
+  .tab-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 99px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .tab-btn:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  .tab-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    font-weight: 600;
+  }
+  .tab-content {
+    animation: fadeIn 0.4s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all
+        buttons.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.style.display = 'none');
+        
+        // Add active class to clicked
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-target');
+        const targetContent = document.getElementById(targetId);
+        if(targetContent) {
+          targetContent.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>
+    <!-- Impact & Reflection Section -->
+    <section class="section border-top" style="padding-top: 80px; padding-bottom: 120px;">
+      <div class="container">
+        
+        <!-- Impact Row -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 40px; margin-bottom: 80px;">
+          <div style="max-width: 250px;">
+            <h2 class="section-heading m-0" style="font-size: 1.8rem;">Impact</h2>
+          </div>
+          <div class="prose" style="font-size: 1.05rem;">
+            <ul class="styled-list mb-4">
+              <li>Chuyển đổi FME từ trung tâm truyền thống sang đối tác giáo dục công nghệ.</li>
+              <li>Xây dựng một <strong>ecosystem khép kín</strong>: LMS – CRM – Sách – Video.</li>
+              <li>Giáo viên có công cụ hiện đại, học viên có trải nghiệm học tập kết nối.</li>
+              <li>Doanh nghiệp vận hành <strong>tinh gọn và minh bạch hơn</strong>, sẵn sàng mở rộng quy mô.</li>
+            </ul>
+            
+            <p class="font-bold mb-2">Xem nhanh:</p>
+            <ul class="styled-list">
+              <li>Trang Web chính: <a href="https://fme.edu.vn/" target="_blank" rel="noopener noreferrer" style="color: #4da6ff; text-decoration: none;">https://fme.edu.vn/</a></li>
+              <li>Landing Page VSTEP 6 tuần: <a href="https://fme.edu.vn/khoa-luyen-thi-vstep-b1-16-buoi/" target="_blank" rel="noopener noreferrer" style="color: #4da6ff; text-decoration: none;">https://fme.edu.vn/khoa-luyen-thi-vstep-b1-16-buoi/</a></li>
+              <li>Một bài học Lesson trên LMS: <a href="https://fme.edu.vn/courses/khoa-hoc-writing-vstep/lessons/huong-dan-viet-thu-trang-trong-trong-thi-vstep/" target="_blank" rel="noopener noreferrer" style="color: #4da6ff; text-decoration: none;">https://fme.edu.vn/courses/khoa-hoc-writing-vstep/lessons/huong-dan-viet-thu-trang-trong-trong-thi-vstep/</a></li>
+              <li>Tài liệu học VSTEP: <a href="https://fme.edu.vn/tai-lieu-hoc-vstep/" target="_blank" rel="noopener noreferrer" style="color: #4da6ff; text-decoration: none;">https://fme.edu.vn/tai-lieu-hoc-vstep/</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Reflection Row -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 40px;">
+          <div style="max-width: 250px;">
+            <h2 class="section-heading m-0" style="font-size: 1.8rem;">Reflection</h2>
+          </div>
+          <div class="prose" style="font-size: 1.05rem;">
+            <p>FME Ecosystem không chỉ là một dự án công nghệ, mà là <strong>một bước tiến chiến lược</strong>.</p>
+            <p>Nó chứng minh rằng một doanh nghiệp giáo dục truyền thống có thể <strong>tái định nghĩa chính mình thành EdTech</strong>, thông qua việc tích hợp công nghệ, nội dung và phương pháp.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</Layout>

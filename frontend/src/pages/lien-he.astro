@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Liên Hệ | Huynh Hieu Travel">
+  <Header />
+  <main class="page-content" style="padding-top: 100px; padding-bottom: 120px;">
+    
+    <!-- Hero Section -->
+    <section class="section text-center mb-5" style="padding-bottom: 60px;">
+      <div class="container max-w-4xl mx-auto">
+        <h1 class="hero-title mb-5" style="font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 900; line-height: 1.1; letter-spacing: -1px; text-transform: uppercase;">
+          Contact me<br />
+          <span style="color: rgba(255,255,255,0.4); font-size: 0.7em;">Xin Chào</span>
+        </h1>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+          <a href="https://www.facebook.com/huynhhieutravel/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook #huynhhieutravel
+          </a>
+          <a href="https://x.com/TravelHieu" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Twitter #huynhhieutravel
+          </a>
+          <a href="https://www.instagram.com/hieuhuynhtravel/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Instagram #huynhhieutravel
+          </a>
+          <a href="mailto:huynhhieutravel@gmail.com" class="social-btn" style="background: #fff; color: #000; border-color: #fff;">
+            huynhhieutravel@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content & QR Code Section -->
+    <section class="section border-top" style="padding-top: 80px;">
+      <div class="container max-w-6xl mx-auto">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 60px; align-items: start;">
+          
+          <!-- Contact Info -->
+          <div>
+            <h2 class="section-heading mb-4" style="font-size: 2rem; font-weight: 700;">Thông tin liên hệ</h2>
+            <div class="prose mb-5" style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+              <p>
+                Vui lòng liên hệ với tôi qua Email hoặc Kết bạn Facebook để nói chuyện. <strong>Tôi là người hướng nội rất ít nghe điện thoại.</strong>
+              </p>
+            </div>
+            
+            <ul style="list-style: none; padding: 0; margin: 0 0 40px 0; font-size: 1.2rem; color: #fff;">
+              <li style="margin-bottom: 15px;">
+                <span style="color: rgba(255,255,255,0.5); display: inline-block; width: 80px;">Email</span>
+                <a href="mailto:huynhhieutravel@gmail.com" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3);">huynhhieutravel@gmail.com</a>
+              </li>
+              <li style="margin-bottom: 15px;">
+                <span style="color: rgba(255,255,255,0.5); display: inline-block; width: 80px;">Name</span>
+                Huỳnh Trọng Hiếu
+              </li>
+              <li style="margin-bottom: 15px;">
+                <span style="color: rgba(255,255,255,0.5); display: inline-block; width: 80px;">Phone</span>
+                <a href="tel:+84332377827" style="color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3);">+84 33.2377.827</a>
+              </li>
+            </ul>
+
+            <h2 class="section-heading mb-4" style="font-size: 2rem; font-weight: 700;">Khả năng làm việc</h2>
+            <div class="prose" style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
+              <p>
+                Môi trường làm việc của tôi khá thoải mái và có thể làm việc online nhiều thời gian. Địa điểm làm việc chính của tôi là Cần Thơ. Tuy vậy, tôi vẫn có thể tham gia các dự án tại Sài Gòn hoặc các tỉnh thành lân cận.
+              </p>
+              <p>
+                Tôi thường làm việc tại một số dự án. Nhưng tôi cũng sẽ thật vui khi thảo luận về những cơ hội mới.
+              </p>
+            </div>
+          </div>
+
+          <!-- QR Code -->
+          <div style="text-align: center; padding: 40px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;">
+            <div style="display: inline-block; background: #fff; padding: 20px; border-radius: 16px; margin-bottom: 20px;">
+              <img src="/media/huynh-hieu-qrcode.jpg" alt="Huynh Hieu Travel QR Code" style="width: 250px; height: 250px; object-fit: cover; border-radius: 8px;" loading="lazy" />
+            </div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 10px;">Quét mã QR</h3>
+            <p style="font-size: 1rem; color: rgba(255,255,255,0.6);">Để kết nối nhanh chóng qua Zalo / Facebook</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .social-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 99px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.05);
+  }
+</style>
