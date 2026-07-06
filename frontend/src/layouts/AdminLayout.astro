@@ -114,7 +114,6 @@ const { title, activeMenu = 'dashboard', activeSubmenu = '', hideSidebar = false
 
         <div class="sidebar-section">Content</div>
         <ul class="sidebar-menu">
-            <li><a href="/admin" class={activeMenu === 'dashboard' ? 'active' : ''}><span class="icon">📊</span> Dashboard</a></li>
             <li id="posts-menu-item">
                 <a href="/admin/posts" class={activeMenu === 'posts' ? 'active' : ''}>
                     <span class="icon">📝</span> Posts <svg style="margin-left:auto" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M4 3l4 3-4 3V3z"/></svg>
@@ -143,11 +142,9 @@ const { title, activeMenu = 'dashboard', activeSubmenu = '', hideSidebar = false
             <li><a href="/admin/links" class={activeMenu === 'system' && activeSubmenu === 'links' ? 'active' : ''}><span class="icon">🔗</span> Link Manager</a></li>
         </ul>
 
-        <div class="sidebar-section">Users & Roles</div>
+        <div class="sidebar-section">Tài khoản</div>
         <ul class="sidebar-menu">
-            {Astro.locals && (Astro.locals as any).authorize('view', 'user') && (
-              <li><a href="/admin/users" class={activeMenu === 'system' && activeSubmenu === 'users' ? 'active' : ''}><span class="icon">👤</span> Quản lý Users</a></li>
-            )}
+            <li><a href="/admin/profile" class={activeMenu === 'system' && activeSubmenu === 'profile' ? 'active' : ''}><span class="icon">👤</span> Đổi mật khẩu</a></li>
             {Astro.locals && (Astro.locals as any).authorize('manage_roles', 'system') && (
               <li><a href="/admin/roles" class={activeMenu === 'system' && activeSubmenu === 'roles' ? 'active' : ''}><span class="icon">🔐</span> Ma trận Phân quyền</a></li>
             )}
