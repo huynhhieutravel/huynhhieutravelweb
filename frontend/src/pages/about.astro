@@ -1,13 +1,14 @@
 ---
+import { env } from "cloudflare:workers";
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-let seoTitle = "About | Huynh Hieu Travel";
+let seoTitle = "About Me | Huynh Hieu Travel";
 let seoDescription = undefined;
 let ogImage = undefined;
 
-const db = Astro.locals.runtime?.env?.DB;
+const db = env.DB;
 if (db) {
   try {
     const stmt = db.prepare('SELECT * FROM Page WHERE slug = ?');
