@@ -31,7 +31,7 @@ export const PATCH: APIRoute = async ({ request, url, locals }) => {
   try {
     await db.prepare(`
       UPDATE Page 
-      SET title=?, slug=?, content=?, status=?, updatedAt=datetime('now')
+      SET title=?, slug=?, content=COALESCE(NULLIF(?, ''), content), status=?, updatedAt=datetime('now')
       WHERE id=?
     `).bind(title, slug, content, status, id).run();
     return new Response(JSON.stringify({ success: true }));

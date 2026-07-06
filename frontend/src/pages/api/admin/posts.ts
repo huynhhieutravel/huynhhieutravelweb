@@ -51,7 +51,10 @@ export const PATCH: APIRoute = async ({ request, url, locals }) => {
     const stmts = [
       db.prepare(`
         UPDATE Post 
-        SET title=?, slug=?, excerpt=?, content=?, status=?, categoryId=?, featuredImage=?, 
+        SET title=?, slug=?, 
+            excerpt=COALESCE(NULLIF(?, ''), excerpt), 
+            content=COALESCE(NULLIF(?, ''), content), 
+            status=?, categoryId=?, featuredImage=?, 
             seoTitle=?, seoDescription=?, ogImage=?, customSchema=?, schemaEnabled=?, schemaUpdatedAt=CURRENT_TIMESTAMP, schemaUpdatedBy=?, updatedAt=datetime('now')
         WHERE id=?
       `).bind(title, slug, excerpt, content, status, categoryId || null, featuredImage || null, seoTitle || null, seoDescription || null, ogImage || null, customSchema || null, schemaEnabled || 1, userId, id),

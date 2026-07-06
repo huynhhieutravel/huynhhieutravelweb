@@ -37,6 +37,7 @@ if (!post) {
   image={post.ogImage || post.featuredImage}
 >
   <article class="elementor elementor-page">
+    {post.css_content && <style set:html={post.css_content}></style>}
     <div class="elementor-container">
       <div set:html={post.content} />
     </div>
