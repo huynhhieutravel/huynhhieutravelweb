@@ -1,0 +1,71 @@
+---
+import { env } from "cloudflare:workers";
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const db = env.DB;
+let posts: any[] = [];
+
+if (db) {
+  try {
+    const { results } = await db.prepare("SELECT * FROM Post WHERE status = 'published' AND type = 'post' ORDER BY createdAt DESC").all();
+    posts = results || [];
+  } catch (e) {
+    console.error("DB Error in blog feed:", e);
+  }
+}
+---
+
+<Layout title="Blog Du Lịch - Huỳnh Hiếu Travel" description="Đọc những bài viết mới nhất về du lịch và trải nghiệm của Huỳnh Hiếu.">
+  <Header />
+  
+  <main class="main-content" style="padding-top: 100px; padding-bottom: 80px;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 48px;">
+        <h1 style="font-size: 40px; font-weight: 800; color: #0f172a; margin-bottom: 16px;">Nhật ký Hành trình</h1>
+        <p style="font-size: 18px; color: #64748b; max-width: 600px; margin: 0 auto;">Những câu chuyện, kinh nghiệm và góc nhìn về du lịch, cuộc sống được ghi lại trên từng chặng đường.</p>
+      </div>
+
+      {posts.length === 0 ? (
+        <div style="text-align: center; padding: 60px 20px; background: #f8fafc; border-radius: 16px; border: 1px dashed #cbd5e1;">
+          <div style="font-size: 48px; margin-bottom: 16px;">📝</div>
+          <h3 style="font-size: 20px; font-weight: 600; color: #334155; margin-bottom: 8px;">Chưa có bài viết nào</h3>
+          <p style="color: #64748b;">Nội dung đang được cập nhật. Bạn vui lòng quay lại sau nhé!</p>
+        </div>
+      ) : (
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px;">
+          {posts.map((post) => (
+            <article style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); transition: transform 0.2s, box-shadow 0.2s;" class="post-card">
+              <a href={`/${post.slug}`} style="text-decoration: none; color: inherit; display: block;">
+                {post.featuredImage ? (
+                  <img src={post.featuredImage} alt={post.title} style="width: 100%; height: 220px; object-fit: cover;" />
+                ) : (
+                  <div style="width: 100%; height: 220px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #94a3b8;">
+                    <span>Không có ảnh</span>
+                  </div>
+                )}
+                <div style="padding: 24px;">
+                  <h3 style="font-size: 20px; font-weight: 700; color: #0f172a; margin-bottom: 12px; line-height: 1.4;">{post.title}</h3>
+                  <p style="color: #475569; font-size: 15px; line-height: 1.6; margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+                    {post.excerpt || 'Đọc chi tiết bài viết...'}
+                  </p>
+                  <div style="color: #3b82f6; font-weight: 600; font-size: 14px;">Đọc thêm &rarr;</div>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      )}
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  }
+</style>

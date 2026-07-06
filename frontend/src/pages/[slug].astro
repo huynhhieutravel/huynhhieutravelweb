@@ -26,7 +26,11 @@ if (!post) {
 
 ---
 
-<Layout title={`${post.title} - Huỳnh Hiếu Travel`} description={post.excerpt} image={post.featuredImage}>
+<Layout 
+  title={post.seoTitle || `${post.title} - Huỳnh Hiếu Travel`} 
+  description={post.seoDescription || post.excerpt} 
+  image={post.ogImage || post.featuredImage}
+>
   <article class="elementor elementor-page">
     <div class="elementor-container">
       <div set:html={post.content} />
