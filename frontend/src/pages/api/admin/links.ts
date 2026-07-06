@@ -4,7 +4,7 @@ import type { APIRoute } from 'astro';
 export const prerender = false;
 
 async function invalidateCache() {
-  const kv = env.KV;
+  const kv = env.SESSION;
   if (kv) await kv.delete('links:all');
 }
 

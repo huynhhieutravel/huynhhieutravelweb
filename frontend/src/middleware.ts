@@ -27,12 +27,21 @@ export const onRequest = defineMiddleware(async (context, next) => {
   if (firstSegment && !RESERVED.has(firstSegment) && !pathname.includes('.')) {
     try {
       const db = import.meta.env.DEV ? (context.locals as any).runtime?.env?.DB : env.DB;
+      const kv = import.meta.env.DEV ? (context.locals as any).runtime?.env?.SESSION : env.SESSION;
       let linksMap: Record<string, any> | null = null;
+
+      if (kv) {
+        const cached = await kv.get('links:all');
+        if (cached) linksMap = JSON.parse(cached);
+      }
 
       if (!linksMap && db) {
         const { results } = await db.prepare("SELECT slug, url, statusCode, isActive FROM Link").all();
         linksMap = {};
         for (const r of (results || [])) linksMap[r.slug] = r;
+        if (kv) {
+          await kv.put('links:all', JSON.stringify(linksMap), { expirationTtl: 86400 });
+        }
       }
 
       if (linksMap) {
