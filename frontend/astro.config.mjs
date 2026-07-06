@@ -7,6 +7,9 @@ const isDev = process.env.npm_lifecycle_event === 'dev';
 
 export default defineConfig({
   output: 'server',
+  redirects: {
+    '/home': '/'
+  },
   adapter: isDev ? undefined : cloudflare({
     platformProxy: {
       enabled: true
