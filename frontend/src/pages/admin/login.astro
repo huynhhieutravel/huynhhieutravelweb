@@ -11,69 +11,143 @@ import '../../styles/global.css';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-center;
+      background: #0f172a;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bg-elements {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    .circle-1 {
+      position: absolute;
+      top: -20%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(59,130,246,0.3) 0%, rgba(59,130,246,0) 70%);
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+    
+    .circle-2 {
+      position: absolute;
+      bottom: -20%; left: -10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(99,102,241,0.2) 0%, rgba(99,102,241,0) 70%);
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+
+    .login-container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 40px;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-box {
+      width: 64px; height: 64px;
+      background: #3b82f6;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 24px;
+      transform: rotate(3deg);
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+    }
+    .logo-box:hover { transform: rotate(0deg); }
+    .logo-box svg { width: 32px; height: 32px; color: #fff; }
+
+    h2 { color: #f8fafc; font-size: 24px; font-weight: 700; text-align: center; margin-bottom: 8px; }
+    p.subtitle { color: #94a3b8; font-size: 14px; text-align: center; margin-bottom: 32px; }
+
+    .input-group { margin-bottom: 20px; }
+    .input-group label { display: block; color: #cbd5e1; font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+    .input-group input {
+      width: 100%; padding: 14px 16px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px; color: #f8fafc; font-size: 15px;
+      outline: none; transition: all 0.2s ease;
+    }
+    .input-group input:focus {
+      border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+    }
+
+    button {
+      width: 100%; padding: 14px;
+      background: #3b82f6; color: #fff; border: none; border-radius: 12px;
+      font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+      margin-top: 12px;
+    }
+    button:hover { background: #2563eb; transform: translateY(-1px); box-shadow: 0 10px 15px -3px rgba(59,130,246,0.3); }
+
+    .error-msg {
+      background: rgba(239,68,68,0.1); color: #ef4444; border: 1px solid rgba(239,68,68,0.2);
+      padding: 12px; border-radius: 10px; font-size: 13px; margin-bottom: 20px; text-align: center;
+      display: none;
+    }
+    .error-msg.visible { display: block; }
+  </style>
 </head>
-<body class="bg-slate-50 font-sans antialiased text-slate-900">
-  <div class="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative overflow-hidden">
-    <!-- Decorative background elements -->
-    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-      <div class="absolute -top-[30%] -right-[10%] w-[70%] h-[70%] rounded-full bg-blue-400/20 blur-3xl"></div>
-      <div class="absolute -bottom-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-indigo-400/20 blur-3xl"></div>
-    </div>
+<body>
+  <div class="bg-elements">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+  </div>
 
-    <div class="sm:mx-auto sm:w-full sm:max-w-md relative z-10">
-      <div class="flex justify-center">
-        <div class="h-16 w-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
-          <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-          </svg>
-        </div>
+  <div class="login-container">
+    <div class="logo-box">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+    </div>
+    <h2>Đăng nhập CMS</h2>
+    <p class="subtitle">Hệ thống quản trị FIT Tour</p>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="email">Email quản trị</label>
+        <input id="email" type="email" placeholder="Nhập email..." required>
       </div>
-      <h2 class="mt-6 text-center text-3xl font-extrabold text-slate-900 tracking-tight">Đăng nhập vào hệ thống</h2>
-      <p class="mt-2 text-center text-sm text-slate-600">
-        Chào mừng trở lại CMS của FIT Tour
-      </p>
-    </div>
-
-    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md relative z-10">
-      <div class="bg-white/80 backdrop-blur-xl py-8 px-4 shadow-2xl shadow-blue-900/5 sm:rounded-2xl sm:px-10 border border-white/50">
-        <form id="loginForm" class="space-y-6">
-          <div>
-            <label for="email" class="block text-sm font-medium text-slate-700">Email quản trị</label>
-            <div class="mt-2">
-              <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow sm:text-sm bg-white/50 focus:bg-white">
-            </div>
-          </div>
-
-          <div>
-            <label for="password" class="block text-sm font-medium text-slate-700">Mật khẩu</label>
-            <div class="mt-2">
-              <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow sm:text-sm bg-white/50 focus:bg-white">
-            </div>
-          </div>
-
-          <div id="errorMessage" class="text-rose-500 text-sm font-medium hidden bg-rose-50 p-3 rounded-lg border border-rose-100"></div>
-
-          <div>
-            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-md text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all hover:shadow-lg hover:-translate-y-0.5">
-              Đăng nhập ngay
-            </button>
-          </div>
-        </form>
+      <div class="input-group">
+        <label for="password">Mật khẩu</label>
+        <input id="password" type="password" placeholder="Nhập mật khẩu..." required>
       </div>
-    </div>
+      <div id="errorMessage" class="error-msg"></div>
+      <button type="submit" id="submitBtn">Đăng nhập ngay</button>
+    </form>
   </div>
 
   <script>
     const form = document.getElementById('loginForm');
     const errorDiv = document.getElementById('errorMessage');
+    const btn = document.getElementById('submitBtn');
 
     form?.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = (document.getElementById('email') as HTMLInputElement).value;
       const password = (document.getElementById('password') as HTMLInputElement).value;
       
-      const btn = form.querySelector('button');
-      if (btn) btn.innerHTML = '<svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Đang xử lý...';
+      if (btn) btn.innerHTML = 'Đang xử lý...';
 
       try {
         const res = await fetch('/api/admin/login', {
@@ -88,14 +162,14 @@ import '../../styles/global.css';
         } else {
           if (errorDiv) {
             errorDiv.textContent = data.error || 'Sai thông tin đăng nhập';
-            errorDiv.classList.remove('hidden');
+            errorDiv.classList.add('visible');
           }
           if (btn) btn.innerHTML = 'Đăng nhập ngay';
         }
       } catch (err: any) {
         if (errorDiv) {
           errorDiv.textContent = err.message || 'Lỗi kết nối';
-          errorDiv.classList.remove('hidden');
+          errorDiv.classList.add('visible');
         }
         if (btn) btn.innerHTML = 'Đăng nhập ngay';
       }
