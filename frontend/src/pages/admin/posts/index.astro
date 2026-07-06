@@ -35,7 +35,7 @@ if (d1Db) {
       });
     }
     
-    const { results: catResults } = await d1Db.prepare("SELECT id, name, slug FROM BlogCategory ORDER BY name ASC").all();
+    const { results: catResults } = await d1Db.prepare("SELECT id, name, slug FROM Category ORDER BY name ASC").all();
     categories = catResults || [];
     
     const { results: tagResults } = await d1Db.prepare("SELECT id, name FROM Tag ORDER BY name ASC").all();
@@ -104,10 +104,10 @@ if (d1Db) {
     }
 
     let sql = `
-      SELECT Post.*, BlogCategory.name as primaryCategoryName,
-             (SELECT GROUP_CONCAT(BlogCategory.name, ', ') 
+      SELECT Post.*, Category.name as primaryCategoryName,
+             (SELECT GROUP_CONCAT(Category.name, ', ') 
               FROM PostCategory 
-              JOIN BlogCategory ON PostCategory.categoryId = BlogCategory.id 
+              JOIN Category ON PostCategory.categoryId = Category.id 
               WHERE PostCategory.postId = Post.id) as categoryNames,
              (SELECT GROUP_CONCAT(PostCategory.categoryId, ',') 
               FROM PostCategory 
@@ -120,7 +120,7 @@ if (d1Db) {
               JOIN Tag ON PostTag.tagId = Tag.id 
               WHERE PostTag.postId = Post.id) as tags
       FROM Post 
-      LEFT JOIN BlogCategory ON Post.categoryId = BlogCategory.id 
+      LEFT JOIN Category ON Post.categoryId = Category.id 
       ${baseWhere}
     `;
     

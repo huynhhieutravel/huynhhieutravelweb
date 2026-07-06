@@ -9,8 +9,8 @@ if (d1Db) {
     // Note: The UI fetches its own data to render SSR
     const { results } = await d1Db.prepare(`
       SELECT c.*, p.name as parentName 
-      FROM BlogCategory c
-      LEFT JOIN BlogCategory p ON c.parentId = p.id
+      FROM Category c
+      LEFT JOIN Category p ON c.parentId = p.id
       ORDER BY c.name ASC
     `).all();
 
