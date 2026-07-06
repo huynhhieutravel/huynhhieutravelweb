@@ -60,15 +60,51 @@ export const onRequest = defineMiddleware(async (context, next) => {
     }
   }
 
-  // ========== AUTH GUARD (Tạm thời bỏ qua nếu chưa setup auth) ==========
-  // if (pathname.startsWith('/admin')) {
-  //   // verify session
-  // }
+  // ========== AUTH GUARD ==========
+  if (pathname.startsWith('/admin') || pathname.startsWith('/api/admin')) {
+    // Exclude login routes from auth guard
+    const isLoginRoute = pathname === '/admin/login' || pathname === '/api/admin/login';
+    if (!isLoginRoute) {
+      const sessionCookie = context.cookies.get('admin_session')?.value;
+      if (!sessionCookie) {
+        if (pathname.startsWith('/api/')) {
+          return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401 });
+        }
+        return context.redirect('/admin/login');
+      }
+
+      // We need to import verifySession dynamically to avoid middleware issues
+      // But we can also just rely on it directly since it's edge compatible
+      // Note: we can't await inside the sync setup of locals, so we verify here
+      // To keep it simple, we verify it right now using dynamic import
+      
+      const { verifySession } = await import('./lib/auth');
+      const payload = await verifySession(sessionCookie, globalThis.__env__ || env);
+      
+      if (!payload) {
+        if (pathname.startsWith('/api/')) {
+          return new Response(JSON.stringify({ error: 'Invalid Session' }), { status: 401 });
+        }
+        return context.redirect('/admin/login');
+      }
+      
+      // Inject user payload into locals
+      (context.locals as any).user = payload;
+    }
+  }
   
-  // Stub authorize cho Admin UI
+  // Basic authorize stub
   (context.locals as any).authorize = (action: string, resource: string) => {
-    return true; // Tạm thời cho phép tất cả để render UI
+    // If not user, return false (unless it's login)
+    if (!(context.locals as any).user) return false;
+    return true; 
   };
 
-  return next();
+  // ========== SECURITY HEADERS ==========
+  const response = await next();
+  response.headers.set('X-Content-Type-Options', 'nosniff');
+  response.headers.set('X-Frame-Options', 'SAMEORIGIN');
+  response.headers.set('X-XSS-Protection', '1; mode=block');
+  
+  return response;
 });

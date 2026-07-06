@@ -12,6 +12,24 @@ export const POST: APIRoute = async ({ request, locals, url }) => {
   const file = formData.get('file') as File;
   if (!file) return new Response(JSON.stringify({ error: 'No file' }), { status: 400 });
 
+  // 1. Validate MIME type
+  const allowedMimeTypes = [
+    'image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml',
+    'video/mp4', 'video/webm', 'video/ogg',
+    'application/pdf'
+  ];
+  
+  if (!allowedMimeTypes.includes(file.type)) {
+    return new Response(JSON.stringify({ error: 'Loại file không được hỗ trợ (Chỉ cho phép ảnh, video, PDF)' }), { status: 400 });
+  }
+
+  // 2. Validate Extension to prevent bypassing MIME check
+  const ext = file.name.split('.').pop()?.toLowerCase() || '';
+  const allowedExts = ['jpg', 'jpeg', 'png', 'webp', 'gif', 'svg', 'mp4', 'webm', 'ogg', 'pdf'];
+  if (!allowedExts.includes(ext)) {
+    return new Response(JSON.stringify({ error: 'Đuôi file không hợp lệ' }), { status: 400 });
+  }
+
   const timestamp = Date.now();
   const safeName = file.name.toLowerCase().replace(/[^a-z0-9.\-_]/g, '-');
   const key = `uploads/${timestamp}-${safeName}`;
